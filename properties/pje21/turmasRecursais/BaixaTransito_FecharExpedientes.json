@@ -1,0 +1,31 @@
+[
+	{
+		"robo": "PAGE.pje21.turmaRecursal.BaixaTransitoJulgadoPJE_Page",
+		"qtdRobos": "2",
+		"navegador": "OPERA",
+		"url": "https://pje2g-debug-prod.tjba.jus.br/pje/login.seam",
+		"tarefa": "(CCPC) Fechar prazos dos expedientes",
+		"perfil": "6ª Turma Recursal / Direção de Secretaria / Diretor de Secretaria",
+		"movimentosJulgamento": ["237","238","239","240","241","242","901"],
+		"movimentosPermitidosBaixa": ["60","1051","92","1061","237","238","239","240","241","242","901"],
+		"movimentosPeticaoIntermediaria": ["85","581"],
+		"movimentacaoDecursoDePrazo": "1051",	
+		"movimentacaoBaixaDefinitiva": "22",
+		"tipoAto":"Certidão",
+		"movimentar":[],
+		"modeloAto": "ENCAMINHA AUTOS PARA O JUIZO DE ORIGEM",
+		"movimento": "848",
+		"fonteDeDados":"BD",
+		"queryProcessos":"dados/queryProcessos.sql",
+		"queryPartes":"dados/queryPartes.sql",
+		"parametroQuery":"(CCPC) Fechar prazos dos expedientes",
+		"dbURL":"jdbc:postgresql://10.10.1.x:x/pje_2g",
+		"dbUser":"lerioliveira",
+		"dbPass":"x",
+		"acoes":["BAIXAR_PROCESSO"],
+		"motivoRemessa": "outros motivos",
+		"filtrarEtiqueta":"ROBO21_ATUANDO",
+		"usuario":"00810804506",
+		"senha":"x"
+	}
+]

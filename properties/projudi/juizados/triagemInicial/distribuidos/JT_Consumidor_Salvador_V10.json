@@ -1,0 +1,17 @@
+[
+	{
+		"robo": "PAGE.projudi.turmasRecursais.JulgamentoTematico_Page2",
+		"qtdRobos": "5",
+		"navegador": "OPERA",
+		"url": "https://projudi.tjba.jus.br/",
+		"perfil": "10ª VSJE DO CONSUMIDOR (VESPERTINO)",
+		"fonteDeDados": "BD",
+		"queryProcessos": "properties\\projudi\\juizados\\triagemInicial\\distribuidos\\distribuidos.sql",
+		"parametrosQuery": [
+			"1","1015","1","1015"
+		],
+		"documentoProcesso": "Petição Inicial",
+		"acuraciaIA": 0.45,
+		"gerarRelatorios":"não"
+}
+]

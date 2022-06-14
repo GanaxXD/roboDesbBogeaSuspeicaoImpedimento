@@ -1,0 +1,105 @@
+[
+         {
+            "etiqueta":"ROBO_CITACAO",
+            "palavrasChaveANDOR":[
+               [
+                  "citação"
+               ],
+               [
+                  "oficial",
+                  " AR ",
+                  "postal",
+                  "correios",
+                  "precatória",
+                  "mandado",
+                  "whatsapp",
+                  "celular",
+                  "telefone"
+               ],
+               [
+                  "MONITÓRIA",
+                  "EXECUÇÃO DE TÍTULO EXTRAJUDICIAL",
+                  "PROCEDIMENTO COMUM CÍVEL",
+                  "BUSCA E APREENSÃO EM ALIENAÇÃO FIDUCIÁRIA",
+                  "MONITÓRIA",
+                  "EXECUÇÃO DE ALIMENTOS",
+                  "DIVÓRCIO LITIGIOSO",
+                  "INVENTÁRIO",
+                  "ALIMENTOS - LEI ESPECIAL Nº 5.478/68",
+                  "ALVARÁ JUDICIAL"
+               ]
+            ],
+            "operadorNOT":[
+               
+            ]
+         },
+         {
+            "etiqueta":"ROBO_TERMO",
+            "palavrasChaveANDOR":[
+               [
+                  "curatela provisória",
+                  "curatela definitiva",
+                  "guarda provisória",
+                  "guarda definitiva",
+                  "inventariante provisório",
+                  "inventariante definitivo"
+               ]
+            ],
+            "operadorNOT":[
+               
+            ]
+         },
+         {
+            "etiqueta":"ROBO_OFICIO",
+            "palavrasChaveANDOR":[
+               [
+                  "existência de saldo",
+                  "conta corrente",
+                  "falecido",
+                  "consórcio",
+                  "seguro",
+                  "desconto alimentos",
+                  "alimentos provisórios",
+                  "alimentos definitivos",
+                  "INSS",
+                  "herdeiros",
+                  "abertura de conta",
+                  "dependentes INSS",
+                  "deprecante",
+                  "perícia interdição",
+                  "deprecante custas",
+                  "escolta polícia"
+               ]
+            ],
+            "operadorNOT":[
+               
+            ]
+         },
+         {
+            "etiqueta":"ROBO_MANDADO_INTIMACAO",
+            "palavrasChaveANDOR":[
+               [
+                  "busca e apreensão",
+                  "monitória",
+                  "título extrajudicial",
+                  "cumprimento de sentença",
+                  "execução alimentos",
+                  "prisão alimentos",
+                  "contraprisão",
+                  "averbação divórcio",
+                  "interesse autor",
+                  "ciência",
+                  "réu",
+                  "oficial",
+                  "entrevista interditando",
+                  "interdição videoconferência",
+                  "audiência",
+                  "pagar alimentos",
+                  "ciência autor"
+               ]
+            ],
+            "operadorNOT":[
+               
+            ]
+         }
+      ]

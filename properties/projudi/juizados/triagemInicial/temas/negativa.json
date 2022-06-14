@@ -1,0 +1,99 @@
+[
+   {
+      "tema":"CARTAO_DE_CREDITO",
+      "palavras":[
+         "banco",
+         "financeira",
+         "cartão de crédito"
+      ]
+   },
+   {
+      "tema":"BANCOS",
+      "palavras":[
+         "financeira",
+         "banco",
+         "Cartão de crédito"
+      ]
+   },
+   {
+      "tema":"ARQUIVISTAS",
+      "palavras":[
+    	  "órgão arquivista",
+          "arquivista",
+          "órgão de proteção ao crédito",
+          "órgão de restrição ao crédito",
+          "entidade de proteção ao crédito",
+          "entidade de restrição ao crédito",
+          "SPC",
+          "SERASA",
+          "CDL"
+      ]
+   },
+   {
+      "tema":"PLANO_DE_SAUDE",
+      "palavras":[
+         "Plano de Saúde",
+         "Seguro Saúde"
+      ]
+   },
+   {
+      "tema":"TELEFONIA",
+      "palavras":[
+         "TELEFONIA",
+         "OPERADORA DE",
+         " TIM ",
+         "TELEFÔNICA",
+         " CLARO ",
+         "OI MÓVEL",
+         "TELEMAR",
+         " GVT ",
+         " VIVO ",
+         "SKY",
+         "EMBRATEL",
+         " NET "
+      ]
+   },
+   {
+      "tema":"FACULDADES",
+      "palavras":[
+         "Faculdade",
+         "universidade"
+      ]
+   },
+   {
+      "tema":"EMPRESAS_AEREAS",
+      "palavras":[
+         "Voo",
+         "companhia aérea",
+         "bilhete aéreo"
+      ]
+   },
+   {
+      "tema":"CONSTRUTORAS",
+      "palavras":[
+         "construtora",
+         "incorporadora"
+      ]
+   },
+   {
+      "tema":"EMBASA",
+      "palavras":[
+         "EMBASA",
+         "EMPRESA BAIANA DE AGUAS"
+      ]
+   },
+   {
+      "tema":"COELBA",
+      "palavras":[
+         "COELBA",
+         "COMPANHIA DE ELETRICIDADE DO ESTADO DA BAHIA"
+      ]
+   },
+   {
+      "tema":"SEGUROS",
+      "palavras":[
+         "SEGURO",
+         "SEGURADORA"
+      ]
+   }
+]

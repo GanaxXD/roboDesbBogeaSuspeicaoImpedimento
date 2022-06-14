@@ -1,0 +1,8 @@
+Atenção: Para operar o navegador da sua máquina, o robô faz uso de um arquivo específico para o tipo e versão dele (Chrome, Firefox, Opera), que encontra-se na pasta /drivers. O robô em questão está configurado para rodar no Google Chrome, versão 95.0 ou anterior, e seu driver encontra-se em /drivers/chromedriver.exe. Se desejar usar outro navegador ou de versão posterior, aconselha-se fazer o download do driver adequado e substituir o arquivo correspondente na pasta /drivers/.
+
+Passos para execução do robô:
+I - Deve-se configurar o arquivo <nome-da-rotina>_config.json com as informações necessárias - tarefa onde será executado, perfil do sistema a ser usado, etc.
+II - Para rotinas que recebem uma lista de processos, deve-se preencher o arquivo <nome-da-rotina>_processos.txt com os números dos processos sobre os quais o robô deverá operar - um número por linha.
+III - Para rodar o robô, clique no arquivo <nome-da-rotina>.bat. Ao iniciar, a rotina abrirá uma tela de operações (console) e uma nova janela do navegador escohido. , através da qual o robô executará as suas operações.
+	I - Mantenha a janela de operações (console) aberta até que o robô termine a sua execução.
+	II - Não interfira com as ações do robô na janela do navegador aberta por ele. Caso ela seja fechada ou se clique em qualquer elemento na tela, há o risco de o robô não conseguir continuar suas operações e executar abruptamente.

@@ -1,0 +1,34 @@
+[
+	{
+		"robo": "PAGE.pje21.justicaComum.CI.AtoCartorioMinutar_Page",
+		"navegador": "OPERA",
+		"url": "https://pje1g-simulacao.tjba.jus.br/pje/login.seam",
+		"perfil": "2º CARTORIO INTEGRADO DE FAMILIA DE SALVADOR / Direção de Secretaria / Diretor de Secretaria",
+		"tarefa": "(CI) Verificar providencias a adotar",
+		"fonteDeDados":"TAREFA",
+		"movimentar":["Preparar ato de cartório"],
+		"atribuirEtiqueta":"CHARLIE",
+		"removerEtiqueta":"sim",
+		"usuario":"81030398534",
+		"senha":"81030398534",
+		"atosJudiciais": [
+			{
+				"etiqueta": "ROBO_DEVOLUCAO_CP",
+				"tipoAto": "Ato Ordinatório",
+				"modeloAto": "2º CI Fam Devolução CP - LI Provimento 06/2016",
+				"movimento": "Ato ordinatório",
+				"codMovimento": "11383",
+				"assinar":"sim",
+				"expedicao":[]
+		
+			}
+		]
+	}
+]
+
+
+
+
+
+
+

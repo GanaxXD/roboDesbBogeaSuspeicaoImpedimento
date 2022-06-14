@@ -1,0 +1,33 @@
+[
+	{
+		"robo": "PAGE.projudi.turmasRecursais.JulgamentoTematico_Page2",
+		"qtdRobos": "5",
+		"navegador": "OPERA",
+		"url": "https://projudi.tjba.jus.br/",
+		"perfil": "1ª Vara do Sistema Juizados - CONCEIÇÃO DO COITÉ",
+		"fonteDeDados": "BD",
+		"queryProcessos": "properties\\projudi\\juizados\\triagemInicial\\distribuidos\\distribuidos.sql",
+		"parametrosQuery": [
+			"67","210","67","210"
+		],
+		"documentoProcesso": "Petição Inicial",
+		"acuraciaIA": 0.45,
+		"gerarRelatorios":"não"
+	},
+	 
+	{
+			"robo": "PAGE.projudi.turmasRecursais.JulgamentoTematico_Page2",
+			"qtdRobos": "5",
+			"navegador": "OPERA",
+			"url": "https://projudi.tjba.jus.br/",
+			"perfil": "2ª Vara do Sistema Juizados - CONCEIÇÃO DO COITÉ",
+			"fonteDeDados": "BD",
+			"queryProcessos": "properties\\projudi\\juizados\\triagemInicial\\distribuidos\\distribuidos.sql",
+			"parametrosQuery": [
+				"67","211","67","211"
+			],
+			"documentoProcesso": "Petição Inicial",
+			"acuraciaIA": 0.45,
+			"gerarRelatorios":"não"
+	}
+]

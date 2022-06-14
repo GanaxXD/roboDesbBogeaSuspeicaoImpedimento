@@ -1,0 +1,19 @@
+[IA_CONSTRUTORAS_BAIXA_DE_HIPOTECA]
+construtora;incorporadora
+imóvel quitado;quitação;carta de quitação;quitad
+hipoteca;gravame;baixa de hipoteca;baixa da hipoteca;baixa de gravame;baixa do gravame
+NOT:atraso de obra;cláusula de tolerância;vício construtivo;distrato;juros de obra;taxa de evolução de obra;taxa de juros de obra
+
+[IA_CONSTRUTORAS_ATRASO_DE_OBRA]
+construtora;incorporadora
+atraso na entrega;entrega atrasada;prazo pactuado;prazo máximo;prazo previsto contratualmente;atraso na conclusão de obra;demora na conclusão de obra;atraso na conclusão da obra;demora na conclusão da obra
+cláusula de tolerância;tolerância;180 dias;cento e oitenta dias
+entrega das chaves;entrega de chaves;imissão na posse;entrega do imóvel;efetiva entrega;posse do imóvel
+NOT:vício construtivo;distrato;baixa de hipoteca;juros de obra;taxa de evolução de obra;taxa de juros de obra
+
+[IA_CONSTRUTORAS_JUROS_DE_OBRA]
+construtora;incorporadora
+juros de obra;taxa de juros de obra;juros de evolução de obra;financiamento de obra
+habite-se;entrega do imóvel;entrega das chaves;entrega de chaves;efetiva entrega;posse do imóvel
+cobrança
+NOT:vício construtivo;distrato;baixa de hipoteca

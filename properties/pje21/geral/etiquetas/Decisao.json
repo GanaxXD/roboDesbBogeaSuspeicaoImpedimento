@@ -1,0 +1,220 @@
+[
+			{
+				"etiqueta": "ROBO_PENHORA_ON_LINE",
+				"tipoAto": "Decisão",
+				"modeloAto": "15VRC-Autoriza Penhora On-line",
+				"movimento": "Bloqueio/penhora on line",
+				"codMovimento": "11382",
+				"assinar":"não",
+				"expedicao":[]
+			},
+			{
+				"etiqueta": "ROBO_BLOQUEIO_RENAJUD",
+				"tipoAto": "Decisão",
+				"modeloAto": "15VRC-Bloqueio RENAJUD",
+				"movimento": "Bloqueio/penhora on line",
+				"codMovimento": "11382",
+				"assinar":"não",
+				"expedicao":[]
+			},
+			{
+				
+				"etiqueta": "ROBO_PENHORA_VEICULO_RENAJUD",
+				"tipoAto": "Decisão",
+				"modeloAto": "15VRC-Decisão Penhora Veículo RENAJUD",
+				"movimento": "Bloqueio/penhora on line",
+				"codMovimento": "11382",
+				"assinar":"não",
+				"expedicao":[]
+			},
+			{
+				
+				"etiqueta": "ROBO_SEGREDO_JUSTICA",
+				"tipoAto": "Decisão",
+				"modeloAto": "15VRC-Decreta Segredo Justiça",
+				"movimento": "Decisão de Saneamento e Organização",
+				"codMovimento": "12387",
+				"assinar":"não",
+				"expedicao":[]
+			},
+			{
+				
+				"etiqueta": "ROBO_INDEFERE_ARRESTO_ESGOTAR_BUSCA_ENDERECO",
+				"tipoAto": "Decisão",
+				"modeloAto": "15VRC-Indefere Arresto - Esgotar Busca Endere�o",
+				"movimento": "Decisão de Saneamento e Organização",
+				"codMovimento": "12387",
+				"assinar":"não",
+				"expedicao":[]
+			},
+			{
+				
+				"etiqueta": "ROBO_INDEFERE_CITACAO_EDITAL",
+				"tipoAto": "Decisão",
+				"modeloAto": "15VRC-Indefere Citação Edital",
+				"movimento": "Decisão de Saneamento e Organização",
+				"codMovimento": "12387",
+				"assinar":"não",
+				"expedicao":[]
+			},
+			{
+				
+				"etiqueta": "ROBO_INDEFERE_LIMINAR_INEXISTENCIA_DEBITO",
+				"tipoAto": "Decisão",
+				"modeloAto": "15VRC-Indefere Liminar Inexistência D�bito",
+				"movimento": "Antecipa��o de tutela",
+				"codMovimento": "785",
+				"assinar":"não",
+				"expedicao":[]
+			},
+			{
+				
+				"etiqueta": "ROBO_INDEFERE_PENHORA",
+				"tipoAto": "Decisão",
+				"modeloAto": "15VRC-Indefere Penhora Bem Al. Fudiciária",
+				"movimento": "Decisão de Saneamento e Organização",
+				"codMovimento": "12387",
+				"assinar":"não",
+				"expedicao":[]
+			},
+			{
+				
+				"etiqueta": "ROBO_LIMINAR_BUSCA_VEICULO",
+				"tipoAto": "Decisão",
+				"modeloAto": "15VRC-Liminar Busca e Apreensão",
+				"movimento": "Liminar",
+				"codMovimento": "339",
+				"assinar":"não",
+				"expedicao":["Indicar expedição de outros documentos"]
+			},
+			{
+				
+				"etiqueta": "ROBO_PONTOS_CONTROVERTIDOS",
+				"tipoAto": "Decisão",
+				"modeloAto": "15VRC-Pontos Controvertidos",
+				"movimento": "Decisão de Saneamento e Organização",
+				"codMovimento": "12387",
+				"assinar":"não",
+				"expedicao":[]
+			},
+			{
+				
+				"etiqueta": "ROBO_SANEAMENTO_CONSENSUAL",
+				"tipoAto": "Decisão",
+				"modeloAto": "15VRC-Saneamento Consensual",
+				"movimento": "Decisão de Saneamento e Organização",
+				"codMovimento": "12387",
+				"assinar":"não",
+				"expedicao":[]
+			},
+			{
+				
+				"etiqueta": "ROBO_LIMINAR_REVISIONAL",
+				"tipoAto": "Decisão",
+				"modeloAto": "15VRC-Liminar Revisional",
+				"movimento": "Antecipação de tutela",
+				"codMovimento": "332",
+				"assinar":"não",
+				"expedicao":["Indicar expedição de outros documentos"]
+			},
+			{
+				
+				"etiqueta": "ROBO_CONFLITO_COMPETENCIA_VOTORANTIM",
+				"tipoAto": "Decisão",
+				"modeloAto": "15VRC-Conflito Competência Votorantim",
+				"movimento": "Suscitação de Conflito de Competência",
+				"codMovimento": "961",
+				"assinar":"não",
+				"expedicao":[]
+			},
+			{
+				
+				"etiqueta": "ROBO_DECRETA_REVELIA",
+				"tipoAto": "Decisão",
+				"modeloAto": "15VRC-Decreta Revelia",
+				"movimento": "Decisão de Saneamento e Organização",
+				"codMovimento": "12387",
+				"assinar":"não",
+				"expedicao":[]
+			},
+			{
+				
+				"etiqueta": "ROBO_ACORDO_PARCIAL",
+				"tipoAto": "Decisão",
+				"modeloAto": "15VRC-Homologa Acordo Parcial",
+				"movimento": "Acordo em execução ou em cumprimento de sentença",
+				"codMovimento": "377",
+				"assinar":"não",
+				"expedicao":[]
+			},
+			{
+				
+				"etiqueta": "ROBO_CONFLITO_COMPETENCIA",
+				"tipoAto": "Decisão",
+				"modeloAto": "15VRC-Conflito Competência",
+				"movimento": "Suscitação de Conflito de Competência",
+				"codMovimento": "961",
+				"assinar":"não",
+				"expedicao":[]
+			},
+			{
+				
+				"etiqueta": "ROBO_INDEFERE_LIMINAR_REVISIONAL",
+				"tipoAto": "Decisão",
+				"modeloAto": "15VRC-Indefere Liminar Revisional",
+				"movimento": "Antecipação de tutela",
+				"codMovimento": "785",
+				"assinar":"não",
+				"expedicao":["Indicar expedição de outros documentos"]
+			},
+			{
+				
+				"etiqueta": "ROBO_PARCELAMENTO_CUSTAS_ISENCAO_PARCIAL",
+				"tipoAto": "Decisão",
+				"modeloAto": "15VRC-Parcelamento Custas Isenção Parcial",
+				"movimento": "Assistência Judiciária Gratuita",
+				"codMovimento": "11024",
+				"assinar":"não",
+				"expedicao":[]
+			},
+			{
+				
+				"etiqueta": "ROBO_DECLINA_COMPETENCIA_VOTORANTIM",
+				"tipoAto": "Decisão",
+				"modeloAto": "15VRC-Declina Competência Votorantim",
+				"movimento": "Incompetência",
+				"codMovimento": "941",
+				"assinar":"não",
+				"expedicao":[]
+			},
+			{
+				
+				"etiqueta": "ROBO_DECLINIO_RESERVA_EXTRATIVISTA",
+				"tipoAto": "Decisão",
+				"modeloAto": "15VRC-Declinio Reserva Extrativista",
+				"movimento": "Incompetência",
+				"codMovimento": "941",
+				"assinar":"não",
+				"expedicao":[]
+			},
+			{
+				
+				"etiqueta": "ROBO_REMESSA_JUIZO_PREVENTO",
+				"tipoAto": "Decisão",
+				"modeloAto": "15VRC-Remessa Juízo Prevento",
+				"movimento": "Incompetência",
+				"codMovimento": "941",
+				"assinar":"não",
+				"expedicao":[]
+			},
+			{
+
+				"etiqueta": "ROBO_TEMA13_MADRE_DEUS",
+				"tipoAto": "Decisão",
+				"modeloAto": "15VRC-TEMA 13 MADRE DE DEUS",
+				"movimento": "Incidente de Resolução de Demandas Repetitivas",
+				"codMovimento": "12098",
+				"assinar":"não",
+				"expedicao":[]
+			}
+]

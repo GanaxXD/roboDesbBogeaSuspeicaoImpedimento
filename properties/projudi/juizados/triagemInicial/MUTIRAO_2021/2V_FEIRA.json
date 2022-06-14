@@ -1,0 +1,18 @@
+[
+	{
+		"robo": "PAGE.projudi.Triagem_Page",
+		"qtdRobos": "1",
+		"navegador": "CHROME",
+		"url": "https://projudi.tjba.jus.br/",
+		"perfil": "2ª Vara do Sistema dos Juizados - FEIRA DE SANTANA",
+		"fonteDeDados": "ARQUIVO",
+		"nomeArquivo":"dados/2VF.csv",
+		"colunaIdProcesso":0,
+		"colunaProcesso":1,
+		"colunaEtiqueta":0,
+		"separador":";",
+		"atribuirEtiqueta": "MUTIRÃO 2021",
+		"usuario":"lerioliveira",
+		"senha":"xx"
+	}
+]

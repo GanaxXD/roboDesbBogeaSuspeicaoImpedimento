@@ -1,0 +1,25 @@
+[
+	{
+		"robo": "tjma.PAGE.pje215.justicaComum.CI.Intimacao_CI",
+		"qtdRobos": "1",
+		"timeout": "0",
+		"navegador": "CHROME",
+		"url": "https://pjeih.tjma.jus.br/pje/login.seam",
+		"perfil": "2ª Vara da Fazenda Pública de São Luís / Secretaria / Diretor de Secretaria",
+		"tarefa": "Preparar intimação de retirada de suspensão",
+		"fonteDeDados":"TAREFA",
+		"comunicacao": "Intimação",
+		"modeloAto": "SEJUD 2VF - CABEÇALHO LUIZ HENRIQUE",
+		"modeloAtoAdvogado": "SEJUD 2VF - CABEÇALHO LUIZ HENRIQUE",
+		"modeloAtoProcuradoria": "SEJUD 2VF - INTIMAÇÃO ELETRÔNICA LUIZ HENRIQUE",
+		"prazo":"15",
+		"prazoAdvogado":"15",
+		"prazoProcuradoria":"30",
+		"polos": ["poloAtivo","poloPassivo"],
+		"usuario":"67324134300",
+		"senha":"pje123456",
+		"filtrarEtiqueta":"1.",
+		"atribuirEtiqueta":"CHARLIE",
+		"removerEtiqueta":"sim"
+	}
+]

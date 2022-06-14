@@ -1,0 +1,25 @@
+[
+	{
+		"robo": "tjma.PAGE.pje215.geral.TriagemInicial_Page",
+		"qtdRobos": "1", 
+		"timeout": "3",
+		"navegador": "CHROME",
+		"url": "https://pje2g.tjma.jus.br/pje2g/login.seam",
+		"perfis": [
+				"1ª Câmara Cível / Gabinete Des. Jorge Rachid Mubárack Maluf / Assessoria / Assessor"
+
+		],
+		"tarefas": [
+				"Minutar decisão"
+		 ],
+		"filtrarEtiqueta":"",
+		"deletarArquivo":"sim",
+		"fonteDeDados":"TAREFA",
+		"documentosProcesso":[
+								"Selecione"
+		],
+		"caminhoDownload": "C:/Users/Administrador/Downloads/",
+		"usuario":"60866978330",
+		"senha":" ds!123456789"
+	}
+]

@@ -1,0 +1,156 @@
+[
+   {
+      "etiqueta":"IA_COELBA_REVISAO_CONSUMO_FATURA",
+      "confirmacaoSinapses":"não",
+      "palavrasChaveANDOR":[
+         [
+            "COELBA",
+            "COMPANHIA DE ELETRICIDADE DO ESTADO DA BAHIA"
+         ],
+         [
+            "média de consumo",
+            "média",
+            "consumo médio",
+            "normalidade",
+            "histórico de consumo",
+            "exorbitante",
+            "abusiv"
+         ],
+         [
+            "revisão",
+            "refaturamento"
+         ],
+         [
+            "medidor"
+         ]
+      ],
+      "operadorNOT":[
+         "desvio de medidor",
+         "desvio",
+         "EMBASA"
+      ]
+   },
+   {
+      "etiqueta":"IA_COELBA_DESVIO_MEDIDOR",
+      "confirmacaoSinapses":"não",
+      "palavrasChaveANDOR":[
+         [
+            "COELBA",
+            "COMPANHIA DE ELETRICIDADE DO ESTADO DA BAHIA"
+         ],
+         [
+            "desvio",
+            "avaria",
+            "medidor avariado",
+			"irregular"
+         ],
+         [
+            "inspeção",
+            "recuperação de consumo",
+            " TOI "
+         ],
+         [
+            "cobrança abusiva",
+            "abusiv"
+         ]
+      ],
+      "operadorNOT":[
+         "refaturamento",
+         "EMBASA"
+      ]
+   },
+   {
+      "etiqueta":"IA_COELBA_QUEDA_ENERGIA",
+      "confirmacaoSinapses":"não",
+      "palavrasChaveANDOR":[
+         [
+            "COELBA",
+            "COMPANHIA DE ELETRICIDADE DO ESTADO DA BAHIA"
+         ],
+         [
+            "queda de energia"
+         ],
+         [
+            "queda",
+            "sobrecarga",
+            "queima",
+            "danos",
+            "aparelho"
+         ],
+         [
+            "ressarcimento",
+            "reembolso",
+            "orçamento",
+            "visita técnica"
+         ]
+      ],
+      "operadorNOT":[
+         "refaturamento",
+         "revisão",
+         "corte",
+         "EMBASA"
+      ]
+   },
+   {
+      "etiqueta":"IA_COELBA_COBRANCA_DEBITO_TITULAR_ANTIGO",
+      "confirmacaoSinapses":"não",
+      "palavrasChaveANDOR":[
+         [
+            "COELBA",
+            "COMPANHIA DE ELETRICIDADE DO ESTADO DA BAHIA"
+         ],
+         [
+            "troca de titularidade",
+            "transferência de titularidade",
+            "mudança de titularidade"
+         ],
+         [
+            "débito",
+            "débito antigo",
+            "dívida",
+            "dívida antiga"
+         ],
+         [
+            "obrigação pessoal",
+            "propter personam"
+         ]
+      ],
+      "operadorNOT":[
+         "refaturamento",
+         "queda de energia",
+         "desvio de medidor",
+         "avaria",
+         "medidor avariado",
+         "EMBASA"
+      ]
+   },
+   {
+      "etiqueta":"IA_COELBA_DEMORA_LIGACAO_RELIGACAO_ENERGIA",
+      "confirmacaoSinapses":"não",
+      "palavrasChaveANDOR":[
+         [
+            "COELBA",
+            "COMPANHIA DE ELETRICIDADE DO ESTADO DA BAHIA"
+         ],
+         [
+            "ligação de energia",
+            "solicitação de energia",
+            "solicitação de serviço",
+            "instalação de energia",
+            "reativação"            
+         ],
+         [
+            "prazo",
+            "extrapol",
+            "serviço essencial"
+         ]
+      ],
+      "operadorNOT":[
+         "refaturamento",
+         "queda de energia",
+         "desvio de medidor",
+         "desvio do medidor",
+         "EMBASA"
+      ]
+   }
+]

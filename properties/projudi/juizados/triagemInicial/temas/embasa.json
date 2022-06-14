@@ -1,0 +1,178 @@
+[
+   {
+      "etiqueta":"IA_EMBASA_REVISAO_DE_CONSUMO_DE_FATURA",
+      "confirmacaoSinapses":"não",
+      "palavrasChaveANDOR":[
+         [
+            "EMBASA",
+            "EMPRESA BAIANA DE AGUAS"
+         ],
+         [
+            "média de consumo",
+            "consumo médio",
+            "normalidade",
+            "histórico de consumo",
+            "cobrança excessiva",
+            "exorbitante",
+            "abusividade",
+            "abusiv"
+         ],
+         [
+            "revisão",
+            "refatur",
+			"superfaturada"
+         ],
+         [
+            "vazamento",
+            "hidrômetro"
+         ]
+      ],
+      "operadorNOT":[
+         "by-pass",
+         "bypass",
+         "desvio",
+		 "desmembramento",
+         "COELBA",
+         "SEGURADORA"
+      ]
+   },
+   {      
+      "etiqueta":"IA_EMBASA_DESMEMBRAMENTO_DE_MATRICULA",
+      "confirmacaoSinapses":"não",
+      "palavrasChaveANDOR":[
+         [
+            "EMBASA",
+            "EMPRESA BAIANA DE AGUAS"
+         ],
+         [
+            "desmembramento",
+            "fornecimento individual",
+            "abastecimento individual",
+            "instalação de hidrômetro"
+         ]
+      ],
+      "operadorNOT":[
+         "refaturamento",
+         "by-pass",
+         "bypass",
+         "desvio",
+         "COELBA",
+         "universidade",
+         " IES ",
+         "SEGURADORA"
+      ]
+   },
+   {
+      "etiqueta":"IA_EMBASA_TAXA_DE_ESGOTO",
+      "confirmacaoSinapses":"não",
+      "palavrasChaveANDOR":[
+         [
+            "EMBASA",
+            "EMPRESA BAIANA DE AGUAS"
+         ],
+         [
+            "taxa de esgoto",
+            "cobrança de esgoto"
+         ],
+         [
+            "ilegalidade",
+            "abusividade",
+            "abusiv",
+            "inexigibilidade"
+         ],
+         [
+            "ausência de ligação de esgoto",
+            "ausência de rede de esgoto",
+            "poço artesiano",
+            "fossa"
+         ],
+         [
+            "saneamento básico",
+            "ineficaz"
+         ]
+      ],
+      "operadorNOT":[
+         "refaturamento",
+         "COELBA",
+         "SEGURADORA"
+      ]
+   },
+   {
+      "etiqueta":"IA_EMBASA_DEMORA_LIGACAO_REATIVACAO",
+      "confirmacaoSinapses":"não",
+      "palavrasChaveANDOR":[
+         [
+            "EMBASA",
+            "EMPRESA BAIANA DE AGUAS"
+         ],
+         [
+            "ligação de água",
+            "solicitação de água",
+            "solicitação de serviço",
+            "fornecimento de água",
+            "ligação nova",
+            "água nova",
+            "reativação"      
+         ],
+         [
+            "prazo",
+            "extrapol",
+            "serviço essencial"
+         ]
+      ],
+      "operadorNOT":[
+         "refatur",
+		 "revisão",
+		 "média de consumo",
+         "by-pass",
+         "bypass",
+         "COELBA",
+         "SEGURADORA"
+      ]
+   },
+   {
+      "etiqueta":"IA_EMBASA_FALTA_DAGUA_PERIODO_PROLONGADO",
+      "confirmacaoSinapses":"não",
+      "palavrasChaveANDOR":[
+         [
+            "EMBASA",
+            "Empresa Bahiana de água"
+         ],
+         [
+            "ROMPIMENTO"
+         ],
+         [
+            "ADUTORA"
+         ]
+      ],
+      "operadorNOT":[
+         "COELBA",
+         "COMPANHIA DE ELETRICIDADE DO ESTADO DA BAHIA",
+         "SEGURADORA"
+         
+      ]
+   },
+   {
+      "etiqueta":"IA_EMBASA_MA_PRESTACAO_SERVICO",
+      "confirmacaoSinapses":"não",
+      "palavrasChaveANDOR":[
+         [
+            "EMBASA",
+            "Empresa Bahiana de água"
+         ],
+         [
+            "abastecimento de água"
+         ],
+         [
+            "Saneamento básico"
+         ]
+      ],
+      "operadorNOT":[
+         "rompimento",
+         "adutora",
+         "COELBA",
+         "COMPANHIA DE ELETRICIDADE DO ESTADO DA BAHIA",
+         "SEGURADORA"
+      ]
+   }
+]

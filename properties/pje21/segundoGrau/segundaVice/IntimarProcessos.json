@@ -1,0 +1,21 @@
+[ 
+{
+	"robo" : "PAGE.pje21.segundoGrau.IntimarProcessosSegundaVice_Page",
+	"qtdRobos" : "1",
+	"navegador" : "CHROME",
+	"url" : "https://pje2g-simulacao.tjba.jus.br/pje/login.seam",
+	"perfis" : [ "2ª Vice Presidência / Direção de Secretaria / Diretor de Secretaria" ],
+	"fonteDeDados" : "TAREFA",
+	"tarefas" : [ "(SG) Autos recebidos da câmara - ANALISAR" ],
+	"movimentar" : [ "01 - Preparar ato de comunicação" ],
+	"filtrarEtiqueta" : "Robo_ExpedirIntimacao",
+	"modeloAto" : "Ato intimação art. 1030",
+	"comunicacao" : "Intimação",
+	"polos" : [ "poloAtivo", "poloPassivo" ],
+	"prazo" : "15",
+	"usuario" : "05410048598",
+	"senha" : "05410048598"
+} 
+]
+
+

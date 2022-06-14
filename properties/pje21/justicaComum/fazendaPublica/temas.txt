@@ -1,0 +1,43 @@
+[IA_CONCURSO_PUBLICO]
+certame ;concurso público
+preterição;classificação
+TAF;teste;aptidão;física;perfil profissiográfico;REDA;regime especial;exame;psicotécnico;psicoteste;vaga;terceirizado
+NOT: URV;licitação;derivado
+
+[IA_CONCURSO_PUBLICO_COTA]
+concurso público;
+banca;heteroidentificação; cota ;racial;deficiente;examinador;vaga
+NOT:TAF;psicoteste;URV;licitação;derivado
+
+[IA_SAUDE]
+saúde
+SUS ;sistema único de saúde;planserv
+médico;doença;relatório;fisioterapia;enfermagem;carcinoma;psiquiátric;coração;pulmão;câncer;leucemia;morte;oncológico;AVC;hemodiálise;medicamento;tratamento;cirurgia;diagnóstico;home e care;homecare;home care;unidade de tratamento intensivo;UTI;UPA ;hospital;multidisciplinar
+
+[IA_PREVIDENCIARIO]
+previdenciário
+pensão ; morte ; aposentadoria ;
+concessão;revisão;cumulação;implant;especial;SUPREV;FUNPREV;BAPREV; beneficiário;dependen;econômica;provento;viúva;falecimento;falecid;invalidez;cônjuge
+
+[ROBO_PM_GRATIFICACAO]
+PM;polícia;policial
+militar
+auxílio transporte;auxílio alimentação;adicional de periculosidade;adicional de insalubridade;GAP;gratificação de atividade policial; cet ;feaspol;ghpm
+
+[IA_VEICULOS]
+veículo
+transporte;trânsito;CNH;DETRAN;departamento de trânsito;agerba;transalvador;agente de trânsito;mobilidade;gratuidade
+
+[IA_CUMPRIMENTO_DE_SENTENCA]
+cumprimento
+sentença
+coletiva
+aplb;asfeb;urv ;sindpoc
+obrigação de pagar;obrigação de fazer;cálculos;título;exequendo
+juros de mora;correção monetária
+
+[IA_LICITACAO]
+licitação
+edital
+certame ;competição;comissão;leiloeiro;pregão;eletrônico;recurso administrativo;concorrência;convite;melhor preço;menor preço
+classificação;ordem;

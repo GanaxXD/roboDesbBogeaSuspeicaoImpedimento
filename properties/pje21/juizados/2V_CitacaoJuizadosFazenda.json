@@ -1,0 +1,16 @@
+[
+	{
+		"robo": "PAGE.pje21.juizados.CitacaoJuizadosFazenda_Page",
+		"qtdRobos": "1", 
+		"navegador": "CHROME",
+		"url": "https://pje1g-simulacao.tjba.jus.br/pje/login.seam",
+		"perfil": "2ª V DO SISTEMA DOS JUIZADOS ESPECIAIS DA FAZENDA PÚBLICA / Direção de Secretaria / Diretor de Secretaria",
+		"tarefa": "Preparar comunicação",
+		"fonteDeDados":"TAREFA",
+		"comunicacao": "Citação",
+		"modeloAto": "ROBO: REU: CITACAO 2 VARA JUIZADOS",
+		"filtrarEtiqueta":"ROBO_CITAR",
+		"prazo":"60", 
+		"polos": ["poloPassivo"]
+	}
+]

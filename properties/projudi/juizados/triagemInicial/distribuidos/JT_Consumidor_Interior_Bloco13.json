@@ -1,0 +1,65 @@
+[
+	{
+		"robo": "PAGE.projudi.turmasRecursais.JulgamentoTematico_Page2",
+		"qtdRobos": "1",
+		"navegador": "OPERA",
+		"url": "https://projudi.tjba.jus.br/",
+		"perfil": "Vara do Sistema Juizados - SANTA MARIA DA VITÓRIA",
+		"fonteDeDados": "BD",
+		"queryProcessos": "properties\\projudi\\juizados\\triagemInicial\\distribuidos\\distribuidos.sql",
+		"parametrosQuery": [
+			"101","330","101","330"
+		],
+		"documentoProcesso": "Petição Inicial",
+		"acuraciaIA": 0.45,
+		"gerarRelatorios":"não"
+	},
+	 
+	{
+			"robo": "PAGE.projudi.turmasRecursais.JulgamentoTematico_Page2",
+			"qtdRobos": "1",
+			"navegador": "OPERA",
+			"url": "https://projudi.tjba.jus.br/",
+			"perfil": "Vara do Sistema dos Juizados-STO ANTÔNIO DE JESUS",
+			"fonteDeDados": "BD",
+			"queryProcessos": "properties\\projudi\\juizados\\triagemInicial\\distribuidos\\distribuidos.sql",
+			"parametrosQuery": [
+				"87","270","87","270"
+			],
+			"documentoProcesso": "Petição Inicial",
+			"acuraciaIA": 0.45,
+			"gerarRelatorios":"não"
+	},
+	 
+	{
+			"robo": "PAGE.projudi.turmasRecursais.JulgamentoTematico_Page2",
+			"qtdRobos": "1",
+			"navegador": "OPERA",
+			"url": "https://projudi.tjba.jus.br/",
+			"perfil": "Vara do Sistema dos Juizados - SANTO ESTEVÃO",
+			"fonteDeDados": "BD",
+			"queryProcessos": "properties\\projudi\\juizados\\triagemInicial\\distribuidos\\distribuidos.sql",
+			"parametrosQuery": [
+				"99","320","99","320"
+			],
+			"documentoProcesso": "Petição Inicial",
+			"acuraciaIA": 0.45,
+			"gerarRelatorios":"não"
+	},
+	 
+	{
+			"robo": "PAGE.projudi.turmasRecursais.JulgamentoTematico_Page2",
+			"qtdRobos": "1",
+			"navegador": "OPERA",
+			"url": "https://projudi.tjba.jus.br/",
+			"perfil": "Vara do Sistema dos Juizados - SENHOR DO BONFIM",
+			"fonteDeDados": "BD",
+			"queryProcessos": "properties\\projudi\\juizados\\triagemInicial\\distribuidos\\distribuidos.sql",
+			"parametrosQuery": [
+				"106","350","106","350"
+			],
+			"documentoProcesso": "Petição Inicial",
+			"acuraciaIA": 0.45,
+			"gerarRelatorios":"não"
+	}
+]

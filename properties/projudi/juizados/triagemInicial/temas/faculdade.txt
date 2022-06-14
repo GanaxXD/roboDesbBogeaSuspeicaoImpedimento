@@ -1,0 +1,10 @@
+[IA_FACULDADE_ATIVIDADES_COMPLEMENTARES]
+Faculdade;universidade; IES 
+atividades complementares
+NOT:diploma;30%;trinta por cento;trinta porcento
+
+[IA_FACULDADE_REDUCAO_30_PORCENTO]
+Faculdade;universidade; IES 
+redução da mensalidade;mensalidade;desconto;abatimento;pandemia
+30%;trinta por cento;trinta porcento
+NOT:diploma;atividades complementares

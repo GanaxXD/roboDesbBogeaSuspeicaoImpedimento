@@ -1,0 +1,78 @@
+[
+   {
+      "etiqueta":"IA_ORGAOS_ARQUIVISTAS_NEGATIVACAO_SEM_COMUNICACAO",
+      "confirmacaoSinapses":"não",
+      "palavrasChaveANDOR":[
+         [
+            "arquivista",
+            "órgão de proteção ao crédito",
+            "órgão de restrição ao crédito",
+            "entidade de proteção ao crédito",
+            "entidade de restrição ao crédito",
+            "SPC",
+            "SERASA",
+            "CDL"
+         ],
+         [
+            "negativação",
+            "restrição"
+         ],
+         [
+            "ausência de aviso prévio",
+            "ausência de comunicação prévia",
+            "não comunicad",
+            "comunicad",
+            "ausência de informação",
+            "ausência de carta",
+            "carta não recebida",
+            "dever de informação"
+         ]
+      ],
+      "operadorNOT":[
+         "fraude",
+         "nega dívida",
+         "nega débito",
+         "dívida desconhecida",
+         "débito desconhecido"
+      ]
+   },
+   {
+      "etiqueta":"IA_ORGAOS_ARQUIVISTAS_SCORE_E_PRESCRICAO",
+      "confirmacaoSinapses":"não",
+      "palavrasChaveANDOR":[
+         [
+            "órgão arquivista",
+            "arquivista",
+            "órgão de proteção ao crédito",
+            "órgão de restrição ao crédito",
+            "entidade de proteção ao crédito",
+            "entidade de restrição ao crédito",
+            "SPC",
+            "SERASA",
+            "CDL"
+         ],
+         [
+            "score",
+            "scoring",
+            "score de crédito",
+            "credit scoring",
+            "credscore",
+            "SERASA LIMPA NOME",
+			"prescrição",
+            "prescrit",
+            "caduc"
+         ],
+         [
+            "dívida",
+            "débito",
+            "negativação",
+            "inscrição",
+            "restrição",
+            "cobrança"
+         ]
+      ],
+      "operadorNOT":[
+         "fraude"
+      ]
+   }
+]

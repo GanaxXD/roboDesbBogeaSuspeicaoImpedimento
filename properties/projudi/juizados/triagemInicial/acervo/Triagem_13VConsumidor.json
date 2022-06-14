@@ -1,0 +1,17 @@
+[
+	{
+		"robo": "PAGE.projudi.turmasRecursais.JulgamentoTematico_Page2",
+		"qtdRobos": "1",
+		"navegador": "OPERA",
+		"url": "https://projudi.tjba.jus.br/",
+		"perfil": "13ª VSJE DO CONSUMIDOR (MATUTINO)",
+		"fonteDeDados": "BD",
+		"queryProcessos": "properties\\projudi\\juizados\\triagemInicial\\acervo\\acervo.sql",
+		"parametrosQuery": [
+			"1","1001"
+		],
+		"documentoProcesso": "Petição Inicial",
+		"acuraciaIA": 0.45,
+		"gerarRelatorios":"sim"
+	}
+]

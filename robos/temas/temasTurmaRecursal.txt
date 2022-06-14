@@ -1,0 +1,51 @@
+[ToadaLab-Robô005-Telefonia]
+Telefonia
+Ausência de sinal;Cobrança;Consumo;Não solicitado;Aferição;Titularidade;Plano;Combo;Oi;Recuperação Judicial;Embargos à execução
+
+[ToadaLab-Robô005-Banco]
+Banco
+Cartão de crédito;Contrato de seguro;Fila em agência bancária;Fraude;Tarifa de abertura de crédito – TAC;Tarifa de emissão de carnê – TEC;Tarifa de avaliação de bem;Tarifa de Cadastro;Tarifa de serviço de terceiro;Seguro prestamista;Seguro de proteção financeira;Empréstimo;Consignado;Mútuo;RMC;Contratação eletrônica;Gravame eletrônico;Dever de informação;Parcelamento automático;Crédito rotativo;Solicitação prévia;Venda casada;Cadastro de proteção ao crédito;IOF
+
+[ToadaLab-Robô005-Água]
+Água
+Cobrança consumo de água;Poço artesiano;Vistoria;Laudo;Hidrômetro;Tarifa mínima;Esgoto;Tubulação;Rede externa
+
+[ToadaLab-Robô005-EnergiaElétrica]
+Energia Elétrica
+Troca de titularidade;Unidade consumidora;Débitos pretéritos;Antigo Titular;Aferição de consumo;Religação à revelia;Taxa;Cobrança de custo administrativo;TOI;Corte, Interrupção e suspensão no fornecimento;Parcelamento;Refaturamento;Oscilação;Queima de aparelho eletrodoméstico
+
+[ToadaLab-Robô005-ConstruçãoDeObra]
+Construção de Obra
+Arras confirmatórias;Cláusula Penal;Devolução do valor pago;Caso fortuito e força maior;Comissão de corretagem;Lucros cessantes;Atraso na entrega do imóvel;Habite-se;Adimplemento substancial;Taxas condominiais;Entrega das chaves;Taxa de administração;Inadimplemento da construtora;Taxa de evolução de obra;Juros de obra;Distrato;Cobrança de aluguel
+
+[ToadaLab-Robô005-PlanoDeSaúde]
+Plano de Saúde
+Autogestão;Atendimento de urgência e emergência;Período de carência;Rede não credenciada;Opção;Reembolso;Limite internação hospitalar;Cirurgia bariátrica;Indicação médica;Cirurgia reparadora;Exame PET-scan;PET-CT;Descredenciamento;Doença preexistente;Erro de diagnóstico;Coparticipação;Reajuste de mensalidade;Mudança de faixa etária;Recusa de cobertura médica;Rescisão unilateral;Rol da ANS;Responsabilidade solidária;Cancelamento do plano;Tratamento domiciliar;"Home care";Tratamento experimental;Ex-empregado demitido
+
+[ToadaLab-Robô005-DPVAT]
+DPVAT
+Complementação;Debilidade permanente;Deformidade;Laudo;Pagamento administrativo;Repercussão;Grau
+
+[ToadaLab-Robô005-CompanhiaAérea]
+Companhia Aérea
+atraso;cancelamento;alteração;remarcação;extravio de bagagem;acomodação;readequação de malha aérea;pandemia;defeitos mecânicos na aeronave;fortuito interno;fortuito externo;codeshare, compartilhamento de voo assistência;material;realocação de assento;impedimento de embarque;erro na grafia de nome do passageiro no bilhete;declaração prévia de conteúdo de bagagem;más condições climáticas;desistência de viagem;pacote de viagem;reembolso;programa de milhagem;“no show”;Voo nacional;Voo internacional
+
+[ToadaLab-Robô005-AcidenteDeCarro]
+Acidente de Carro
+colisão entre veículos;carro;sinistro;seguro;franquia;seguradora;responsabilidade;culpa;dano material;orçamentos;reparo;conserto;oficina credenciada;oficina autorizada;concessionária;dano moral;boletim de ocorrência;perícia;croqui;laudo ICRIM;dinâmica do acidente;Atenção;Cuidado;Segurança;Condução;Condutor;Motorista;Art 28, 29, 30 do CTB;Via Pública;Rua;Avenida;Circulação
+
+[ToadaLab-Robô005-Produtos-Ou-ServiçosNãoSolicitados]
+Produtos Ou Serviços Não Solicitados
+Assinatura de revista;Renovação automática;Cancelamento;Compra e venda de carro;Débitos;Transferência;Consórcio;Desistência;Restituição dos valores pagos;Devolução imediata;Taxa de administração;Contemplação;consórcio contemplado;Uber;99 pop;99 Táxi;Motorista de Aplicativo;Plataforma de transporte;Beach Park;RCI;Montreal;Clube de Hospedagem;Diária;Multa;Percentual;Arras
+
+[ToadaLab-Robô005-DanoMoral]
+Dano Moral
+Exclusivo;Majoração;Fixação;Condenação
+
+[ToadaLab-Robô005-PrestaçãoDeEnsinoSuperior]
+Prestação De Ensino Superior
+Propaganda;FIES;Cobrança;Notas;Avaliação;Expedição de diploma;Atraso;2ª chamada;Formatura;Fotos;Mensalidade;Histórico escolar
+
+[ToadaLab-Robô005-Aluguel]
+Aluguel
+Despejo;Cobrança;Valores;Prejuízo;Danos;Tributos;Água;Luz;Energia Elétrica

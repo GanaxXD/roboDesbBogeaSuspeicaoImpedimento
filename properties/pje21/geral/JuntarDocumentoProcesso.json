@@ -1,0 +1,17 @@
+[	
+	{	
+		"robo": "PAGE.pje21.geral.JuntarDocumentoProcesso_Page",
+		"qtdRobos": "1",
+		"navegador": "CHROME",
+		"url": "https://pje1g-simulacao.tjba.jus.br/pje/login.seam",
+		"perfil": "1ª V DO SISTEMA DOS JUIZADOS ESPECIAIS DA FAZENDA PÚBLICA / Direção de Secretaria / Diretor de Secretaria",
+		"fonteDeDados":"ARQUIVO",
+		"nomeArquivo":"arquivos/processos.txt",
+		"usuario":"00810804506",
+		"senha":"00810804506",
+		"tipoDocumento":"Certidão",
+		"modeloDocumento":"FALHA DE FLUXO - AUDIENCIA DESIGNADA",
+		"descricaoDocumento":"Designação Audiência por Falha do Sistema"
+			
+	}
+]

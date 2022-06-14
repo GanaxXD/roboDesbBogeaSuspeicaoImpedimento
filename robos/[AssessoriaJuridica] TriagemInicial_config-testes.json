@@ -1,0 +1,23 @@
+[
+	{
+		"robo": "tjma.PAGE.pje215.geral.TriagemInicial_Page",
+		"qtdRobos": "1", 
+		"navegador": "CHROME",
+		"url": "https://pje2g.tjma.jus.br/pje2g/login.seam",
+		"perfis": [
+				"Presidência / Gabinete do Presidente do Tribunal de Justiça na Coordenação de Recursos Constitucionais / Assessoria / Assessor"
+		],
+		"tarefas": [
+				"Minutar decisão"
+		 ],
+		"filtrarEtiqueta":"robo-filtrado",
+		"deletarArquivo":"não",
+		"fonteDeDados":"TAREFA",
+		"documentosProcesso":[
+								"Selecione"
+		],
+		"caminhoDownload": "C:/Users/Administrador/Downloads/",
+		"usuario":"42550963334",
+		"senha":"pje123456"
+	}
+]

@@ -1,0 +1,49 @@
+[
+	{
+	      "etiqueta":"IA_FACULDADE_ATIVIDADES_COMPLEMENTARES",
+	      "confirmacaoSinapses":"não",
+	      "palavrasChaveANDOR":[
+	         [
+	            "Faculdade",
+	            "universidade",
+				" IES "
+	         ],
+	         [
+	            "atividades complementares"
+	         ]
+	      ],
+	      "operadorNOT":[
+	         "diploma",
+	         "30%",
+	         "trinta por cento",
+	         "trinta porcento"
+	      ]
+	   },
+	   {
+	      "etiqueta":"IA_FACULDADE_REDUCAO_30_PORCENTO",
+	      "confirmacaoSinapses":"não",
+	      "palavrasChaveANDOR":[
+	         [
+	            "Faculdade",
+	            "universidade",
+				" IES "
+	         ],
+	         [
+	            "redução da mensalidade",
+	            "mensalidade",
+	            "desconto",
+	            "abatimento",
+	            "pandemia"
+	         ],
+	         [
+	            "30%",
+	            "trinta por cento",
+	            "trinta porcento"
+	         ]
+	      ],
+	      "operadorNOT":[
+	         "diploma",
+	         "atividades complementares"
+	      ]
+	   }
+]

@@ -1,0 +1,137 @@
+[
+   {
+      "etiqueta":"IA_SEGUROS_CARRO_CANCELAMENTO_APOLICE",
+      "confirmacaoSinapses":"não",
+      "palavrasChaveANDOR":[
+         [
+            "SEGURADORA"
+         ],
+         [
+		    "carro",
+		    "veículo",
+		    "motocicleta",
+			" moto ",
+		    "caminhão"
+		 ],
+         [
+			"apólice"
+		 ],
+         [
+            "cancelamento",
+            "cancelad",
+            "inadimplência",
+            "inadimplente",
+            "parcelas em aberto",
+            "débito",
+            "dívida",
+            "pagamento não computado",
+            "pagamento não recebido",
+            "pagamento não identificado"
+         ],
+         [
+            "aviso prévio",
+            "comunicação prévia",
+            "notificação prévia",
+            "dever de informação"
+         ]
+      ],
+      "operadorNOT":[
+         "celular",
+         "plano de saúde",
+         "operadora de saúde",
+		 "COELBA",
+		 "EMBASA"
+      ]
+   },
+   {
+      "etiqueta":"IA_SEGUROS_CELULAR_FURTO_ROUBO",
+      "confirmacaoSinapses":"não",
+      "palavrasChaveANDOR":[
+         [
+            "SEGURADORA",
+			"bilhete de seguro"
+         ],
+         [
+            "celular",
+            "smartphone"
+         ],
+         [
+            "furto",
+            "furtado",
+            "roubo",
+            "roubado",
+            "furto qualificado"
+         ],
+         [
+            "cobertura",
+            "proteção",
+            "proteções",            
+            "previsão contratual"            
+         ],
+         [
+            "negativa",
+            "recusa",
+            "não autorizad",
+            "ausência de cobertura",
+            "evento não coberto",
+            "risco não coberto",
+            "risco não previsto",
+            "risco não contratado",
+            "exclusão",
+            "dever de informação"
+         ]
+      ],
+      "operadorNOT":[
+         "carro",
+         "veículo",
+		 "automóvel",
+		 " moto ",
+		 "motocicleta",
+         "plano de saúde",
+         "operadora de saúde"
+      ]
+   },
+   {
+      "etiqueta":"IA_SEGUROS_VENDA_CASADA",
+      "confirmacaoSinapses":"não",
+      "palavrasChaveANDOR":[
+         [
+            "SEGURADORA"
+         ],
+         [
+            "seguro",
+			"prestamista",
+            "seguro de vida"
+         ],
+         [
+            "empréstimo",
+            "financiamento",
+            "consórcio",
+            "cartão de crédito"            
+         ],
+         [
+            "venda casada"
+		 ],
+         [
+            "desconhece",
+            "desconhecid",
+            "não solicitado",
+            "imposição",
+            "impôs",
+			"adesão",
+			"aderir"
+         ]
+      ],
+      "operadorNOT":[
+         "carro",
+         "veículo",
+		 "motocicleta",
+		 " moto ",
+		 "caminhão",
+         "plano de saúde",
+         "operadora de saúde",
+		 "COELBA",
+		 "EMBASA"
+      ]
+   }
+]

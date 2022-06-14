@@ -1,0 +1,25 @@
+[IA_EMPRESAS_AEREAS_ATRASO]
+ Voo ;companhia aérea;bilhete aéreo
+Atraso de voo;longa demora;longa espera;fora do horário previsto;alterar planejamento;motivo do atraso;atraso injustificado
+Falta de assistência;ausência de assistência;não forneceu alimentação;voucher;não forneceu assistência;sem informaç;sem justificativa;não prestou informaç;não prestou justificativa;não ofereceu auxílio;disponibilidade de acomodaç
+Atraso
+NOT:Milha;programa de incentivo;fidelidade;categorias;prazo de expiração;vantagens;descontos;trecho não pontuado;resgate de pontos;perda dos pontos;Overbooking;extravio;avaria;danificad;despachada;rastreamento;extraviad;No-show
+
+[IA_EMPRESAS_AEREAS_CANCELAMENTO]
+ Voo ;companhia aérea;bilhete aéreo
+cancelamento
+Cancelamento de voo;cancelado;alteração de planos de viagem;motivo do cancelamento;cancelamento injustificado;multa pelo cancelamento;multa exorbitante;No-show
+Falta de assistência;ausência de assistência;não forneceu alimentação;não forneceu assistência;sem informações;informações;informação;sem justificativas;não prestou informações;não prestou justificativas;não ofereceu auxilio;disponibilidade de acomodação
+NOT:Milhas;milhagem;programa de incentivo;pontos;fidelidade;prazo de expiração;trecho não pontuado;resgate de pontos;perda dos pontos;Overbooking;extravio;extraviad
+
+[IA_EMPRESAS_AEREAS_EXTRAVIO_DANO_BAGAGEM]
+ Voo ;companhia aérea;bilhete aéreo
+Mala;bagagem;equipamento
+extravio;avaria;danificad;perda;despachada;deslocamento;rastreamento;extraviad
+NOT:Milhas;milhagem;programa de incentivo;pontos;fidelidade;categorias;prazo de expiração;validade;vantagens;descontos;trecho não pontuado;resgate de pontos;perda dos pontos;não forneceu alimentação;disponibilidade de acomodação;Overbooking;novo voucher;novo cartão de embarque;impedido de embarcar;cancelamento de voo;voo cancelado;alteração de planos de viagem;motivo do cancelamento;cancelamento injustificado;força maior;caso fortuito;multa pelo cancelamento;multa exorbitante;No-show;atraso de voo;manutenção da aeronave;previsão de embarque;no show;reembolso
+
+[IA_EMPRESAS_AEREAS_OVERBOOKING]
+ Voo ;companhia aérea;bilhete aéreo
+Overbooking
+novo voucher;novo bilhete;novo cartão de embarque;impedido de embarcar;relocação
+Falta de assistência;ausência de assistência;não forneceu alimentação;não forneceu assistência;sem informaç;sem justificativa;não prestou informaç;não prestou justificativa;sem prestar justificativa;não ofereceu auxílio;disponibilidade de acomodação

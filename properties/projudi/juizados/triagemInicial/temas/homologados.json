@@ -1,0 +1,744 @@
+[
+			{
+				"etiqueta": "IA_CONSORCIO_RESTITUICAO_PARCELAS",
+				"confirmacaoSinapses": "não",
+				"palavrasChaveANDOR": [
+					[
+						"Consórcio"
+						
+					],
+					[
+						"restituição"
+					],
+					[
+						"parcelas"
+					],
+					[
+						"desistência","propaganda enganosa"
+					]
+					
+				],
+				"operadorNOT": [
+					
+				]
+			},
+			{
+				"etiqueta": "IA_EMPRESTIMO_RMC",
+				"confirmacaoSinapses": "não",
+				"palavrasChaveANDOR": [
+					[
+						"Cartão de crédito"
+						
+					],
+					[
+						"pensionista","INSS","aposentado"
+					],
+					[
+						"consignado"
+					],
+					[
+						"empréstimo","Financiamento"
+					]
+					
+				],
+				"operadorNOT": []
+			},
+			{
+				"etiqueta": "IA_EMBASA_FALTA_DAGUA_PERIODO_PROLONGADO",
+				"confirmacaoSinapses": "não",
+				"palavrasChaveANDOR": [
+					[
+						"EMBASA",
+						"Empresa Bahiana de água"
+					],
+					[
+						"ROMPIMENTO"
+					],
+					[
+						"ADUTORA"
+					]
+				],
+				"operadorNOT": [
+					"COELBA",
+					"COMPANHIA DE ELETRICIDADE DO ESTADO DA BAHIA"
+				]
+			},
+			{
+				"etiqueta": "IA_EMBASA_MA_PRESTACAO_SERVICO",
+				"confirmacaoSinapses": "não",
+				"palavrasChaveANDOR": [
+					[
+						"EMBASA",
+						"Empresa Bahiana de água"
+					],
+					[
+						"abastecimento de água"
+					],
+					[
+						"Saneamento básico"
+					]
+				],
+				"operadorNOT": [
+					"rompimento",
+					"adutora",
+					"COELBA",
+					"COMPANHIA DE ELETRICIDADE DO ESTADO DA BAHIA"
+				]
+			},
+			{
+				"etiqueta": "IA_EMPRESAS_AEREAS_ATRASO",
+				"confirmacaoSinapses": "não",
+				"palavrasChaveANDOR": [
+					[
+						"Voo",
+						"companhia aérea",
+						"bilhete aéreo"
+					],
+					[
+						"Atraso de voo",
+						"longa demora",
+						"longa espera",
+						"fora do horário previsto",
+						"alterar planejamento",
+						"motivo do atraso",
+						"atraso injustificado"
+					],
+					[
+						"Convenção de Varsóvia",
+						"Convenção de Montreal",
+						"força maior",
+						"caso fortuito"
+					],
+					[
+						"Falta de assistência",
+						"ausência de assistência",
+						"não forneceu alimentação",
+						"não forneceu assistência",
+						"sem informaç",
+						"sem justificativa",
+						"não prestou informaç",
+						"não prestou justificativa",
+						"não ofereceu auxílio",
+						"disponibilidade de acomodaç"
+					],
+					[
+						"Atraso"
+					]
+				],
+				"operadorNOT": [
+					"Milha",
+					"programa de incentivo",
+					"fidelidade",
+					"categorias",
+					"prazo de expiração",
+					"vantagens",
+					"descontos",
+					"trecho não pontuado",
+					"resgate de pontos",
+					"perda dos pontos",
+					"Overbooking",
+					"extravio",
+					"avaria",
+					"danificad",
+					"despachada",
+					"rastreamento",
+					"extraviad",
+					"No-show"
+				]
+			},
+			{
+				"etiqueta": "IA_EMPRESAS_AEREAS_CANCELAMENTO",
+				"confirmacaoSinapses": "não",
+				"palavrasChaveANDOR": [
+					[
+						"Voo",
+						"companhia aérea",
+						"bilhete aéreo"
+					],
+					[
+						"cancelamento"
+					],
+					[
+						"Cancelamento de voo",
+						"voo cancelado",
+						"alteração de planos de viagem",
+						"motivo do cancelamento",
+						"cancelamento injustificado",
+						"multa pelo cancelamento",
+						"multa exorbitante",
+						"No-show"
+					],
+					[
+						"Convenção de Varsóvia",
+						"Convenção de Montreal",
+						"força maior",
+						"caso fortuito"
+					],
+					[
+						"Falta de assistência",
+						"ausência de assistência",
+						"não forneceu alimentação",
+						"não forneceu assistência",
+						"sem informações",
+						"sem justificativas",
+						"não prestou informações",
+						"não prestou justificativas",
+						"não ofereceu auxilio",
+						"disponibilidade de acomodação"
+					]
+				],
+				"operadorNOT": [
+					"Milhas",
+					"milhagem",
+					"programa de incentivo",
+					"pontos",
+					"fidelidade",
+					"prazo de expiração",
+					"trecho não pontuado",
+					"resgate de pontos",
+					"perda dos pontos",
+					"Overbooking",
+					"extravio",
+					"extraviad"
+				]
+			},
+			{
+				"etiqueta": "IA_EMPRESAS_AEREAS_EXTRAVIO_DANO_BAGAGEM",
+				"confirmacaoSinapses": "não",
+				"palavrasChaveANDOR": [
+					[
+						"Voo",
+						"companhia aérea",
+						"bilhete aéreo"
+					],
+					[
+						"Mala",
+						"bagagem",
+						"equipamento"
+					],
+					[
+						"extravio",
+						"avaria",
+						"danificad",
+						"perda",
+						"despachada",
+						"deslocamento",
+						"rastreamento",
+						"extraviad"
+					],
+					[
+						"Convenção de Varsóvia",
+						"Pacto de Varsóvia"
+					]
+				],
+				"operadorNOT": [
+					"Milhas",
+					"milhagem",
+					"programa de incentivo",
+					"pontos",
+					"fidelidade",
+					"categorias",
+					"prazo de expiração",
+					"validade",
+					"vantagens",
+					"descontos",
+					"trecho não pontuado",
+					"resgate de pontos",
+					"perda dos pontos",
+					"não forneceu alimentação",
+					"disponibilidade de acomodação",
+					"Overbooking",
+					"novo voucher",
+					"novo cartão de embarque",
+					"impedido de embarcar",
+					"cancelamento de voo",
+					"voo cancelado",
+					"alteração de planos de viagem",
+					"motivo do cancelamento",
+					"cancelamento injustificado",
+					"força maior",
+					"caso fortuito",
+					"multa pelo cancelamento",
+					"multa exorbitante",
+					"No-show",
+					"atraso de voo",
+					"manutenção da aeronave",
+					"previsão de embarque",
+					"no show",
+					"reembolso"
+				]
+			},
+			{
+				"etiqueta": "IA_EMPRESAS_AEREAS_OVERBOOKING",
+				"confirmacaoSinapses": "não",
+				"palavrasChaveANDOR": [
+					[
+						"Voo",
+						"companhia aérea",
+						"bilhete aéreo"
+					],
+					[
+						"Overbooking"
+					],
+					[
+						"novo voucher",
+						"novo bilhete",
+						"novo cartão de embarque",
+						"impedido de embarcar",
+						"relocação"
+					],
+					[
+						"Falta de assistência",
+						"ausência de assistência",
+						"não forneceu alimentação",
+						"não forneceu assistência",
+						"sem informaç",
+						"sem justificativa",
+						"não prestou informaç",
+						"não prestou justificativa",
+						"sem prestar justificativa",
+						"não ofereceu auxílio",
+						"disponibilidade de acomodação"
+					]
+				],
+				"operadorNOT": []
+			},
+			{
+				"etiqueta": "IA_PLANO_DE_SAUDE_REAJUSTE_ANUAL",
+				"confirmacaoSinapses": "não",
+				"palavrasChaveANDOR": [
+					[
+						"Plano de Saúde",
+						"Seguro Saúde"
+					],
+					[
+						"reajuste"
+					],
+					[
+						"aniversário",
+						"anual",
+						"índice ANS",
+						"índice da ANS"
+					],
+					[
+						"Abusivo",
+						"excessivo",
+						"exorbitante",
+						"cobrança indevida",
+						"reajuste",
+						"percentual autorizado",
+						"restituição",
+						"elevação de mensalidade",
+						"elevação da mensalidade",
+						"readequação da mensalidade",
+						"readequação de mensalidade",
+						"cláusula abusiva",
+						"cláusulas abusivas",
+						"cálculo atuarial"
+					]
+				],
+				"operadorNOT": [
+					"Faixa etária",
+					"59 anos",
+					"cinquenta e nove anos",
+					"Estatuto do idoso",
+					"Lei 9.656/98",
+					"Resolução Normativa 63/03",
+					"índice de sinistralidade",
+					"sinistralidade",
+					"despesa anual",
+					"variação de custos",
+					"procedimento",
+					"cirurgia"
+				]
+			},
+			{
+				"etiqueta": "IA_PLANO_DE_SAUDE_CANCELAMENTO",
+				"confirmacaoSinapses": "não",
+				"palavrasChaveANDOR": [
+					[
+						"Plano de Saúde",
+						"Seguro Saúde"
+					],
+					[
+						"cancelamento",
+						"suspensão do benefício",
+						"rescisão",
+						"unilateral"
+					],
+					[
+						"atraso",
+						"inadimplemento",
+						"inadimplência",
+						"pagamento",
+						"vencimento",
+						"boleto",
+						"60 dias",
+						"sessenta dias",
+						"30 dias",
+						"trinta dias"
+					],
+					[
+						"Notificação prévia",
+						"ausência de notificação",
+						"comunicação prévia"
+					]
+				],
+				"operadorNOT": []
+			},
+			{
+				"etiqueta": "IA_PLANO_DE_SAUDE_REAJUSTE_SINISTRALIDADE",
+				"confirmacaoSinapses": "não",
+				"palavrasChaveANDOR": [
+					[
+						"Plano de Saúde",
+						"Seguro Saúde"
+					],
+					[
+						"sinistralidade"
+					],
+					[
+						"Coletivo",
+						"índice de sinistralidade",
+						"sinistralidade"
+					],
+					[
+						"anual",
+						"variação",
+						"custos"
+					],
+					[
+						"Reajuste",
+						"Abusivo",
+						"exorbitante",
+						"cobrança indevida",
+						"elevação de mensalidade",
+						"elevação da mensalidade",
+						"readequação da mensalidade",
+						"readequação de mensalidade",
+						"cláusula abusiva",
+						"cláusulas abusivas"
+					]
+				],
+				"operadorNOT": [
+					"aniversário",
+					"índice ANS",
+					"índice da ANS",
+					"faixa etária",
+					"59 anos",
+					"cinquenta e nove anos",
+					"Estatuto do idoso",
+					"Lei 9.656/98",
+					"Resolução Normativa 63/03",
+					"EMBARGOS DE DECLARAÇÃO"
+				]
+			},
+			{
+				"etiqueta": "IA_PLANO_DE_SAUDE_NEGATIVA_PROCEDIMENTO",
+				"confirmacaoSinapses": "não",
+				"palavrasChaveANDOR": [
+					[
+						"Plano de Saúde",
+						"Seguro Saúde"
+					],
+					[
+						"negativa d",
+						"autorização para",
+						"autorização d",
+						"carência",
+						"recusa"
+					],
+					[
+						"procedimento",
+						"cirurgia",
+						"atendimento",
+						"consulta",
+						"tratamento",
+						"medicação",
+						"medicamento",
+						"exame",
+						"urgência",
+						"emergência"
+					],
+					[
+						"rede credenciada",
+						"especialista",
+						"médico credenciado",
+						"cobertura"
+					],
+					[
+						"laudo",
+						"relatório"
+					]
+				],
+				"operadorNOT": []
+			},
+			{
+				"etiqueta": "IA_BANCOS_EMPRESTIMO",
+				"confirmacaoSinapses": "não",
+				"palavrasChaveANDOR": [
+					[
+						"financeira",
+						"banco",
+						"instituição"
+					],
+					[
+						"empréstimo"
+					],
+					[
+						"consignado"
+					]
+				],
+				"operadorNOT": [
+					"Decadência quadrienal",
+					"EMBASA",
+					"Empresa Bahiana de água",
+					"PLANO DE SAÚDE",
+					"TELEFONIA",
+					"FACULDADE",
+					"COBRANÇA INDEVIDA",
+					"COELBA",
+					"COMPANHIA DE ELETRICIDADE DO ESTADO DA BAHIA"
+					
+				]
+			},
+			{
+				"etiqueta": "IA_BANCOS_EMPRESTIMO_DECADENCIA_QUADRIENAL",
+				"confirmacaoSinapses": "não",
+				"palavrasChaveANDOR": [
+					[
+						"financeira",
+						"banco",
+						"instituição"
+					],
+					[
+						"empréstimo"
+					],
+					[
+						"consignado"
+					],
+					[
+						"Decadência quadrienal"
+					]
+				],
+				"operadorNOT": []
+			},
+			{
+				"etiqueta": "IA_TELEFONIA_INSTABILIDADE",
+				"confirmacaoSinapses": "não",
+				"palavrasChaveANDOR": [
+					[
+						"telefonia",
+						"operadora de",
+						" TIM ",
+						"TELEFÔNICA",
+						"CLARO S",
+						"OI MÓVEL",
+						"TELEMAR",
+						"GVT",
+						"VIVO",
+						"3G",
+						"4G",
+						"BANDA LARGA"
+					],
+					[
+						"Sem sinal de internet",
+						"internet não funciona",
+						"ausência de sinal d",
+						"problema com a internet",
+						"instabilidade"
+					]
+				],
+				"operadorNOT": [
+					"migração pré-pago",
+					"migração pós-pago",
+					"cobrança indevida",
+					"ausência de contratação",
+					"serviço não contratado",
+					"débito inexistente",
+					"não reconhece o contrato",
+					"ligação de cobrança",
+					"solicitação de cancelamento do plano",
+					"ausência de instalação",
+					"valor acima do contratado",
+					"valor superior ao contratado",
+					"valor exorbitante",
+					"mudança de operadora",
+					"manutenção do número",
+					"migração do número",
+					"ausência de migração",
+					"demora na migração",
+					"portabilidade fora do prazo",
+					"portabilidade não realizada",
+					"número provisório"
+				]
+			},
+			{
+				"etiqueta": "IA_TELEFONIA_PORTABILIDADE_MIGRACAO",
+				"confirmacaoSinapses": "não",
+				"palavrasChaveANDOR": [
+					[
+						"telefonia",
+						"operadora de",
+						" TIM ",
+						"TELEFÔNICA",
+						"CLARO S",
+						"OI MÓVEL",
+						"TELEMAR",
+						"GVT",
+						"VIVO",
+						"3G",
+						"4G",
+						"BANDA LARGA"
+					],
+					[
+						"PORTABILIDADE",
+						"MIGRAÇÃO"
+					],
+					[
+						"MUDANÇA DE OPERADORA",
+						"MANUTENÇÃO DO NÚMERO",
+						"MIGRAÇÃO DO NÚMERO",
+						"MIGRAÇÃO DE OPERADORA",
+						"MIGRAÇÃO DE PLANO",
+						"AUSÊNICA DE MIGRAÇÃO",
+						"NÚMERO PROVISÓRIO"
+
+					]
+				],
+				"operadorNOT": [
+					"PLANO DE SAÚDE",
+					"OPERADORA DE SAÚDE"
+
+				]
+			},
+			{
+				"etiqueta": "IA_MEDIA_CONSUMO",
+				"confirmacaoSinapses": "não",
+				"palavrasChaveANDOR": [
+					[
+						"MÉDIA DE CONSUMO"
+					],
+					[
+						"REFATURAMENTO"
+					]
+				],
+				"operadorNOT": [
+					"SPC",
+					"SERASA",
+					"inexistência de débitos",
+					"órgãos de restrição",
+					"restrição ao crédito",
+					"proceda a retirada",
+					"NEGATIVAÇÃO",
+					"NEGATIVAÇÃO INDEVIDA"
+				]
+			},
+			{
+				"etiqueta": "IA_COBRANCA_NEGATIVACAO_INDEVIDA",
+				"confirmacaoSinapses": "não",
+				"palavrasChaveANDOR": [
+					[
+						"NEGATIVAÇÃO INDEVIDA"
+					],
+					[
+						"SPC",
+						"SERASA",
+						"órgão de restrição",
+						"órgãos de restrição",
+						"restrição ao crédito"
+					],
+					[
+						"NOME NEGATIVADO",
+						"negativação",
+						"cadastro indevido",
+						"inexistência de débitos"
+					],
+					[
+						"Dano moral"
+					]
+				],
+				"operadorNOT": [
+					"multa"
+				]
+			},
+			{
+				"etiqueta": "IA_TIM_BETA",
+				"confirmacaoSinapses": "não",
+				"palavrasChaveANDOR": [
+					[
+						"celular",
+						"operadora",
+						"plano"
+					],
+					[
+						" TIM "
+					],
+					[
+						" BETA ",
+						"JOVEM PRÉ",
+						"majoração"
+					],
+					[
+						"cobrança",
+						"aumento",
+						"majoração"
+					]
+				],
+				"operadorNOT": [
+					"EMBASA",
+					"COELBA",
+					" Claro ",
+					" vivo ",
+					"telemar",
+					"telefônica",
+					"Oi móvel",
+					"operadora oi"
+				]
+			},
+			{
+				"etiqueta": "IA_FACULDADE_ATIVIDADES_COMPLEMENTARES",
+				"confirmacaoSinapses": "não",
+				"palavrasChaveANDOR": [
+					[
+						"Faculdade",
+						"universidade"
+					],
+					[
+						"atividades complementares"
+					]
+				],
+				"operadorNOT": [
+					"diploma",
+					"30%",
+					"trinta por cento",
+					"trinta porcento"
+				]
+			},
+			{
+				"etiqueta": "IA_FACULDADE_REDUCAO_30_PORCENTO",
+				"confirmacaoSinapses": "não",
+				"palavrasChaveANDOR": [
+					[
+						"Faculdade",
+						"universidade"
+					],
+					[
+						"redução da mensalidade",
+						"mensalidade",
+						"desconto",
+						"abatimento",
+						"pandemia"
+					],
+					[
+						"30%",
+						"trinta por cento",
+						"trinta porcento"
+					]
+				],
+				"operadorNOT": [
+					"diploma",
+					"atividades complementares"
+				]
+			}
+]

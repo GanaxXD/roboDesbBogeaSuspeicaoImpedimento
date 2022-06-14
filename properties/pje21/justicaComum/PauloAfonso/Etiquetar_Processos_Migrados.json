@@ -1,0 +1,21 @@
+[ {
+	"robo" : "PAGE.pje21.justicaComum.pauloAfonso.TriagemInicial_PauloAfonso_Page",
+	"navegador" : "CHROME",
+	"url" : "https://pje1g-debug-prod.tjba.jus.br/pje/login.seam",
+	"perfis" : [ "VARA DE FAMÍLIA DE PAULO AFONSO / Direção de Secretaria / Diretor de Secretaria" ],
+	"tarefas" : [ 
+		"Processo redistribuído - ANALISAR" 
+	],
+	"fonteDeDados" : "ARQUIVO",
+	"nomeArquivo" : "dados/PROCESSOS_TAREFA_2V.csv",
+	"nomeArquivoAux" : "dados/processos.txt",
+	"colunaProcesso":1,
+	"colunaEtiqueta":0,
+	"separador":";",
+	"usuario" : "00982259522",
+	"senha" : "Robo1234@"
+
+} ]
+
+
+

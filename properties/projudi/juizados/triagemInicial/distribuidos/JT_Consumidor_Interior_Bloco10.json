@@ -1,0 +1,113 @@
+[
+	{
+		"robo": "PAGE.projudi.turmasRecursais.JulgamentoTematico_Page2",
+		"qtdRobos": "1",
+		"navegador": "OPERA",
+		"url": "https://projudi.tjba.jus.br/",
+		"perfil": "1ª Vara do Sistema dos Juizados - ITAPETINGA",
+		"fonteDeDados": "BD",
+		"queryProcessos": "properties\\projudi\\juizados\\triagemInicial\\distribuidos\\distribuidos.sql",
+		"parametrosQuery": [
+			"62","190","62","190"
+		],
+		"documentoProcesso": "Petição Inicial",
+		"acuraciaIA": 0.45,
+		"gerarRelatorios":"não"
+	},
+	 
+	{
+			"robo": "PAGE.projudi.turmasRecursais.JulgamentoTematico_Page2",
+			"qtdRobos": "1",
+			"navegador": "OPERA",
+			"url": "https://projudi.tjba.jus.br/",
+			"perfil": "1ª Vara do Sistema dos Juizados - JACOBINA",
+			"fonteDeDados": "BD",
+			"queryProcessos": "properties\\projudi\\juizados\\triagemInicial\\distribuidos\\distribuidos.sql",
+			"parametrosQuery": [
+				"59","180","59","180"
+			],
+			"documentoProcesso": "Petição Inicial",
+			"acuraciaIA": 0.45,
+			"gerarRelatorios":"não"
+	},
+	 
+	{
+			"robo": "PAGE.projudi.turmasRecursais.JulgamentoTematico_Page2",
+			"qtdRobos": "1",
+			"navegador": "OPERA",
+			"url": "https://projudi.tjba.jus.br/",
+			"perfil": "2ª Vara do Sistema dos Juizados - JACOBINA",
+			"fonteDeDados": "BD",
+			"queryProcessos": "properties\\projudi\\juizados\\triagemInicial\\distribuidos\\distribuidos.sql",
+			"parametrosQuery": [
+				"59","182","59","182"
+			],
+			"documentoProcesso": "Petição Inicial",
+			"acuraciaIA": 0.45,
+			"gerarRelatorios":"não"
+	},
+	 
+	{
+			"robo": "PAGE.projudi.turmasRecursais.JulgamentoTematico_Page2",
+			"qtdRobos": "1",
+			"navegador": "OPERA",
+			"url": "https://projudi.tjba.jus.br/",
+			"perfil": "1ª Vara do Sistema dos Juizados - JEQUIÉ",
+			"fonteDeDados": "BD",
+			"queryProcessos": "properties\\projudi\\juizados\\triagemInicial\\distribuidos\\distribuidos.sql",
+			"parametrosQuery": [
+				"109","360","109","360"
+			],
+			"documentoProcesso": "Petição Inicial",
+			"acuraciaIA": 0.45,
+			"gerarRelatorios":"não"
+	},
+	 
+	{
+			"robo": "PAGE.projudi.turmasRecursais.JulgamentoTematico_Page2",
+			"qtdRobos": "1",
+			"navegador": "OPERA",
+			"url": "https://projudi.tjba.jus.br/",
+			"perfil": "2ª Vara do Sistema dos Juizados - JEQUIÉ",
+			"fonteDeDados": "BD",
+			"queryProcessos": "properties\\projudi\\juizados\\triagemInicial\\distribuidos\\distribuidos.sql",
+			"parametrosQuery": [
+				"109","363","109","363"
+			],
+			"documentoProcesso": "Petição Inicial",
+			"acuraciaIA": 0.45,
+			"gerarRelatorios":"não"
+	},
+	 
+	{
+			"robo": "PAGE.projudi.turmasRecursais.JulgamentoTematico_Page2",
+			"qtdRobos": "1",
+			"navegador": "OPERA",
+			"url": "https://projudi.tjba.jus.br/",
+			"perfil": "1ª Vara do Sistema dos Juizados - JUAZEIRO",
+			"fonteDeDados": "BD",
+			"queryProcessos": "properties\\projudi\\juizados\\triagemInicial\\distribuidos\\distribuidos.sql",
+			"parametrosQuery": [
+				"75","230","75","230"
+			],
+			"documentoProcesso": "Petição Inicial",
+			"acuraciaIA": 0.45,
+			"gerarRelatorios":"não"
+	},
+	 
+	{
+			"robo": "PAGE.projudi.turmasRecursais.JulgamentoTematico_Page2",
+			"qtdRobos": "1",
+			"navegador": "OPERA",
+			"url": "https://projudi.tjba.jus.br/",
+			"perfil": "2ª Vara do Sistema dos Juizados - JUAZEIRO",
+			"fonteDeDados": "BD",
+			"queryProcessos": "properties\\projudi\\juizados\\triagemInicial\\distribuidos\\distribuidos.sql",
+			"parametrosQuery": [
+				"75","231","75","231"
+			],
+			"documentoProcesso": "Petição Inicial",
+			"acuraciaIA": 0.45,
+			"gerarRelatorios":"não"
+	}
+]

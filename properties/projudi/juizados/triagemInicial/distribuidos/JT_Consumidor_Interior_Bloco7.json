@@ -1,0 +1,81 @@
+[
+	{
+		"robo": "PAGE.projudi.turmasRecursais.JulgamentoTematico_Page2",
+		"qtdRobos": "7",
+		"navegador": "OPERA",
+		"url": "https://projudi.tjba.jus.br/",
+		"perfil": "Vara do Sistema dos Juizados - GANDU",
+		"fonteDeDados": "BD",
+		"queryProcessos": "properties\\projudi\\juizados\\triagemInicial\\distribuidos\\distribuidos.sql",
+		"parametrosQuery": [
+			"44","130","44","130"
+		],
+		"documentoProcesso": "Petição Inicial",
+		"acuraciaIA": 0.45,
+		"gerarRelatorios":"não"
+	},
+	 
+	{
+			"robo": "PAGE.projudi.turmasRecursais.JulgamentoTematico_Page2",
+			"qtdRobos": "1",
+			"navegador": "OPERA",
+			"url": "https://projudi.tjba.jus.br/",
+			"perfil": "1ª Vara do Sistema dos Juizados - GUANAMBI",
+			"fonteDeDados": "BD",
+			"queryProcessos": "properties\\projudi\\juizados\\triagemInicial\\distribuidos\\distribuidos.sql",
+			"parametrosQuery": [
+				"56","170","56","170"
+			],
+			"documentoProcesso": "Petição Inicial",
+			"acuraciaIA": 0.45,
+			"gerarRelatorios":"não"
+	},
+	 
+	{
+			"robo": "PAGE.projudi.turmasRecursais.JulgamentoTematico_Page2",
+			"qtdRobos": "1",
+			"navegador": "OPERA",
+			"url": "https://projudi.tjba.jus.br/",
+			"perfil": "1ª Vara do Sistema dos Juizados - ILHÉUS",
+			"fonteDeDados": "BD",
+			"queryProcessos": "properties\\projudi\\juizados\\triagemInicial\\distribuidos\\distribuidos.sql",
+			"parametrosQuery": [
+				"19","80","19","80"
+			],
+			"documentoProcesso": "Petição Inicial",
+			"acuraciaIA": 0.45,
+			"gerarRelatorios":"não"
+	},
+	 
+	{
+			"robo": "PAGE.projudi.turmasRecursais.JulgamentoTematico_Page2",
+			"qtdRobos": "1",
+			"navegador": "OPERA",
+			"url": "https://projudi.tjba.jus.br/",
+			"perfil": "2ª Vara do Sistema dos Juizados - ILHÉUS",
+			"fonteDeDados": "BD",
+			"queryProcessos": "properties\\projudi\\juizados\\triagemInicial\\distribuidos\\distribuidos.sql",
+			"parametrosQuery": [
+				"19","81","19","81"
+			],
+			"documentoProcesso": "Petição Inicial",
+			"acuraciaIA": 0.45,
+			"gerarRelatorios":"não"
+	},
+	 
+	{
+			"robo": "PAGE.projudi.turmasRecursais.JulgamentoTematico_Page2",
+			"qtdRobos": "1",
+			"navegador": "OPERA",
+			"url": "https://projudi.tjba.jus.br/",
+			"perfil": "3ª Vara do Sistema dos Juizados - ILHÉUS",
+			"fonteDeDados": "BD",
+			"queryProcessos": "properties\\projudi\\juizados\\triagemInicial\\distribuidos\\distribuidos.sql",
+			"parametrosQuery": [
+				"19","82","19","82"
+			],
+			"documentoProcesso": "Petição Inicial",
+			"acuraciaIA": 0.45,
+			"gerarRelatorios":"não"
+	}
+]

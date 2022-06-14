@@ -1,0 +1,13 @@
+[
+	{
+		"robo": "PAGE.pje21.geral.TriagemSimples_Page",
+		"qtdRobos": "1", 
+		"navegador": "CHROME",
+		"url": "https://pje1g-simulacao.tjba.jus.br/pje/login.seam",
+		"perfil": "V DOS FEITOS RELATIVOS ÀS RELAÇÕES DE CONSUMO, CÍVEIS E COMERCIAIS DE ESPLANADA / Assessoria / Assessor",
+		"tarefa": "Minutar sentença extintiva",
+		"fonteDeDados":"ARQUIVO",
+		"nomeArquivo":"dados/processos.txt",
+		"atribuirEtiqueta":"ROBO_LISTAZILMAARQUIVAMENTO"
+	}
+]

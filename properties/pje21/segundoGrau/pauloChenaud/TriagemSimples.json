@@ -1,0 +1,25 @@
+[
+	{
+		"robo": "PAGE.pje21.geral.TriagemSimples_Page",
+		"qtdRobos": "1", 
+		"navegador": "CHROME",
+		"url": "https://pje2g-simulacao.tjba.jus.br/pje/login.seam",
+		"perfis": [
+				"Segunda Câmara Cível / Des. Paulo Alberto Nunes Chenaud / Assessoria / Assessor",
+				"Seção Cível de Direito Público / Des. Paulo Alberto Nunes Chenaud / Assessoria / Assessor"
+		],
+		"tarefas": [
+				"(SG) Concluso para despacho ou decisão - MINUTAR",
+				"(SG) Autos Recebidos da Secretaria - ANALISAR",
+				"(SG) Autos Recebidos do SECOMGE - ANALISAR"
+		 ],
+		"fonteDeDados":"ARQUIVO",
+		"nomeArquivo":"dados/processos.txt",
+		"atribuirEtiqueta":"100_DIAS",
+		"usuario":"93868995587",
+		"senha":"93868995587"
+	}
+]
+
+
+

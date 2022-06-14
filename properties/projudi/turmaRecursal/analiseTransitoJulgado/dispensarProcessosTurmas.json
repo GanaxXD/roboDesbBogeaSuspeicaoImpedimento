@@ -1,0 +1,28 @@
+[   
+	{
+		"robo": "PAGE.projudi.turmasRecursais.DispensarProcessosTurmaProjudi_Page",
+		"navegador": "OPERA",
+		"url": "https://projudi.tjba.jus.br/projudi/",
+		"perfil": "Primeira Turma Recursal",
+		"codigoTurma": "1",
+		"usuario": "lerioliveira",
+		"senha": "xxx",
+		"tarefa":"Intimações Para Analisar o Decurso do Prazo",
+		"movimentosJulgamento": ["237","238","239","240","241","242","901"],
+		"movimentosPermitidosBaixa": ["60","1051","92","1061","237","238","239","240","241","242","901"],
+		"movimentosPeticaoIntermediaria": ["85","581"],
+		"movimentacaoDecursoDePrazo": "1051",	
+		"movimentacaoBaixaDefinitiva": "22",
+		"qtdLinhasGrid":"3",
+		"fonteDeDados": "BD",
+		"parametrosQuery": [
+			"1"
+		],
+		"queryProcessos":"properties\\projudi\\turmaRecursal\\analiseTransitoJulgado\\queryProcessos.sql",
+		"queryPartes":"properties\\projudi\\turmaRecursal\\analiseTransitoJulgado\\queryPartes.sql",
+		"dbURL": "jdbc:oracle:thin:@(DESCRIPTION=(ADDRESS_LIST=(ADDRESS=(PROTOCOL=TCP)(HOST=xx-scan.tjba.jus.br)(PORT=1521)))(CONNECT_DATA=(SERVICE_NAME=projudi)))",
+		"dbUser": "lerioliveira",
+		"dbPass": "xx",
+		"qtdRobos": "1"
+	}
+]

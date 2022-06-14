@@ -1,0 +1,20 @@
+[
+	{
+		"robo": "PAGE.pje21.geral.CadastrarProcesso_Page",
+		"qtdRobos": "2", 
+		"navegador": "CHROME",
+		"url": "https://corregedoria.treinamento.pje.jus.br/login.seam",
+		"perfil": "Defensoria - DEFENSORIA WEBINAR CNJ TJBA AUTOMACOES / Procurador/Gestor",
+		"fonteDeDados":"ARQUIVO",
+		"nomeArquivo":"dados/ListaProcessosCadastroPorDiretor_WEBINAR.txt"
+	},
+	{
+		"robo": "PAGE.pje21.geral.CadastrarProcesso_Page",
+		"qtdRobos": "2", 
+		"navegador": "CHROME",
+		"url": "https://corregedoria.treinamento.pje.jus.br/login.seam",
+		"perfil": "Corregedoria Geral de Justiça BA - Interior / Seção de cumprimento / Servidor Geral",
+		"fonteDeDados":"ARQUIVO",
+		"nomeArquivo":"dados/ListaProcessosCadastroPorDiretor_WEBINAR.txt"
+	}
+]

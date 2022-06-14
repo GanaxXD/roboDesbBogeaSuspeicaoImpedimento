@@ -1,0 +1,18 @@
+[ {
+	"robo" : "PAGE.pje21.geral.RedistribuirProcesso_Page",
+	"navegador" : "CHROME",
+	"url" : "https://pje1g-simulacao.tjba.jus.br/pje/login.seam",
+	"perfis" : [ "2ª V DOS FEITOS REL A RELAÇÃO DE CONSUMO, CÍVEL, COMERCIAL, ACIDENTES DE TRAB E FAZ PUB DE PAULO AFONSO / Direção de Secretaria / Diretor de Secretaria" ],
+	"tarefas" : [ "Verificar providência a adotar" ],
+	"fonteDeDados" : "ARQUIVO",
+	"nomeArquivo" : "dados/processos2V_CARTORIO.txt",
+	"movimentar" : [ "Redistribuir processo" ],
+	"usuario" : "00982259522",
+	"senha" : "00982259522",
+	"dadosRedistribuicao" : {
+		"motivo" : "Incompetência",
+		"motivoAlternativo":"Alteração da competência do órgão",
+		"jurisdicao" : "PAULO AFONSO",
+		"competencia" : "Familia"
+	}
+} ]

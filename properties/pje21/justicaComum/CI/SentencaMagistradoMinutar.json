@@ -1,0 +1,118 @@
+[
+	{
+		"robo": "PAGE.pje21.justicaComum.CI.AtoMagistradoMinutar_Page",
+		"navegador": "CHROME",
+		"url": "https://pje1g-simulacao.tjba.jus.br/pje/login.seam",
+		"perfil": "15ª VARA DE RELAÇÕES DE CONSUMO DA COMARCA DE SALVADOR / Juiz de Direito Titular",
+		"fonteDeDados":"TAREFA",
+		"tarefa": "(CI) Concluso para sentença - MINUTAR",
+		"atribuirEtiqueta":"CHARLIE",
+		"removerEtiqueta":"sim",
+		"atosJudiciais": [
+			{
+				"filtrarEtiqueta": "ROBO_REVELIA_PADRAO",
+				"tipoAto": "Sentença",
+				"modeloAto": "15-VRC Revelia Padrão",
+				"movimento": "Procedência",
+				"codMovimento": "219",
+				"assinar":"não",
+				"expedicao":[]
+			},
+			{
+				"filtrarEtiqueta": "ROBO_EXTCUMPSENT_ESPONTANEO",
+				"tipoAto": "Sentença",
+				"modeloAto": "15VRC-ExtCumpSent Espontâneo",
+				"movimento": "Extinção da execução ou do cumprimento da Sentença",
+				"codMovimento": "196",
+				"assinar":"não",
+				"expedicao":[]
+			},
+			{
+				"filtrarEtiqueta": "ROBO_EXTCUMPSENT_PAGAMENTO",
+				"tipoAto": "Sentença",
+				"modeloAto": "15VRC-ExtCumpSent Pagamento",
+				"movimento": "Extinção da execução ou do cumprimento da Sentença",
+				"codMovimento": "196",
+				"assinar":"não",
+				"expedicao":[]
+			},
+			{
+				"filtrarEtiqueta": "ROBO_EXTCUMPSENT_PENHORA_ONLINE",
+				"tipoAto": "Sentença",
+				"modeloAto": "15VRC-ExtCumpSent Penhora On-line",
+				"movimento": "Extinção da execução ou do cumprimento da Sentença",
+				"codMovimento": "196",
+				"assinar":"não",
+				"expedicao":[]
+			},
+			{
+				"filtrarEtiqueta": "ROBO_HOMOLOGACAO_TRANSACAO",
+				"tipoAto": "Sentença",
+				"modeloAto": "15VRC-Homologação Transação",
+				"movimento": "Homologação de Transação",
+				"codMovimento": "466"
+			},
+			{
+				"filtrarEtiqueta": "ROBO_DESISTENCIA_REU_CITADO",
+				"tipoAto": "Sentença",
+				"modeloAto": "15VRC-Homologação Desistência Réu Citado",
+				"movimento": "Desistência",
+				"codMovimento": "463"
+			},
+			{
+				"filtrarEtiqueta": "ROBO_DESISTENCIA_REU_NAO_CITADO",
+				"tipoAto": "Sentença",
+				"modeloAto": "15VRC-Homologação Desistência Réu Não Citado",
+				"movimento": "Desistência",
+				"codMovimento": "463",
+				"assinar":"não",
+				"expedicao":[]
+			},
+			{
+				"filtrarEtiqueta": "ROBO_INEXISTENCIA_DEBITO_IMPROCEDENTE",
+				"tipoAto": "Sentença",
+				"modeloAto": "15VRC-Inexistência Débito Improcedente",
+				"movimento": "Improcedência",
+				"codMovimento": "220",
+				"assinar":"não",
+				"expedicao":[]
+			},
+			{
+				"filtrarEtiqueta": "ROBO_INEXISTENCIA_DEBITO_PROCEDENTE",
+				"tipoAto": "Sentença",
+				"modeloAto": "15VRC-Inexistência Débito Procedente",
+				"movimento": "Procedência",
+				"codMovimento": "219",
+				"assinar":"não",
+				"expedicao":[]
+			},
+			{
+				"filtrarEtiqueta": "ROBO_MONITORIA_REVELIA",
+				"tipoAto": "Sentença",
+				"modeloAto": "15VRC-Sentença Monit�ria Revelia",
+				"movimento": "Procedência",
+				"codMovimento": "219",
+				"assinar":"não",
+				"expedicao":[]
+			},
+			{
+				"filtrarEtiqueta": "ROBO_INDEFERE_INICIAL",
+				"tipoAto": "Sentença",
+				"modeloAto": "15VRC-Indefere Inicial",
+				"movimento": "Indeferimento da petição inicial",
+				"codMovimento": "454",
+				"assinar":"não",
+				"expedicao":[]
+			},
+			{
+				"filtrarEtiqueta": "ROBO_CONSOLIDACAO_POSSE",
+				"tipoAto": "Sentença",
+				"modeloAto": "15VRC-BuscaAp Consolidação Posse",
+				"movimento": "Procedência",
+				"codMovimento": "219",
+				"assinar":"não",
+				"expedicao":[]
+			}
+		]
+	}
+]

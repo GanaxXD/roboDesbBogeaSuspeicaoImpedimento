@@ -1,0 +1,36 @@
+[
+	{
+		"robo": "PAGE.pje21.justicaComum.CI.CumprimentoCartorioMinutar_Page",
+		"navegador": "OPERA",
+		"url": "https://pje1g-simulacao.tjba.jus.br/pje/login.seam",
+		"perfil": "2º CARTORIO INTEGRADO DE FAMILIA DE SALVADOR / Direção de Secretaria / Diretor de Secretaria",
+		"tarefa": "(CI) Expedição - ANALISAR",
+		"fonteDeDados":"TAREFA",
+		"atribuirEtiqueta":"CHARLIE",
+		"removerEtiqueta":"sim",
+		"usuario":"42559553520",
+		"senha":"42559553520",
+		"atosJudiciais": [
+			{
+				"etiqueta": "ROBO_EXPEDICAO_MANDADO",
+				"tipoAto": "Mandado",
+				"modeloAto": "2 CI FAM SSA - CITAÇÃO 15 dias (EXPEDIÇÃO)",
+				"movimento": "Expedição de documento",
+				"codMovimento": "60",
+				"assinar":"sim",
+				"expedicao":["Expedir mandado"],
+				"prazo": "15",
+				"tipo": "JCD",
+				"polos":["Polo Passivo"]
+		
+			}
+		]
+	}
+]
+
+
+
+
+
+
+

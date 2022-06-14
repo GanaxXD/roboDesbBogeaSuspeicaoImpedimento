@@ -1,0 +1,49 @@
+[
+	{
+		"robo": "PAGE.projudi.turmasRecursais.JulgamentoTematico_Page2",
+		"qtdRobos": "1",
+		"navegador": "OPERA",
+		"url": "https://projudi.tjba.jus.br/",
+		"perfil": "1ª Vara do Sistema Juizados - Teixeira de Freitas",
+		"fonteDeDados": "BD",
+		"queryProcessos": "properties\\projudi\\juizados\\triagemInicial\\distribuidos\\distribuidos.sql",
+		"parametrosQuery": [
+			"46","140","46","140"
+		],
+		"documentoProcesso": "Petição Inicial",
+		"acuraciaIA": 0.45,
+		"gerarRelatorios":"não"
+	},
+	 
+	{
+			"robo": "PAGE.projudi.turmasRecursais.JulgamentoTematico_Page2",
+			"qtdRobos": "1",
+			"navegador": "OPERA",
+			"url": "https://projudi.tjba.jus.br/",
+			"perfil": "2ª Vara do Sistema Juizados - Teixeira de Freitas",
+			"fonteDeDados": "BD",
+			"queryProcessos": "properties\\projudi\\juizados\\triagemInicial\\distribuidos\\distribuidos.sql",
+			"parametrosQuery": [
+				"46","143","46","143"
+			],
+			"documentoProcesso": "Petição Inicial",
+			"acuraciaIA": 0.45,
+			"gerarRelatorios":"não"
+	},
+	 
+	{
+			"robo": "PAGE.projudi.turmasRecursais.JulgamentoTematico_Page2",
+			"qtdRobos": "1",
+			"navegador": "OPERA",
+			"url": "https://projudi.tjba.jus.br/",
+			"perfil": "Vara do Sistema dos Juizados - VALENÇA",
+			"fonteDeDados": "BD",
+			"queryProcessos": "properties\\projudi\\juizados\\triagemInicial\\distribuidos\\distribuidos.sql",
+			"parametrosQuery": [
+				"89","280","89","280"
+			],
+			"documentoProcesso": "Petição Inicial",
+			"acuraciaIA": 0.45,
+			"gerarRelatorios":"não"
+	}
+]

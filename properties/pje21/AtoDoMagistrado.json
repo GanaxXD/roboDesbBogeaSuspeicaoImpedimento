@@ -1,0 +1,14 @@
+[	
+	{	"robo": "PAGE.pje21.geral.AtoDoMagistrado_Page",
+		"qtdRobos": "1",
+		"navegador": "CHROME",
+		"url": "https://corregedoria.treinamento.pje.jus.br/login.seam",
+		"perfil": "Corregedoria Geral de Justiça BA - Interior / Corregedoria Geral de Justiça da Bahia - Interior / Corregedor Geral",
+		"fonteDeDados":"TAREFA",
+		"tarefa": "Ato do magistrado - MINUTAR",
+		"filtrarEtiqueta":"ROBO DECISAO LIMINAR PADRAO",
+		"tipoDocumento":"Decisão",
+		"modeloDocumento":"MODELO WEBINAR ROBOS DECISAO",
+		"movimento":"892"
+	}
+]

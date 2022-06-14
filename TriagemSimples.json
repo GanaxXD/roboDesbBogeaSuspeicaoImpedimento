@@ -1,0 +1,20 @@
+[
+	{
+		"robo": "tjma.PAGE.pje215.geral.TriagemSimples_Page",
+		"qtdRobos": "1",
+		"timeout": "2",
+		"navegador": "CHROME",
+		"url": "https://pjeih.tjma.jus.br/pje/login.seam",
+		"perfis": [
+				"1ª Vara de Tuntum / Juiz de Direito Titular"
+		],
+		"tarefas": [
+				"Concluso para despacho"
+		 ],
+		"fonteDeDados":"TAREFA",
+		"atribuirEtiqueta":"0.novo",
+		"renomearEtiquetaAntesAtribuir":"0.antigo",
+		"usuario":"67324134300",
+		"senha":"pje123456"
+	}
+]

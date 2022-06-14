@@ -1,0 +1,16 @@
+[
+	{
+		"robo": "PAGE.pje21.geral.CumprirDeterminacoes_Page",
+		"qtdRobos": "1", 
+		"navegador": "OPERA",
+		"url": "https://pje1g-simulacao.tjba.jus.br/pje/login.seam",
+		"perfis": ["2º CARTORIO INTEGRADO DE FAMILIA DE SALVADOR / Direção de Secretaria / Diretor de Secretaria"],
+		"tarefas": [
+					"(CI) Expedição - ANALISAR"
+		],
+		"fonteDeDados":"TAREFA",
+		"filtrarClasse": "divórcio",
+		"usuario":"42559553520",
+		"senha":"42559553520"
+	}
+]

@@ -1,0 +1,20 @@
+[
+	{
+		"robo": "PAGE.pje21.juizados.IntimacaoJuizadosFazenda_Page",
+		"qtdRobos": "1", 
+		"navegador": "CHROME",
+		"url": "https://pje1g-simulacao.tjba.jus.br/pje/login.seam",
+		"perfil": "1ª V DO SISTEMA DOS JUIZADOS ESPECIAIS DA FAZENDA PÚBLICA / Direção de Secretaria / Diretor de Secretaria",
+		"tarefa": "Preparar comunicação",
+		"fonteDeDados":"TAREFA",
+		"comunicacao": "Intimação",
+		"modeloAto": "ATO ORDINATORIO NOVO FLUXO",
+		"filtrarEtiqueta":"INTIMAR NOVO FLUXO",
+		"removerEtiqueta":"sim",
+		"manterEtiqueta":"AGUARDANDO RÉPLICA",
+		"prazo":"10", 
+		"polos": ["poloAtivo"],
+		"usuario":"00810804506",
+		"senha":"00810804506"
+	}
+]

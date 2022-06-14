@@ -1,0 +1,17 @@
+[
+	{
+		"robo": "PAGE.pje21.juizados.CitacaoJuizadosFazenda_Page",
+		"qtdRobos": "2", 
+		"navegador": "CHROME",
+		"url": "https://pje1g-simulacao.tjba.jus.br/pje/login.seam",
+		"perfil": "1ª V DO SISTEMA DOS JUIZADOS ESPECIAIS DA FAZENDA PÚBLICA / Direção de Secretaria / Diretor de Secretaria",
+		"tarefa": "Preparar comunicação",
+		"fonteDeDados":"TAREFA",
+		"movimentar":"Preparar Ato de Cartório",
+		"comunicacao": "Citação",
+		"modeloAto": "CITAÇÃO NOVA - ROBÔ 1A VSJE",
+		"filtrarEtiqueta":"ROBO_CITAR",
+		"prazo":"60", 
+		"polos": ["poloPassivo"]
+	}
+]

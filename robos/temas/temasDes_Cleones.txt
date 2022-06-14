@@ -1,0 +1,64 @@
+[Robô-Tema1142]
+execução;cumprimento de sentença
+honorários advocatícios
+fracionamento;ação coletiva
+falcão
+
+[Robô-AçõesColetivas–ExecIndiv]
+execução individual
+sentença coletiva;título executivo;título coletivo
+liquidação
+líquida
+homologação
+termo inicial
+prescrição
+ação coletiva;ações coletivas
+
+[Robô-Tema-972/STJ]
+contrato bancário
+consumidor
+seguro
+venda casada
+ciência inequívoca
+contrato de adesão
+cláusula abusiva;clausula abusiva
+
+[Robô-URV-IAC02-LimitaçãoTemporal]
+lei estadual
+termo inicial
+incorporação 
+limitação temporal
+Thiago
+
+[Robô-URV-Tema-5-STF-ReestrutCarreira]
+reestruturação na carreira;reestruturação remuneratória
+Lei
+limitação temporal
+marco inicial
+prazo prescricional;prescrição;prescrito
+
+[Robô-advogado-escritório GL]
+Galvão Leonardo
+
+[Robô-advogado-escritório PR]
+Paulo Roberto 
+
+[Robô-advogado-escritório WA]
+Wagner Antônio 
+
+[Robô-advogado-escritório HW]
+Henry Wall 
+
+[Robô-advogado-escritório NF]
+Nelson Fratoni 
+
+[Robô-advogado-escritório GB]
+Guilherme Branco 
+
+[Robô-advogado-escritório LA]
+Leverriher Alencar 
+
+[Robô-Hapvida]
+recusa
+carência 
+emergência

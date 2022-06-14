@@ -1,0 +1,11 @@
+{
+	"usuario": "lerioliveira",
+	"senha": "",
+	"dbURL": "jdbc:oracle:thin:@(DESCRIPTION=(ADDRESS_LIST=(ADDRESS=(PROTOCOL=TCP)(HOST=-scan.tjba.jus.br)(PORT=1521)))(CONNECT_DATA=(SERVICE_NAME=projudi)))",
+	"dbUser": "lerioliveira",
+	"dbPass": "",
+	"JCRLocation": "\\\\projudijava-job\\projudi-processos",
+	"sinapsesURL": "https://sinapses-backend.ia.pje.jus.br/rest/modelo/executarServico/-tjba-coje/CLS_TRIAGEM_COJE_JE2/3",
+	"sinapsesUser": "tjba_coje_tema",
+	"sinapsesPassword": ""
+}

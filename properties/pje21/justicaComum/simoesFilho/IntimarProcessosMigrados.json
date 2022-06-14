@@ -1,0 +1,47 @@
+[	
+	{	
+		"robo": "PAGE.pje21.justicaComum.IntimarMigrados_Page",
+		"qtdRobos": "1",
+		"navegador": "CHROME",
+		"url": "https://pje1g-simulacao.tjba.jus.br/pje-web/login.seam",
+		"perfil": "2ª V DOS FEITOS RELAT. ÀS REL DE CONS, CIVEIS, COM. E ACIDENTES DE TRAB DE SIMÕES FILHO / Direção de Secretaria / Diretor de Secretaria",
+		"fonteDeDados":"TAREFA",
+		"tarefa": "Nó de Desvio - Fluxo básico de conhecimento",
+		"movimentar": ["Verificar providência a adotar","Preparar Comunicação Avançada - PAC"],
+		"filtrarEtiqueta":"ROBO_INTIMAR_MP",
+		"modeloAto": "ROBO_INTIMACAO - Ato manifestar interesse MP",
+		"comunicacao": "Intimação",
+		"polos": ["poloAtivo"],
+		"prazo": "30"
+	},
+	{	
+		"robo": "PAGE.pje21.justicaComum.IntimarMigrados_Page",
+		"qtdRobos": "1",
+		"navegador": "CHROME",
+		"url": "https://pje1g-simulacao.tjba.jus.br/pje-web/login.seam",
+		"perfil": "2ª V DOS FEITOS RELAT. ÀS REL DE CONS, CIVEIS, COM. E ACIDENTES DE TRAB DE SIMÕES FILHO / Direção de Secretaria / Diretor de Secretaria",
+		"fonteDeDados":"TAREFA",
+		"tarefa": "Nó de Desvio - Fluxo básico de conhecimento",
+		"movimentar": ["Verificar providência a adotar","Preparar Comunicação Avançada - PAC"],
+		"filtrarEtiqueta":"ROBO_INTIMAR_ADV",
+		"modeloAto": "ROBO_INTIMACAO - Ato manifestar interesse autor",
+		"comunicacao": "Intimação",
+		"polos": ["poloAtivo"],
+		"prazo": "5"
+	},
+	{	
+		"robo": "PAGE.pje21.justicaComum.IntimarMigrados_Page",
+		"qtdRobos": "1",
+		"navegador": "CHROME",
+		"url": "https://pje1g-simulacao.tjba.jus.br/pje-web/login.seam",
+		"perfil": "2ª V DOS FEITOS RELAT. ÀS REL DE CONS, CIVEIS, COM. E ACIDENTES DE TRAB DE SIMÕES FILHO / Direção de Secretaria / Diretor de Secretaria",
+		"fonteDeDados":"TAREFA",
+		"tarefa": "Nó de Desvio - Fluxo básico de conhecimento",
+		"movimentar": ["Verificar providência a adotar","Preparar Comunicação Avançada - PAC"],
+		"filtrarEtiqueta":"ROBO_INTIMAR_DPE",
+		"modeloAto": "ROBO_INTIMACAO - Ato manifestar interesse DPE",
+		"comunicacao": "Intimação",
+		"polos": ["poloAtivo"],
+		"prazo": "10"
+	}
+]

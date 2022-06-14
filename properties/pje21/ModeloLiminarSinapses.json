@@ -1,0 +1,15 @@
+[	
+	{	
+		"robo": "PAGE.pje21.webinar.RoboIAModeloLiminar_Page",
+		"qtdRobos": "1",
+		"navegador": "CHROME",
+		"url": "https://corregedoria.treinamento.pje.jus.br/login.seam",
+		"perfil": "Corregedoria Geral de Justiça BA - Interior / Seção de cumprimento / Servidor Geral",
+		"fonteDeDados":"TAREFA",
+		"tarefa": "Autos recebidos do gabinete - ANALISAR",
+		"atribuirEtiqueta":"ROBO DECISAO LIMINAR PADRAO",
+		"sinapsesURL":"https://sinapses-backend.ia.pje.jus.br/rest/modelo/executarServico/-/CLS_LIMINAR/1",
+		"sinapsesUser":"pje3",
+		"sinapsesPassword":"YzQ1Mzc0MzdkMjA1OTU0MTBiNWQ1YWU0"
+	}
+]

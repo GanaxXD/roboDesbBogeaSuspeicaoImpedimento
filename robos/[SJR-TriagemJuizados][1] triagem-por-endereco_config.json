@@ -1,0 +1,23 @@
+[
+	{
+		"robo": "tjma.PAGE.pje215.geral.TriagemSjrPorEndereco",
+		"qtdRobos": "1", 
+		"navegador": "CHROME",
+		"url": "https://pje1g.tjma.jus.br/pje/login.seam",
+		"perfis": [
+				"1º Juizado Especial Cível e Criminal do Termo Judiciário de São José de Ribamar / Secretaria / Diretor de Secretaria"
+		],
+		"tarefas": [
+				"Processo com prazo em curso"
+		 ],
+		"fonteDeDados":"TAREFA",
+		"filtrarEtiqueta":"Teste Robô",
+		"arquivoBairrosJuizado1":"[SJR] TriagemPorEndereco_bairros_juizado_1.txt",
+		"atribuirEtiquetaJuizado1":"ToadaRobô04 - 1 Juizado",
+		"arquivoBairrosJuizado2":"[SJR] TriagemPorEndereco_bairros_juizado_2.txt",
+		"atribuirEtiquetaJuizado2":"ToadaRobô04 - 2 Juizado",
+		
+		"usuario":"60866978330",
+		"senha":"ds!123456789"
+	}
+]

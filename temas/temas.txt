@@ -1,0 +1,212 @@
+[IA_PRESCRICAO]
+execução fiscal
+prescrição
+intercorrente;direta
+
+[IA_POLICIAL_GAP]
+policia;polícia
+militar
+GAP;GRATIFICAÇÃO
+V;IV;III
+NOT: concurso
+
+[IA_INCONSTITUCIONALIDADE_IPTU]
+INCONSTITUCIONAL
+IPTU
+salvador
+alíquota;BASE DE CÁLCULO;VALOR VENAL;VUP
+
+[IA_VERBAS_REMUNERATORIAS_REDA]
+servidor
+temporári
+décimo;férias
+reda;regime especial;contrato temporário
+
+[IA_ANULACAO_QUESTOES]
+concurso
+policia;polícia
+militar
+questões;questão
+edital
+
+[IA_CONCURSO_PUBLICO]
+concurso público;certame
+Preterição;classificação
+TAF;teste;aptidão;física;perfil profissiográfico;REDA;regime especial;exame psicotécnico;psicoteste;vaga;terceirizado
+NOT:TAF;psicoteste;URV;licitação;derivado
+
+[IA_CONCURSO_PUBLICO_COTA]
+concurso público;certame
+Preterição;classificação
+banca;heteroidentificação; cota ;racial;deficiente;examinador;vaga
+NOT:TAF;psicoteste;URV;licitação;derivado
+
+[IA_SAUDE_SUS]
+saúde
+SUS;sistema único de saúde
+médico;doença
+relatório; CID ;fisioterapia;enfermagem;carcinoma;psiquiátric;coração;pulmão;câncer;leucemia;morte;oncológico;AVC;hemodiálise;medicamento;tratamento;cirurgia;diagnóstico;home e care;homecare;home care;unidade de tratamento intensivo;UTI;UPA ;hospital;multidisciplinar
+NOT:PLANSERV
+
+[IA_SAUDE_PLANSERV]
+saúde
+planserv;plano de assistência
+médico;doença
+relatório; CID ;fisioterapia;enfermagem;carcinoma;psiquiátric;coração;pulmão;câncer;leucemia;morte;oncológico;AVC;hemodiálise;medicamento;tratamento;cirurgia;diagnóstico;home e care;homecare;home care;unidade de tratamento intensivo;UTI;UPA ;hospital;multidisciplinar
+NOT:SUS;sistema único de saúde
+
+[IA_PREVIDENCIARIO]
+previdenciári
+pensão;morte;aposentadoria
+concessão;revisão;cumulação;implant;especial;SUPREV;FUNPREV;BAPREV;benefício;beneplácito;beneficiário;dependen;econômica;provento;herdeir ;união estável;viúv;falecimento;falecid;invalidez;cônjuge
+
+[IA_PM_GRATIFICACAO]
+PM;polícia;policial
+militar
+auxílio transporte;auxílio alimentação;adicional de periculosidade;adicional de insalubridade
+GAP;gratificação de atividade policial; cet ;feaspol;ghpm
+
+[IA_VEICULOS]
+veículo
+transport;trânsito;CNH;DETRAN;departamento de trânsito;agerba;transalvador;agente de trânsito;mobilidade;gratuidade
+
+[IA_LICITACAO]
+licita
+edital
+certame;competição;comissão;leiloeiro;pregão;eletrônico;recurso administrativo;concorrência;convite;melhor preço;menor preço
+classificação;ordem;8666;8.666;10.520;10520
+
+[IA_DESAPROPRIACAO]
+desapropriação;imissão
+expropriação;área pública
+indenização
+
+[IA_EXPURGOS_INFLACIONARIOS]
+Expurgos;inflacionários
+Cumprimento de sentença;ação civil coletiva
+Legitimidade ativa;poupadores;domicílio;IDEC;ajuizamento; 
+termo inicial dos juros de mora;citação do devedor;processo de conhecimento; liquidação por cálculos aritméticos;
+juros remuneratórios;condenação expressa no título; 
+expurgos inflacionários posteriores; correção monetária
+
+[IA_REVISAO_CONTRATUAL]
+Revisão contratual; revisão de contrato;contrat
+abusividade; taxa média de mercado
+juros remuneratórios;capitalização dos juros; juros moratórios; comissão de permanência
+expressamente pactuado; duodécuplo
+NOT: expurgos; inflacionários
+
+[IA_CONCURSO_PUBLICO_FORA_VAGAS] 
+Concurso público;certame;edital;
+Canditato aprovado fora do número de vagas;nomeação; 
+surgimento novas vagas;prazo de validade;preterição arbitrária; imotivada; 
+direito subjetivo;ordem;classificação 
+NOT: foi aprovado dentro do número de vagas;dentro das vagas;foi aprovado nas vagas;candidato aprovado dentro do número de vagas
+
+[IA_CONCURSO_PUBLICO_DENTRO_VAGAS]
+Concurso público;certame;edital
+nomeação;candidato aprovado dentro do número de vagas;prazo de validade; direito subjetivo; dever da administração;
+NOT: não foi aprovado nas vagas; fora das vagas; Candidato não aprovado dentro do número de vagas;Não foi aprovado dentro do número de vagas
+
+[IA_HONORARIOS_ADVOCATICIOS_DEFENSORIA]
+Honorários advocatícios;
+Defensoria Pública do Estado da Bahia;Estado da Bahia;
+Represente;litigante;vencedor;demanda;contra;
+ente; vinculada; autonomia funcional;administrativa;funcional
+
+[IA_SAUDE_OBESIDADE_MORBIDA]
+Saude;internamento;obesidade mórbida;patologia;clinica de emagrecimento;
+Plano de saúde;assistência médica;
+Relatório;médico;tratamento prescrito
+Recusa;abusiva;negativa de cobertura;clausula contratual;cobertura
+Dano moral;configuração
+NOT: SUS
+
+[CONTRATO_BANCARIO_CELULA_CREDITO] 
+agravo de instrumento
+concessão 
+efeito
+suspensivo; ativo 
+embargos de execução 
+cédula de crédito rural
+exclusão; não inscrição
+cadastro restritivo;proteção ao crédito
+
+[IA_CONTRATO_BANCARIO_MANUTENCAO] 
+agravo de instrumento
+concessão
+efeito
+suspensivo; ativo 
+banco
+revisão de contrato; revisão contratual
+pagamento; depósito; valor incontroverso
+inscrição
+órgão proteção crédito; restrição crédito
+manutenção
+posse
+bem; veículo
+
+[IA_CUMPRIMENTO_SENTENCA_DESERCAO] 
+agravo de instrumento
+concessão
+efeito suspensivo; ativo
+ausência;falta;não
+recolhimento de custas;recolhimento das custas;
+intimação 
+devedor
+deserção
+cancelamento 
+distribuição
+
+[IA_CUMPRIMENTO_SENTENCA_MANDADO_SEGURANCA_COLETIVO]
+cumprimento 
+individual
+execução
+sentença
+mandado de segurança coletivo; 0010262-48.2010.8.05.0000 
+renúncia
+crédito
+parcelas indevidas
+índice de correção monetária
+juros de mora
+
+[IA_SERVIDOR_PUBLICO_SISTEMA_REMUNERATORIO_BENEFICIOS] 
+Férias
+Indenização
+Terço Constitucional
+Município
+Servidor
+Cobrança 
+Pagamento
+Atraso; atrasado
+
+[IA_SISTEMA_REMUNERATORIO_PISO_SALARIAL] 
+Município
+Agente comunitário 
+Saúde 
+Endemias
+Piso salarial 
+Teto
+Cobrança
+Verba
+Salarial
+
+[IA_SERVIDOR_PUBLICO_SISTEMA_REMUNERATORIO_TEMPO_SERVICO]
+Servidor
+Municipal;estadual
+Cobrança;Pagamento;vantagem
+Adicional de Tempo de serviço
+inadimpl;
+vínculo
+administração
+requisito;ingresso;quinquênio
+NOT: férias;fgts;décimo terceiro;13º
+
+[IA_REDIRECIONAMENTO_SOCIO_GERENTE]
+CDA
+redirecionamento
+sócio
+gerente
+TEMA 630
+empresa dissolvida
+irregular

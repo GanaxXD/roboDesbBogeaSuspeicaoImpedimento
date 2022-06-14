@@ -1,0 +1,25 @@
+[
+	{
+		"robo": "tjma.PAGE.pje215.justicaComum.CI.Intimacao_CI",
+		"qtdRobos": "1",
+		"timeout": "5",
+		"navegador": "CHROME",
+		"url": "https://pje1g.tjma.jus.br/pje/login.seam",
+		"perfil": "3ª Vara da Fazenda Pública de São Luís / Secretaria / Diretor de Secretaria",
+		"tarefa": "Preparar intimação de retirada de suspensão",
+		"fonteDeDados":"TAREFA",
+		"comunicacao": "Intimação",
+		"modeloAto": "SEJUD 3VF - CABEÇALHO LUIZ HENRIQUE",
+		"modeloAtoAdvogado": "SEJUD 3VF - CABEÇALHO LUIZ HENRIQUE",
+		"modeloAtoProcuradoria": "SEJUD 3VF - INTIMAÇÃO ELETRÔNICA LUIZ HENRIQUE",
+		"prazo":"15",
+		"prazoAdvogado":"15",
+		"prazoProcuradoria":"30",
+		"polos": ["poloAtivo","poloPassivo"],
+		"usuario":"60866978330",
+		"senha":"ds!123456789",
+		"filtrarEtiqueta":"TESTE ROBO",
+		"atribuirEtiqueta":"CHARLIE",
+		"removerEtiqueta":"sim"
+	}
+]

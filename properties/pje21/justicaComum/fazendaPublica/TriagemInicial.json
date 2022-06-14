@@ -1,0 +1,24 @@
+[
+	{
+		"robo": "PAGE.pje21.geral.TriagemInicial_Page",
+		"qtdRobos": "1", 
+		"navegador": "CHROME",
+		"url": "https://pje1g-simulacao.tjba.jus.br/pje/login.seam",
+		"perfis": [
+				"8ª V DA FAZENDA PÚBLICA DE SALVADOR / Secretaria_N2 / Servidor N2"
+		],
+		"tarefas": [
+				"Aguardar decurso de prazo"
+		 ],
+		"deletarArquivo":"não",
+		"fonteDeDados":"TAREFA",
+		"documentosProcesso":[
+								"Petição Inicial"
+		],
+		"caminhoDownload": "C:/Users/lerioliveira/Downloads/",
+		"filtrarEtiqueta":"TESTE_LEO",
+		"usuario":"03388266530",
+		"senha":"03388266530"
+		
+	}
+]

@@ -1,0 +1,28 @@
+[
+	{
+		"robo": "tjma.PAGE.pje215.geral.TriagemInicial_Page",
+		"qtdRobos": "1", 
+		"timeout": "3",
+		"navegador": "CHROME",
+		"url": "https://pje2g.tjma.jus.br/pje2g/login.seam",
+		"perfis": [
+		
+				"1ª Turma Recursal Permanente da Comarca da Ilha de São Luís / Gabinete do 2º Cargo da 1ª Turma Recursal Cível e Criminal de São Luis / Assessoria / Assessor"
+
+		],
+		"tarefas": [
+				"Minutar despacho inicial"
+		 ],
+		"filtrarEtiqueta":"robo-filtrado",
+		"deletarArquivo":"sim",
+		"fonteDeDados":"TAREFA",
+		"documentosProcesso":[
+								"Sentença",
+								"Razões",
+								"Contrarrazões"
+		],
+		"caminhoDownload": "C:/Users/Administrador/Downloads/",
+		"usuario":"60866978330",
+		"senha":"ds!123456789"
+	}
+]

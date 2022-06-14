@@ -1,0 +1,23 @@
+[IA_SEGUROS_CARRO_CANCELAMENTO_APOLICE]
+SEGURADORA
+carro;veículo;motocicleta; moto ;caminhão
+apólice
+cancelamento;cancelad;inadimplência;inadimplente;parcelas em aberto;débito;dívida;pagamento não computado;pagamento não recebido;pagamento não identificado
+aviso prévio;comunicação prévia;notificação prévia;dever de informação
+NOT:celular;plano de saúde;operadora de saúde;COELBA;EMBASA
+
+[IA_SEGUROS_CELULAR_FURTO_ROUBO]
+SEGURADORA;bilhete de seguro
+celular;smartphone
+furto;furtado;roubo;roubado;furto qualificado
+cobertura;proteção;proteções;previsão contratual
+negativa;recusa;não autorizad;ausência de cobertura;evento não coberto;risco não coberto;risco não previsto;risco não contratado;exclusão;dever de informação
+NOT:carro;veículo;automóvel; moto ;motocicleta;plano de saúde;operadora de saúde
+
+[IA_SEGUROS_VENDA_CASADA]
+SEGURADORA
+seguro;prestamista;seguro de vida
+empréstimo;financiamento;consórcio;cartão de crédito
+venda casada
+desconhece;desconhecid;não solicitado;imposição;impôs;adesão;aderir
+NOT:carro;veículo;motocicleta; moto ;caminhão;plano de saúde;operadora de saúde;COELBA;EMBASA

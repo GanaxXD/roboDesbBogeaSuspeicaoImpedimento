@@ -1,0 +1,13 @@
+[
+	{
+		"robo": "PAGE.pje21.geral.TriagemInicial_Page",
+		"qtdRobos": "1", 
+		"navegador": "CHROME",
+		"url": "https://pje.tjba.jus.br/pje/login.seam",
+		"perfil": "V DOS FEITOS RELATIVOS ÀS RELAÇÕES DE CONSUMO, CÍVEIS E COMERCIAIS DE ESPLANADA / Juiz Substituto",
+		"tarefa": "Minutar decisão urgente",
+		"fonteDeDados":"TAREFA",
+		"documentoProcesso":"Petição Inicial",
+		"caminhoDownload": "C:/Users/yferraro/Downloads/"
+	}
+]

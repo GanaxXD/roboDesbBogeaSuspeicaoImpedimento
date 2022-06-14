@@ -1,0 +1,16 @@
+[	
+	{	
+		"robo": "PAGE.pje21.geral.CitacaoIntimacao_Page",
+		"qtdRobos": "1",
+		"navegador": "CHROME",
+		"url": "https://corregedoria.treinamento.pje.jus.br/login.seam",
+		"perfil": "Corregedoria Geral de Justiça BA - Interior / Seção de cumprimento / Servidor Geral",
+		"fonteDeDados":"TAREFA",
+		"tarefa": "Autos recebidos do gabinete - ANALISAR",
+		"filtrarEtiqueta":"ROBO DECISAO LIMINAR PADRAO",
+		"documentoProcesso":"Decisão",
+		"comunicacao": "Intimação",
+		"polos": "poloAtivo,poloPassivo",
+		"prazo": "15"
+	}
+]

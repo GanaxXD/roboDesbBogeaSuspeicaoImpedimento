@@ -1,0 +1,393 @@
+[
+   {
+      "etiqueta":"IA_TELEFONIA_MULTA_FIDELIZACAO",
+      "confirmacaoSinapses":"não",
+      "palavrasChaveANDOR":[
+         [
+            "TELEFONIA",
+            "OPERADORA"                
+         ],
+         [
+             "fidelidade",
+             "fidelização"                
+         ],
+         [
+            "abusiv",
+            "prática abusiva",
+			"cláusula abusiva"
+		 ],
+         [
+            "ausência de aviso prévio",
+            "violação do dever de informação",
+            "não informad",
+            "inexistência de cláusula",
+			"cancelamento"
+         ]
+      ],
+      "operadorNOT":[
+         "migração",
+         "plano de saúde",
+         "operadora de saúde",
+		 "tim beta",
+		 "EMBASA",
+		 "COELBA",
+		 "universidade",
+		 " IES "
+      ]
+   },
+   {
+      "etiqueta":"IA_TELEFONIA_COBRANCA_SERVICO_NAO_CONTRATADO",
+      "confirmacaoSinapses":"não",
+      "palavrasChaveANDOR":[
+         [
+            "TELEFONIA",
+            "OPERADORA",
+			"telefônica",
+			"internet"		
+         ],
+         [
+            "cobrança"
+		 ],
+         [
+            "serviços digitais",
+            "interatividade",
+            "serviços VAS",
+			"neomobile",
+			"VO-TIM",
+			"VO - TIM"
+         ],
+         [
+            "não contratad",
+            "não requerid",
+            "desconhec",
+            "sem anuência"
+         ]
+      ],
+      "operadorNOT":[
+         "migração",
+         "portabilidade",
+         "plano de saúde",
+         "operadora de saúde",
+		 "universidade",
+		 " IES "
+      ]
+   },
+   {
+      "etiqueta":"IA_TELEFONIA_ALTERACAO_UNILATERAL_DE_PLANO",
+      "confirmacaoSinapses":"não",
+      "palavrasChaveANDOR":[
+         [
+            "TELEFONIA",
+            "OPERADORA"                       
+         ],
+         [
+            "alteração unilateral",
+            "alteração de plano",
+            "mudança unilateral",
+            "mudança de plano",
+            "cancelamento"
+         ],
+         [
+            "não contratad",
+            "não requerid",
+            "desconhece",
+            "desconhecid",
+            "sem anuência"
+         ]
+      ],
+      "operadorNOT":[
+         "portabilidade",
+         "plano de saúde",
+         "operadora de saúde",
+		 "tim beta",
+		 "universidade",
+		 " IES ",
+		 "serviços digitais",
+         "interatividade",
+         "serviços VAS",
+	     "neomobile"
+      ]
+   },
+   {
+      "etiqueta":"IA_TELEFONIA_COBRANCA_MAIOR_QUE_CONTRATADO",
+      "confirmacaoSinapses":"não",
+      "palavrasChaveANDOR":[
+         [
+            "TELEFONIA",
+            "OPERADORA"                      
+         ],
+         [
+            "mensalidade",
+            "alteração de mensalidade",
+            "alteração de valor do plano",
+            "mudança de valor do plano",
+            "cobrança a maior",
+            "aumento unilateral",
+            "acréscimo",
+            "valor excedente",
+            "exorbitante",
+            "valor original",
+            "valor diverso",
+            "valor maior"
+         ],
+         [
+            "desconhece",
+            "desconhecid",
+            "protocolo",
+            "contestação de fatura"
+         ]
+      ],
+      "operadorNOT":[
+         "portabilidade",
+         "migração",
+         "plano de saúde",
+         "operadora de saúde",
+		 "tim beta",
+		 "EMBASA",
+		 "COELBA",
+		 "universidade",
+		 " IES "
+      ]
+   },
+   {
+      "etiqueta":"IA_TELEFONIA_COBRANCA_INDEVIDA",
+      "confirmacaoSinapses":"não",
+      "palavrasChaveANDOR":[
+         [
+            "TELEFONIA",
+            "OPERADORA"                   
+         ],
+         [
+            "fatura paga",
+            "boleto pago",
+            "comprovante de pagamento",
+            "quitação",
+            "quitad",
+            "duplicidade",
+			"cancelamento",
+			"cancelad",
+			"rescisão",
+			"rescindid"
+         ],
+         [
+            "cobrança",
+            "ligação",
+            "ligações"
+         ]
+      ],
+      "operadorNOT":[
+         "fraude",
+		 "seguradora",
+		 "universidade",
+		 " IES ",
+		 "COELBA",
+		 "EMBASA"
+      ]
+   },
+   {
+      "etiqueta":"IA_TELEFONIA_INSTABILIDADE_INTERRUPCAO_SUSPENSAO",
+      "confirmacaoSinapses":"não",
+      "palavrasChaveANDOR":[
+         [
+            "TELEFONIA",
+            "OPERADORA"                     
+         ],
+         [
+            "linha telefônica",
+            "linha móvel",
+            "linhas móveis",
+            "linha fixa",
+            "linhas fixas",
+            "TV por assinatura",
+            "TV a cabo",
+            "internet",
+            "banda larga"
+         ],
+         [
+            "interrupção",
+            "suspensão",
+            "instabilidade",
+            "sem serviço",
+            "suspens",
+            "queda",
+            "sem uso",
+            "linha muda",
+            "telefone mudo",
+            "inativ",
+            "fora do ar"
+         ]
+      ],
+      "operadorNOT":[
+         "fraude",
+         "migração",
+         "portabilidade",
+		 "tim beta",
+		 "universidade",
+		 " IES ",
+		 "COELBA",
+		 "EMBASA",
+		 "serviços digitais",
+         "interatividade",
+         "serviços VAS",
+	     "neomobile"
+      ]
+   },
+   {
+      "etiqueta":"IA_TELEFONIA_LIGACOES_EXCESSIVAS",
+      "confirmacaoSinapses":"não",
+      "palavrasChaveANDOR":[
+         [
+            "TELEFONIA",
+            "OPERADORA"            
+         ],
+         [
+            "ligações excessivas",
+            "excesso de ligações",
+            "ligações frequentes",
+            "inúmeras ligações",
+            "oferta de serviços",
+            "oferta de produtos"
+		 ],
+         [
+			"vexatória",
+            "importuna",
+            "perturb"
+         ],
+         [
+            "fim de semana",
+            "final de semana",
+            "noite",
+            "descanso",
+            "trabalho",
+            " parente "
+         ],
+         [
+            "abuso de direito",
+            "abuso",
+            "abusiv",
+            "extrapol"
+         ]
+      ],
+      "operadorNOT":[
+         "migração",
+         "portabilidade",
+         "instabilidade",
+         "interrupção",
+		 "universidade",
+		 " IES ",
+		 "COELBA",
+		 "EMBASA"
+      ]
+   },
+   {
+      "etiqueta":"IA_TELEFONIA_TIM_BETA",
+      "confirmacaoSinapses":"não",
+      "palavrasChaveANDOR":[
+         [
+            "celular",
+            "operadora",
+            "plano"
+         ],
+         [
+            " TIM "
+         ],
+         [
+            " BETA ",
+            "JOVEM PRÉ",
+            "majoração"
+         ],
+         [
+            "cobrança",
+            "aumento",
+            "majoração"
+         ]
+      ],
+      "operadorNOT":[
+         "EMBASA",
+         "COELBA",
+         " Claro ",
+         " vivo ",
+         "telemar",
+         "telefônica",
+         "Oi móvel",
+         "operadora oi"
+      ]
+   },
+   {
+      "etiqueta":"IA_TELEFONIA_INSTABILIDADE",
+      "confirmacaoSinapses":"não",
+      "palavrasChaveANDOR":[
+         [
+            "telefonia",
+            "operadora",
+            "3G",
+            "4G",
+            "BANDA LARGA"
+         ],
+         [
+            "Sem sinal de internet",
+            "internet não funciona",
+            "ausência de sinal d",
+            "problema com a internet",
+            "instabilidade"
+         ]
+      ],
+      "operadorNOT":[
+         "migração pré-pago",
+         "migração pós-pago",
+         "cobrança indevida",
+         "ausência de contratação",
+         "serviço não contratado",
+         "débito inexistente",
+         "não reconhece o contrato",
+         "ligação de cobrança",
+         "solicitação de cancelamento do plano",
+         "ausência de instalação",
+         "valor acima do contratado",
+         "valor superior ao contratado",
+         "valor exorbitante",
+         "mudança de operadora",
+         "manutenção do número",
+         "migração do número",
+         "ausência de migração",
+         "demora na migração",
+         "portabilidade fora do prazo",
+         "portabilidade não realizada",
+         "número provisório"
+      ]
+   },
+   {
+      "etiqueta":"IA_TELEFONIA_PORTABILIDADE_MIGRACAO",
+      "confirmacaoSinapses":"não",
+      "palavrasChaveANDOR":[
+         [
+            "telefonia",
+            "operadora",            
+            "3G",
+            "4G",
+            "BANDA LARGA"
+         ],
+         [
+            "PORTABILIDADE",
+            "MIGRAÇÃO"
+         ],
+         [
+            "MUDANÇA DE OPERADORA",
+            "MANUTENÇÃO DO NÚMERO",
+            "MIGRAÇÃO DO NÚMERO",
+            "MIGRAÇÃO DE OPERADORA",
+            "MIGRAÇÃO DE PLANO",
+            "AUSÊNICA DE MIGRAÇÃO",
+            "NÚMERO PROVISÓRIO"
+         ]
+      ],
+      "operadorNOT":[
+         "PLANO DE SAÚDE",
+         "OPERADORA DE SAÚDE",
+		 "universidade",
+		 " IES ",
+		 "COELBA",
+		 "EMBASA"
+      ]
+   }
+]

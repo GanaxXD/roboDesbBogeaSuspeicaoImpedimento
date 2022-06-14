@@ -1,0 +1,227 @@
+[
+			{
+				"etiqueta": "ROBO_JULGAR_AUXILIAR",
+				"tipoAto": "Despacho",
+				"modeloAto": "15VRC-Anuncia Julgamento Juíza Auxiliar",
+				"movimento": "Mero expediente",
+				"codMovimento": "11010",
+				"assinar":"não",
+				"expedicao":[]
+			},
+			{
+				"etiqueta": "ROBO_JULGAR_TITULAR",
+				"tipoAto": "Despacho",
+				"modeloAto": "15VRC-Anuncia Julgamento Juíza Titular",
+				"movimento": "Mero expediente",
+				"codMovimento": "11010",
+				"assinar":"não",
+				"expedicao":[]
+			},
+			{
+				"etiqueta": "ROBO_BENS_BLOQUEADOS_OUTRO_JUIZO",
+				"tipoAto": "Despacho",
+				"modeloAto": "15VRC-Bens Bloqueados Outro Juízo",
+				"movimento": "Mero expediente",
+				"codMovimento": "11010",
+				"assinar":"não",
+				"expedicao":[]
+			},
+			{
+				"etiqueta": "ROBO_COMPROVAR_MORA",
+				"tipoAto": "Despacho",
+				"modeloAto": "15VRC-Busca e Apreensão Comp. Mora",
+				"movimento": "Mero expediente",
+				"codMovimento": "11010",
+				"assinar":"não",
+				"expedicao":[]
+			},
+			{
+				"etiqueta": "ROBO_COMPROVAR_RENDA_PF",
+				"tipoAto": "Despacho",
+				"modeloAto": "15VRC-Comprovação Renda P. Física",
+				"movimento": "Mero expediente",
+				"codMovimento": "11010",
+				"assinar":"não",
+				"expedicao":[]
+			},
+			{
+				"etiqueta": "ROBO_COMPROVAR_RENDA_PJ",
+				"tipoAto": "Despacho",
+				"modeloAto": "15VRC-Comprovação Renda P. Jurídica",
+				"movimento": "Mero expediente",
+				"codMovimento": "11010",
+				"assinar":"não",
+				"expedicao":[]
+			},
+			{
+				"etiqueta": "ROBO_CUSTAS_INCORRETAS",
+				"tipoAto": "Despacho",
+				"modeloAto": "15VRC-Custas Recolhidas Erroneamente",
+				"movimento": "Mero expediente",
+				"codMovimento": "11010",
+				"assinar":"não",
+				"expedicao":[]
+			},
+			{
+				"etiqueta": "ROBO_RECOLHER_CUSTAS",
+				"tipoAto": "Despacho",
+				"modeloAto": "15VRC-Custas Sistemas Pesquisa",
+				"movimento": "Mero expediente",
+				"codMovimento": "11010",
+				"assinar":"não",
+				"expedicao":[]
+			},
+			{
+				"etiqueta": "ROBO_DESIGNA_INSTRUCAO",
+				"tipoAto": "Despacho",
+				"modeloAto": "15VRC-Designa��o Audi�ncia Instrução",
+				"movimento": "Mero expediente",
+				"codMovimento": "11010",
+				"assinar":"não",
+				"expedicao":[]
+			},
+			{
+				"etiqueta": "ROBO_DESIGNA_CONCILIACAO",
+				"tipoAto": "Despacho",
+				"modeloAto": "15VRC-Designa��o Audi�ncia Conciliação",
+				"movimento": "Mero expediente",
+				"codMovimento": "11010",
+				"assinar":"não",
+				"expedicao":[]
+			},
+			{
+				"etiqueta": "ROBO_PESQUISA_ENDERECO_INFRUTIFERA",
+				"tipoAto": "Despacho",
+				"modeloAto": "15VRC-Despacho Pesquisa Endereço Infrutífera",
+				"movimento": "Mero expediente",
+				"codMovimento": "11010",
+				"assinar":"não",
+				"expedicao":[]
+			},
+			{
+				"etiqueta": "ROBO_PESQUISA_ENDERECO",
+				"tipoAto": "Despacho",
+				"modeloAto": "15VRC-Despacho Resultado Pesquisa Endereço",
+				"movimento": "Mero expediente",
+				"codMovimento": "11010",
+				"assinar":"não",
+				"expedicao":[]
+			},
+			{
+				"etiqueta": "ROBO_COMPROVAR_ENDERECO",
+				"tipoAto": "Despacho",
+				"modeloAto": "15VRC-Inexist�ncia D�bito Comprovar Endereço",
+				"movimento": "Mero expediente",
+				"codMovimento": "11010",
+				"assinar":"não",
+				"expedicao":[]
+			},
+			{
+				"etiqueta": "ROBO_INICIAL_CUMPRIMENTO_SENTENCA",
+				"tipoAto": "Despacho",
+				"modeloAto": "15VRC-Inicial Cumprimento Sentença",
+				"movimento": "Mero expediente",
+				"codMovimento": "11010",
+				"assinar":"não",
+				"expedicao":[]
+			},
+			{
+				"etiqueta": "ROBO_INICIAL_EXECUCAO_EXTRAJUDICIAL",
+				"tipoAto": "Despacho",
+				"modeloAto": "15VRC-Inicial Execução Extrajudicial",
+				"movimento": "Mero expediente",
+				"codMovimento": "11010",
+				"assinar":"não",
+				"expedicao":[]
+			},
+			{
+				"etiqueta": "ROBO_INICIAL_MONITORIA",
+				"tipoAto": "Despacho",
+				"modeloAto": "15VRC-Inicial Monitória",
+				"movimento": "Mero expediente",
+				"codMovimento": "11010",
+				"assinar":"não",
+				"expedicao":["Indicar expedi��o de outros documentos"]
+			},
+			{
+				"etiqueta": "ROBO_INTERESSE_CONC_VIDEO",
+				"tipoAto": "Despacho",
+				"modeloAto": "15VRC-Interesse Conciliação Videoconferência",
+				"movimento": "Mero expediente",
+				"codMovimento": "11010",
+				"assinar":"não",
+				"expedicao":[]
+			},
+			{
+				"etiqueta": "ROBO_INTERESSE_INST_VIDEO",
+				"tipoAto": "Despacho",
+				"modeloAto": "15VRC-Interesse Instrução Videoconferência",
+				"movimento": "Mero expediente",
+				"codMovimento": "11010",
+				"assinar":"não",
+				"expedicao":[]
+			},
+			{
+				"etiqueta": "ROBO_RENAJUD_INFOJUD_INFRUTIFERO",
+				"tipoAto": "Despacho",
+				"modeloAto": "15VRC-Pesquisa RENAJUD-INFOJUD Infrutífera",
+				"movimento": "Mero expediente",
+				"codMovimento": "11010",
+				"assinar":"não",
+				"expedicao":[]
+			},
+			{
+				"etiqueta": "ROBO_RESPOSTA_CONSULTA_ENDERECO",
+				"tipoAto": "Despacho",
+				"modeloAto": "15VRC-Resposta Consulta Endereço",
+				"movimento": "Mero expediente",
+				"codMovimento": "11010",
+				"assinar":"não",
+				"expedicao":[]
+			},
+			{
+				"etiqueta": "ROBO_COMPLETAR_CUSTAS",
+				"tipoAto": "Despacho",
+				"modeloAto": "15VRC-Complementar Custas",
+				"movimento": "Mero expediente",
+				"codMovimento": "11010",
+				"assinar":"não",
+				"expedicao":[]
+			},
+			{
+				"etiqueta": "ROBO_DESPACHO_AGRAVO",
+				"tipoAto": "Despacho",
+				"modeloAto": "15VRC-Despacho Agravo",
+				"movimento": "Mero expediente",
+				"codMovimento": "11010",
+				"assinar":"não",
+				"expedicao":[]
+			},
+			{
+				"etiqueta": "ROBO_INICIAL_SEM_GRATUIDADE",
+				"tipoAto": "Despacho",
+				"modeloAto": "15VRC-Inicial Padrão Sem Gratuidade",
+				"movimento": "Mero expediente",
+				"codMovimento": "11010",
+				"assinar":"não",
+				"expedicao":["Indicar expedição de outros documentos"]
+			},
+			{
+				"etiqueta": "ROBO_INICIAL_COM_GRATUIDADE",
+				"tipoAto": "Despacho",
+				"modeloAto": "15VRC-Inicial Padrão Com Gratuidade",
+				"movimento": "Mero expediente",
+				"codMovimento": "11010",
+				"assinar":"não",
+				"expedicao":["Indicar expedição de outros documentos"]
+			},
+			{
+				"etiqueta": "ROBO_INICIAL_LIMINAR_APOS_CONTESTACAO",
+				"tipoAto": "Despacho",
+				"modeloAto": "15VRC-Inicial Analisar Liminar Após Contestação",
+				"movimento": "Mero expediente",
+				"codMovimento": "11010",
+				"assinar":"não",
+				"expedicao":["Indicar expedição de outros documentos"]
+			}
+]

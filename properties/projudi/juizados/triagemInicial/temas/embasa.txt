@@ -1,0 +1,37 @@
+[IA_EMBASA_REVISAO_DE_CONSUMO_DE_FATURA]
+EMBASA;EMPRESA BAIANA DE AGUAS
+média de consumo;consumo médio;normalidade;histórico de consumo;cobrança excessiva;exorbitante;abusividade;abusiv
+revisão;refatur;superfaturada
+vazamento;hidrômetro
+NOT:by-pass;bypass;desvio;desmembramento;COELBA;SEGURADORA
+
+[IA_EMBASA_DESMEMBRAMENTO_DE_MATRICULA]
+EMBASA;EMPRESA BAIANA DE AGUAS
+desmembramento;fornecimento individual;abastecimento individual;instalação de hidrômetro
+NOT:refaturamento;by-pass;bypass;desvio;COELBA;universidade; IES ;SEGURADORA
+
+[IA_EMBASA_TAXA_DE_ESGOTO]
+EMBASA;EMPRESA BAIANA DE AGUAS
+taxa de esgoto;cobrança de esgoto
+ilegalidade;abusividade;abusiv;inexigibilidade
+ausência de ligação de esgoto;ausência de rede de esgoto;poço artesiano;fossa
+saneamento básico;ineficaz
+NOT:refaturamento;COELBA;SEGURADORA
+
+[IA_EMBASA_DEMORA_LIGACAO_REATIVACAO]
+EMBASA;EMPRESA BAIANA DE AGUAS
+ligação de água;solicitação de água;solicitação de serviço;fornecimento de água;ligação nova;água nova;reativação
+prazo;extrapol;serviço essencial
+NOT:refatur;revisão;média de consumo;by-pass;bypass;COELBA;SEGURADORA
+
+[IA_EMBASA_FALTA_DAGUA_PERIODO_PROLONGADO]
+EMBASA;Empresa Bahiana de água
+ROMPIMENTO
+ADUTORA
+NOT:COELBA;COMPANHIA DE ELETRICIDADE DO ESTADO DA BAHIA;SEGURADORA
+
+[IA_EMBASA_MA_PRESTACAO_SERVICO]
+EMBASA;Empresa Bahiana de água
+abastecimento de água
+Saneamento básico
+NOT:rompimento;adutora;COELBA;COMPANHIA DE ELETRICIDADE DO ESTADO DA BAHIA;SEGURADORA

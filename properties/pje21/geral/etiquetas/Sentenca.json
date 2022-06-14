@@ -1,0 +1,12 @@
+[
+	{
+		"etiqueta": "ROBO_REJEITAEMBARGOS",
+		"tipoAto": "Sentença",
+		"modeloAto": "REJEITA EMBARGOS",
+		"movimento": "Não-Acolhimento de Embargos de Declaração",
+		"codMovimento": "200",
+		"assinar":"não",
+		"expedicao":[]
+		
+	}
+]

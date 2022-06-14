@@ -1,0 +1,25 @@
+[
+	{
+		"robo": "PAGE.pje21.geral.TriagemInicial_Page",
+		"qtdRobos": "1", 
+		"navegador": "CHROME",
+		"url": "https://pje2g-simulacao.tjba.jus.br/pje/login.seam",
+		"perfis": [
+				"2ª Vice Presidência / 2ª Vice Presidência / Assessoria / Assessor"
+		],
+		"tarefas": [
+				"(SG) Autos Recebidos da Secretaria Especial de Recursos - ANALISAR"
+		 ],
+		"deletarArquivo":"sim",
+		"fonteDeDados":"TAREFA",
+		"documentosProcesso":[
+								"Acórdão",
+								"Recurso Especial",
+								"Recurso Extraordinário"
+		],
+		"caminhoDownload": "C:/Users/lerioliveira/Downloads/",
+		"usuario":"05410048598",
+		"senha":"05410048598"
+		
+	}
+]

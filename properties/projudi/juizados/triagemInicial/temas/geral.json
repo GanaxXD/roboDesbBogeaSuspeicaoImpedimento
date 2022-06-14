@@ -1,0 +1,128 @@
+[
+   {
+      "etiqueta":"IA_VICIO_PRODUTO",
+      "confirmacaoSinapses":"não",
+      "palavrasChaveANDOR":[
+         [
+            "vício",
+            "viciad",
+            "defeito",
+            "defeituos",
+            "imprestável ao uso"
+         ],
+         [            
+            "produto",
+            "aparelho"
+         ],
+         [
+            "garantia",
+            "garantia contratual",
+            "garantia legal",
+            "validade"
+         ],
+         [
+            "negativa",
+            "negad",
+			"negou",
+            "recusa",
+            "sem resposta",
+			"solução",
+			"resolv",
+			"garantia",
+			"validade"
+         ],
+         [            
+            "assistência técnica",
+            "visita técnica",
+            "ordem de serviço"
+		 ],
+         [
+            "reparo",
+            "conserto",
+            "troca",
+            "substituição",
+            "restituição",
+            "devolução",
+            "ressarcimento",
+            "estorno"
+         ],
+         [            
+            "responsável",
+			"responsabilidade",
+			"solidári",
+            "solidariedade",
+            "marketplace",
+            "cadeia de fornecedores",
+            "loja",
+            "lojista",
+            "vendedor",
+            "comerciante",
+            "fabricante",
+            "produtor"		 
+         ]
+      ],
+      "operadorNOT":[
+         "plano de saúde",
+         "telefonia",
+         "faculdade",
+		 "hospital",
+		 "cobrança indevida",
+         "EMBASA",
+         "COELBA",
+         "fraude",
+         "consórcio",
+		 "roubo",
+		 "furto",
+		 "faculdade",
+		 "universidade",
+         "não entreg",
+         "entrega do produto"		 
+      ]
+   },
+   {
+      "etiqueta":"IA_COBRANCA_NEGATIVACAO_INDEVIDA",
+      "confirmacaoSinapses":"não",
+      "palavrasChaveANDOR":[
+         [            
+            "SPC",
+            "SERASA",
+			"CDL",
+            "órgãos de restrição",
+			"órgãos de proteção",
+            "restrição ao crédito",
+			"rol de maus pagadores",
+			"cadastro de inadimplentes"
+         ],
+         [
+            "NOME NEGATIVADO",
+            "negativação",
+            "cadastro indevido",
+			"inexistência de débito",
+			"inexistência de dívida"
+		 ],
+         [
+			"não contratou",
+            "não contratad",
+			"não contraiu",
+			"desconhec",
+			"sem anuência",
+			"sem consentimento",
+			"sem aquiescência",
+			"sem solicitação",
+			"não solicitad",
+			"não autorizad",
+			"não contratad",
+			"indevid"
+         ],
+         [
+            "dano moral",
+			"danos morais"
+         ]
+      ],
+      "operadorNOT":[
+         "score",
+		 "cadastro positivo",
+		 "limpa nome"
+      ]
+   }
+]

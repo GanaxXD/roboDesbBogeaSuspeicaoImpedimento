@@ -1,0 +1,21 @@
+[
+	{
+		"robo": "tjma.PAGE.pje215.geral.TriagemSimples_Page",
+		"qtdRobos": "3",
+		"timeout": "2",
+		"navegador": "CHROME",
+		"url": "https://pjeih.tjma.jus.br/pje/login.seam",
+		"perfis": [
+				"1ª Vara de Tuntum / Juiz de Direito Titular"
+		],
+		"tarefas": [
+				"Concluso para despacho",
+				"Concluso para decisão",
+				"Concluso para sentença"
+		 ],
+		"fonteDeDados":"ARQUIVO",
+		"nomeArquivo":"[Raniel - Tuntum] processos.txt",
+		"atribuirEtiqueta":"+100DIAS",
+		"renomearEtiquetaAntesAtribuir":"+100DIAS-Histórico"
+	}
+]

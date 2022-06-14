@@ -1,0 +1,23 @@
+[ {
+	"robo" : "PAGE.pje21.geral.RedistribuirProcesso_Page",
+	"navegador" : "CHROME",
+	"url" : "https://pje1g-simulacao.tjba.jus.br/pje/login.seam",
+	"perfis" : [ "1ª V DOS FEITOS REL A RELAÇÕES DE CONSUMO, CÍVEL, COM, REG PUB E FAZENDA DE PAULO AFONSO / Assessoria / Assessor" ],
+	"tarefas" : [ 
+		"Minutar ato de decisão",
+		"Minutar ato de despacho",
+		"Minutar ato de julgamento",
+		"Minutar decisão",
+		"Minutar despacho",
+		"Minutar sentença"
+	],
+	"fonteDeDados" : "ARQUIVO",
+	"nomeArquivo" : "dados/processos1V_GABINETE.txt",
+	"movimentar" : [ "Cancelar e sair da tarefa", "Cancelar e sair da tarefa" ],
+	"usuario" : "00982259522",
+	"senha" : "00982259522"
+
+} ]
+
+
+

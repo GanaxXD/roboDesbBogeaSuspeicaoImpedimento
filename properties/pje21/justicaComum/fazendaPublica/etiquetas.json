@@ -1,0 +1,124 @@
+[
+					{
+						"etiqueta": "ROBO_PM_GAP",
+						"palavrasChaveANDOR": [
+							[
+								"policial"
+							],
+							[
+								"militar"
+							],
+							[
+								"GAP", "IV"
+							]
+						],
+						"operadorNOT": [
+							
+						]
+				  },
+				  {
+						"etiqueta": "ROBO_COVID",
+						"palavrasChaveANDOR": [
+							[
+								"saúde"
+							],
+							[
+								"COVID"
+							]
+						],
+						"operadorNOT": [
+							
+						]
+				  },
+				  {
+						"etiqueta": "ROBO_ERRO_MEDICO_INDENIZACAO",
+						"palavrasChaveANDOR": [
+							[
+								"Responsabilidade civil"
+							],
+							[
+								"erro médico"
+							],
+							[
+								"indenização"
+							]
+						],
+						"operadorNOT": [
+							
+						]
+				  },
+				  {
+					    "etiqueta": "ROBO_CONC_PUB_REPROV_TESTE_FISICO",
+						"palavrasChaveANDOR": [
+							[
+								"teste"
+							],
+							[
+								"aptidão física", "físico", "esforço físico"
+							],
+							[
+								"reprov", "não foi aprovad", "não aprovad"
+							],
+							[
+								"TAF"
+							],
+							[
+								"edital"
+							]
+						],
+						"operadorNOT": [
+							
+						]
+				  },
+				  {
+						"etiqueta": "ROBO_BENEFICIO_PENSAO_POR_MORTE",
+						"palavrasChaveANDOR": [
+							[
+								"Pensão por morte"
+							],
+							[
+								"Benefício"
+							],
+							[
+								"Restabelecimento"
+							],
+							[
+								"Carência"
+							],
+							[
+								"Dependente"
+							],
+							[
+								"FUNPREV"
+							]
+						],
+						"operadorNOT": [
+							
+						]
+				  },
+				  {
+						"etiqueta": "ROBO_VEICULO_E_TRANSPORTE_APREENSAO",
+						"palavrasChaveANDOR": [
+							[
+								"VEÍCULO"
+							],
+							[
+								"apreensão"
+							],
+							[
+								"infração"
+							],
+							[
+								"licenciamento"
+							],
+							[
+								"liberação de veículo"
+							]
+						],
+						"operadorNOT": [
+							
+						]
+				  }
+				  
+				  
+		]

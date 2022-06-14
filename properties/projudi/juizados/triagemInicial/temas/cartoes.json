@@ -1,0 +1,204 @@
+[
+{
+      "etiqueta":"IA_CARTAO_DE_CREDITO_CONSIGNADO_RMC",
+      "confirmacaoSinapses":"não",
+      "palavrasChaveANDOR":[
+         [
+            "Cartão de crédito"
+         ],
+         [
+            "pensionista",
+            "INSS",
+            "aposentad"
+         ],
+         [
+            "consignado"
+         ],
+         [
+            "empréstimo",
+            "Financiamento"
+         ],
+         [
+            "valor mínimo",
+            "amortização",
+            "5%",
+            "cinco por cento",
+            "impagável"
+         ]
+      ],
+      "operadorNOT":[
+         
+      ]
+   },
+   {
+      "etiqueta":"IA_CARTAO_DE_CREDITO_ANUIDADE",
+      "confirmacaoSinapses":"não",
+      "palavrasChaveANDOR":[
+         [
+            "banco",
+            "cartão de crédito"
+         ],
+         [
+            "anuidade"
+         ],
+         [
+            "não contratou",
+            "não contratad",
+            "dever de informação",
+            "sem anuência",
+            "sem consentimento",
+            "sem aquiescência",
+            "sem solicitação",
+            "não solicitad",
+            "não autorizad",
+            "não contratad"
+         ],
+         [
+            "cobrança",
+            "desconto",
+            "parcela"
+         ]
+      ],
+      "operadorNOT":[
+         "plano de saúde",
+         "telefonia",
+         "universidade",
+         "EMBASA",
+         "COELBA",
+         "consórcio"
+      ]
+   },
+   {
+      "etiqueta":"IA_CARTAO_DE_CREDITO_NEGATIVA_DE_AUTORIZACAO",
+      "confirmacaoSinapses":"não",
+      "palavrasChaveANDOR":[
+         [
+            "banco",
+            "cartão de crédito"
+         ],
+         [
+            "compra recusada",
+            "compra não autorizada",
+            "transação recusada",
+            "transação não autorizada",
+            "operação recusada",
+            "operação não autorizada",
+            "compra não aprovada",
+            "transação não aprovada",
+            "recusad",
+            "não aprovad",
+            "não processad"
+         ],
+         [
+            "limite",
+            "saldo",
+            "limite de crédito",
+            "limite disponível",
+            "adimplente",
+            "adimplência",
+            "fatura paga"
+         ]
+      ],
+      "operadorNOT":[
+         "plano de saúde",
+		 "seguro saúde",
+         "telefonia",
+         "faculdade",
+         "EMBASA",
+         "COELBA",
+         "consórcio",
+		 "universidade",
+		 " IES "
+      ]
+   },
+   {
+      "etiqueta":"IA_CARTAO_DE_CREDITO_TRANSACOES_NAO_RECONHECIDAS",
+      "confirmacaoSinapses":"não",
+      "palavrasChaveANDOR":[
+         [
+            "banco"
+         ],
+         [
+            "cartão de crédito"
+         ],
+         [
+            "desconhec",
+            "não reconhece",
+            "não efetuad",
+            "compra",
+            "compra desconhecida",
+            "transação desconhecida",
+            "operação desconhecida",
+            "compra não efetuada",
+            "transação não efetuada",
+            "operação não efetuada"
+         ],
+         [
+            "golpe",
+            "clonagem",
+            "clonado",
+            "contestação de fatura",
+            "contestou",
+            "contestad"
+         ]
+      ],
+      "operadorNOT":[
+         "plano de saúde",
+		 "seguro saúde",
+         "telefonia",
+         "faculdade",
+         "EMBASA",
+         "COELBA",
+         "consórcio",
+		 "universidade",
+		 " IES ",
+		 "empréstimo",
+		 "consignado"
+      ]
+   },
+   {
+      "etiqueta":"IA_CARTAO_DE_CREDITO_PARCELAMENTO_AUTOMATICO",
+      "confirmacaoSinapses":"não",
+      "palavrasChaveANDOR":[
+         [
+            "cartão de crédito"
+         ],
+         [
+            "parcelamento",
+            "automático",
+            "fatura parcelada"
+		 ],
+         [
+			"crédito rotativo",
+            "rotativo"
+		 ],
+         [
+            "BACEN",
+            "Banco Central",
+			"BCB"
+         ],
+         [
+            "imposição",
+            "impôs",
+            "sem consentimento",
+            "sem anuência",
+            "sem aquiescência",
+            "sem solicitação",
+            "não solicitad",
+            "não autorizad",
+            "não contratad"
+         ]
+      ],
+      "operadorNOT":[
+         "plano de saúde",
+		 "seguro saúde",
+         "telefonia",
+         "faculdade",
+         "EMBASA",
+         "COELBA",
+         "consórcio",
+		 "universidade",
+		 " IES "
+      ]
+   }
+]

@@ -1,0 +1,134 @@
+[IA_POLICIAL_GAP]
+policia;polícia
+militar
+GAP;GRATIFICAÇÃO
+V;IV;III
+NOT: concurso
+
+[IA_VERBAS_REMUNERATORIAS_REDA]
+servidor
+temporário
+décimo;férias
+ reda ;regime especial;contrato temporário
+
+[IA_PREVIDENCIARIO]
+previdenciári
+pensão;morte;aposentadoria
+concessão;revisão;cumulação;implant;especial;SUPREV;FUNPREV;BAPREV;benefício;beneplácito;beneficiário;dependen;econômica;provento;herdeir ;união estável;viúv;falecimento;falecid;invalidez;cônjuge
+
+[IA_PM_GRATIFICACAO]
+PM;polícia;policial
+militar
+auxílio transporte;auxílio alimentação;adicional de periculosidade;adicional de insalubridade
+GAP;gratificação de atividade policial; cet ;feaspol;ghpm
+
+[IA_EXPURGOS_INFLACIONARIOS_BB]
+Expurgos;inflacionários
+Cumprimento de sentença;ação civil coletiva
+Legitimidade ativa;poupadores;domicílio;IDEC;ajuizamento; 
+juros de mora;juros remuneratórios;citação;processo de conhecimento;liquidação;cálculos aritméticos;condenação expressa no título
+Banco do Brasil
+NOT: BRADESCO
+
+[IA_EXPURGOS_INFLACIONARIOS_BRADESCO]
+Expurgos;inflacionários
+Cumprimento de sentença;ação civil coletiva
+Legitimidade ativa;poupadores;domicílio;IDEC;ajuizamento; 
+juros de mora;juros remuneratórios;citação;processo de conhecimento;liquidação;cálculos aritméticos;condenação expressa no título
+BRADESCO
+NOT: Banco do Brasil
+
+[IA_EXPURGOS_INFLACIONARIOS]
+Expurgos;inflacionários
+Cumprimento de sentença;ação civil coletiva
+Legitimidade ativa;poupadores;domicílio;IDEC;ajuizamento; 
+
+[IA_REVISAO_CONTRATUAL]
+Revisão contratual; revisão de contrato;contrat
+abusividade; taxa média de mercado
+juros remuneratórios;capitalização dos juros; juros moratórios; comissão de permanência
+expressamente pactuado; duodécuplo
+NOT: expurgos inflacionários
+
+[IA_CONCURSO_PUBLICO_FORA_VAGAS] 
+Concurso público;certame;edital;
+Canditato aprovado fora do número de vagas;nomeação; 
+surgimento novas vagas;prazo de validade;preterição arbitrária; imotivada; 
+direito subjetivo;ordem;classificação 
+NOT: foi aprovado dentro do número de vagas;dentro das vagas;foi aprovado nas vagas;candidato aprovado dentro do número de vagas
+
+[IA_CONCURSO_PUBLICO_DENTRO_VAGAS]
+Concurso público;certame;edital
+nomeação;candidato aprovado dentro do número de vagas;prazo de validade; direito subjetivo; dever da administração;
+NOT: não foi aprovado nas vagas; fora das vagas; Candidato não aprovado dentro do número de vagas;Não foi aprovado dentro do número de vagas
+
+[IA_HONORARIOS_ADVOCATICIOS_DEFENSORIA_BAHIA]
+Honorários advocatícios;tema 129; Tema 1002;Tema 1.002
+condena;ausência;ausencia;possibilidade;obrigação de fazer
+honorários advocatícios;honorarios;advocatícios
+pessoa jurídica de direito público
+Defensoria Pública;Estado da Bahia;
+NOT: brumado
+
+[IA_HONORARIOS_ADVOCATICIOS_DEFENSORIA_BRUMADO]
+Honorários advocatícios;tema 129; Tema 1002;Tema 1.002
+condena;ausência;ausencia;possibilidade;obrigação de fazer
+honorários advocatícios;honorarios;advocatícios
+pessoa jurídica de direito público
+Defensoria Pública;Estado da Bahia;
+brumado
+
+[IA_SAUDE_OBESIDADE_MORBIDA]
+saude;saúde;internamento;obesidade morbida;obesidade mórbida; patologia; clínica de emagrecimento;
+plano de saude;plano de saúde;planos;assistência médica;assistencia medica;
+relatório;relatorio;médico;tratamento prescrito;medico;
+recusa ;abusiva;negativa;cobertura;clausula contatual;cláusula contratual;
+internamento; clinica especializada;clinica especializada;
+
+[IA_SERVIDOR_PUBLICO_SISTEMA_REMUNERATÓRIO_BENEFICIOS]
+servidor;públic
+cobrança;ação;acao;irredutibilidade;
+salário;salario;verbas salariais;atraso;atrasado;
+férias;ferias;salário;terço constitucional;terco constitucional;
+
+[IA_SISTEMA_REMUNERATORIO_PISO_SALARIAL]
+municipio;município;
+agente comunitário;agente comunitario;endemia
+saude;saúde;piso salarial;salário;salario;
+
+[IA_SERVIDOR_PUBLICO_SISTEMA_REMUNERATORIO_TEMPO_SERVICO]
+servidor 
+públic
+tempo de serviço
+municipal;município;municipio;
+cobrança;pagamento;adicional;tempo;serviço;
+
+[IA_FERTILIZACAO_IN_VITRO_TEMA_1067]
+fertilização; fertilizacao
+in vitro;tema 1067;tema 1.067
+obrigatoriedade;cobertura
+plano;assistência médica
+saúde;saude
+
+[IA_FERTILIZACAO_IN_VITRO]
+fertilização
+vitro ;
+
+[IA_ATRASO_OBRA]
+atraso
+ obra ;entrega
+construtora;incorporadora
+cláusula;clausula
+tolerância;atraso injustificado;
+lucros cessantes;danos morais; dano moral
+
+[IA_INCLUSAO_INDEVIDA]
+SPC;SERASA;órgãos de restrição;órgão de restrição
+negativ; Inclusão Indevida em Cadastro de Inadimplentes;
+
+[IA_PROPAGANDA_ENGANOSA_MEDICINA]
+propaganda enganosa
+medicina
+
+[IA_DPVAT]
+DPVAT

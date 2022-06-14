@@ -1,0 +1,68 @@
+[
+	{
+		"robo": "PAGE.pje21.justicaComum.CI.Intimacao_CI",
+		"qtdRobos": "1", 
+		"navegador": "CHROME",
+		"url": "https://pje1g-simulacao.tjba.jus.br/pje/login.seam",
+		"perfil": "2º CARTORIO INTEGRADO RELAÇÕES DE CONSUMO DE SALVADOR / Direção de Secretaria / Diretor de Secretaria",
+		"tarefa": "(CI) Expedir ato ordinatório",
+		"fonteDeDados":"TAREFA",
+		"comunicacao": "Intimação",
+		"modeloAto": "EM - Intimar Contestação sem videoconf.",		              
+		"movimentar":[
+						"Preparar ato de comunicação",
+					    "Expedir usando o PAC"
+		],
+		"prazo":"15", 
+		"polos": ["poloAtivo","poloPassivo"],
+		"usuario":"01690290501",
+		"senha":"01690290501",
+		"filtrarEtiqueta":"Robo_EM_Replica",
+		"atribuirEtiqueta":"CHARLIE",
+		"removerEtiqueta":"sim"
+	},
+	{
+		"robo": "PAGE.pje21.justicaComum.CI.Intimacao_CI",
+		"qtdRobos": "1", 
+		"navegador": "CHROME",
+		"url": "https://pje1g-simulacao.tjba.jus.br/pje/login.seam",
+		"perfil": "2º CARTORIO INTEGRADO RELAÇÕES DE CONSUMO DE SALVADOR / Direção de Secretaria / Diretor de Secretaria",
+		"tarefa": "(CI) Expedir ato ordinatório",
+		"fonteDeDados":"TAREFA",
+		"comunicacao": "Intimação",
+		"modeloAto": "EM - Intimar apelação",		              
+		"movimentar":[
+			"Preparar ato de comunicação",
+		    "Expedir usando o PAC"
+		 ],
+		"prazo":"15", 
+		"polos": ["poloAtivo","poloPassivo"],
+		"usuario":"01690290501",
+		"senha":"01690290501",
+		"filtrarEtiqueta":"Robo_EM_Apelacao",
+		"atribuirEtiqueta":"CHARLIE",
+		"removerEtiqueta":"sim"
+	},
+	{
+		"robo": "PAGE.pje21.justicaComum.CI.Intimacao_CI",
+		"qtdRobos": "1", 
+		"navegador": "CHROME",
+		"url": "https://pje1g-simulacao.tjba.jus.br/pje/login.seam",
+		"perfil": "2º CARTORIO INTEGRADO RELAÇÕES DE CONSUMO DE SALVADOR / Direção de Secretaria / Diretor de Secretaria",
+		"tarefa": "(CI) Expedir ato ordinatório",
+		"fonteDeDados":"TAREFA",
+		"comunicacao": "Intimação",
+		"modeloAto": "EM - Intimar réu contestar (art. 335, II)",		              
+		"movimentar":[
+			"Preparar ato de comunicação",
+		    "Expedir usando o PAC"
+		 ],
+		"prazo":"15", 
+		"polos": ["poloAtivo","poloPassivo"],
+		"usuario":"01690290501",
+		"senha":"01690290501",
+		"filtrarEtiqueta":"Robo_EM_Contestar",
+		"atribuirEtiqueta":"CHARLIE",
+		"removerEtiqueta":"sim"
+	}
+]

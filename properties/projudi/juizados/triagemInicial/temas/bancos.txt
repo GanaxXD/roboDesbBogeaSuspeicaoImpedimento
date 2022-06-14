@@ -1,0 +1,56 @@
+[IA_BANCOS_EMPRESTIMO_CONSIGNADO_NAO_CONTRATADO]
+instituição financeira;banco
+pensionista;INSS;aposentad
+empréstimo;Financiamento
+consignado
+desconhece;desconhecido;não reconhece;não reconhecido;não contratou;não contratado;não formalizou;jamais formalizou;suposto;supostamente
+NOT:SEGURADORA;COELBA;EMBASA
+
+[IA_BANCOS_EMPRESTIMO_DECADENCIA_QUADRIENAL]
+instituição financeira;banco
+empréstimo
+consignado
+Decadência quadrienal
+NOT:SEGURADORA;COELBA;EMBASA
+
+[IA_BANCOS_REVISIONAL_DE_JUROS]
+instituição financeira;banco
+empréstimo;consignado;financiamento
+juros;taxa de juros;encargos;juros remuneratórios;capitalização de juros
+extorsiv;exorbitante;abusiv;ilegal;cobrança excessiva;cobrança gravosa;onerosidade;estratosféric
+média de mercado;BACEN;Banco Central;CODECON;PROCON
+ revisão ;revisar;recálculo;recalcular
+NOT:plano de saúde;operadora de saúde;seguradora de saúde;seguro saúde;consórcio;SEGURADORA;COELBA;EMBASA;parcelamento automático
+
+[IA_BANCOS_REVISAO_DE_CLAUSULAS]
+instituição financeira;banco
+empréstimo;financiamento
+cláusula abusiva;cláusula leonina;venda casada;imposição;impôs;cobrança indevida;embutid
+tarifa de cadastro;tarifa de avaliação;registro de contrato;seguro prestamista;IOF;custas cartorárias
+extorsiv;exorbitante;abusiv;ilegal;cobrança excessiva;cobrança gravosa;onerosidade;estratosféric
+NOT:plano de saúde;operadora de saúde;seguradora de saúde;seguro saúde;telefonia;faculdade;EMBASA;COELBA;consórcio
+
+[IA_BANCOS_DESCONTOS_INDEVIDOS]
+instituição financeira;banco
+conta bancária;conta corrente;conta-salário
+desconto;cobrança;retenção
+tarifa bancária;pacote mensal;pacote de serviço;cesta de serviço;adiantamento depositante;seguro;abatimento
+não contratou;não contratad;desconhec;dever de informação;sem anuência;sem consentimento;sem aquiescência;sem solicitação;não solicitad;não autorizad;não contratad;venda casada
+NOT:plano de saúde;operadora de saúde;seguradora de saúde;seguro saúde;telefonia;universidade;EMBASA;COELBA;consórcio;SEGURADORA
+
+[IA_BANCOS_BAIXA_DE_GRAVAME]
+instituição financeira;banco
+financiamento de veículo;alienação fiduciária
+veículo;automóvel;carro;moto;motocicleta
+quitação;pagamento integral;quitad
+gravame;restrição;pendência;ônus
+DETRAN;Departamento Estadual de Trânsito
+baixa;desalienação;liberação;desembaraço;retirada;remoção;exclusão
+NOT:construtora;plano de saúde;operadora de saúde;seguradora de saúde;seguro saúde;telefonia;universidade;SEGURADORA
+
+[IA_BANCOS_DEMORA_EM_FILA]
+banco;instituição financeira;agência;agência bancária
+atendimento;senha;guichê
+demora;espera;chamad;fila
+15 minutos;quinze minutos;lei municipal
+NOT:hospital;clínica;emergência;pronto-atendimento;universidade

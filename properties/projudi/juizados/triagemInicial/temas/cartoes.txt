@@ -1,0 +1,34 @@
+[IA_CARTAO_DE_CREDITO_CONSIGNADO_RMC]
+Cartão de crédito
+pensionista;INSS;aposentad
+consignado
+empréstimo;Financiamento
+valor mínimo;amortização;5%;cinco por cento;impagável
+
+[IA_CARTAO_DE_CREDITO_ANUIDADE]
+banco;cartão de crédito
+anuidade
+não contratou;não contratad;dever de informação;sem anuência;sem consentimento;sem aquiescência;sem solicitação;não solicitad;não autorizad;não contratad
+cobrança;desconto;parcela
+NOT:plano de saúde;telefonia;universidade;EMBASA;COELBA;consórcio
+
+[IA_CARTAO_DE_CREDITO_NEGATIVA_DE_AUTORIZACAO]
+banco;cartão de crédito
+compra recusada;compra não autorizada;transação recusada;transação não autorizada;operação recusada;operação não autorizada;compra não aprovada;transação não aprovada;recusad;não aprovad;não processad
+limite;saldo;limite de crédito;limite disponível;adimplente;adimplência;fatura paga
+NOT:plano de saúde;seguro saúde;telefonia;faculdade;EMBASA;COELBA;consórcio;universidade; IES 
+
+[IA_CARTAO_DE_CREDITO_TRANSACOES_NAO_RECONHECIDAS]
+banco
+cartão de crédito
+desconhec;não reconhece;não efetuad;compra;compra desconhecida;transação desconhecida;operação desconhecida;compra não efetuada;transação não efetuada;operação não efetuada
+golpe;clonagem;clonado;contestação de fatura;contestou;contestad
+NOT:plano de saúde;seguro saúde;telefonia;faculdade;EMBASA;COELBA;consórcio;universidade; IES ;empréstimo;consignado
+
+[IA_CARTAO_DE_CREDITO_PARCELAMENTO_AUTOMATICO]
+cartão de crédito
+parcelamento;automático;fatura parcelada
+crédito rotativo;rotativo
+BACEN;Banco Central;BCB
+imposição;impôs;sem consentimento;sem anuência;sem aquiescência;sem solicitação;não solicitad;não autorizad;não contratad
+NOT:plano de saúde;seguro saúde;telefonia;faculdade;EMBASA;COELBA;consórcio;universidade; IES 

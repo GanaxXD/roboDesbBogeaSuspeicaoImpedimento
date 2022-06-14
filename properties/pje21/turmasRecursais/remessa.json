@@ -1,0 +1,12 @@
+[
+	{
+		"robo": "PAGE.pje21.turmaRecursal.RemessaInstanciaOrigem_Page",
+		"qtdRobos": "1",
+		"navegador": "CHROME",		
+		"fonteDeDados":"TAREFA",
+		"url": "https://pje2g-simulacao.tjba.jus.br/pje/login.seam",
+		"perfil": "6ª Turma Recursal / Direção de Secretaria / Diretor de Secretaria",
+		"tarefa": "(CCPC) Encaminhar ao primeiro grau",
+		"motivoRemessa": "outros motivos"
+	}
+]

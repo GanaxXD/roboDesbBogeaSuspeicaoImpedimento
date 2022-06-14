@@ -1,0 +1,22 @@
+[
+	{
+		"robo": "tjma.PAGE.pje215.geral.TriagemInicial_Page",
+		"qtdRobos": "1", 
+		"timeout": "3",
+		"navegador": "CHROME",
+		"url": "https://pje2.tjma.jus.br/pje2g/login.seam",
+		"perfis": [
+				"1ª Câmara Cível / Gabinete Des. Jorge Rachid Mubárack Maluf / Assessoria / Assessor"
+
+		],
+		"tarefas": [
+				"(SG) Assessoria - Minutar relatório, voto e ementa"
+		 ],
+		"deletarArquivo":"não",
+		"fonteDeDados":"TAREFA",
+		"documentosProcesso":[
+								"Selecione"
+		],
+		"caminhoDownload": "C:/Users/lucia/Downloads/"
+	}
+]

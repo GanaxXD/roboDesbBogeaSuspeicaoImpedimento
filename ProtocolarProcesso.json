@@ -1,0 +1,25 @@
+[
+	{
+		"robo": "tjma.PAGE.pje215.geral.ProtocolarProcesso_Page",
+		"qtdRobos": "1",
+		"timeout": "0",
+		"navegador": "CHROME",
+		"url": "https://pjed.tjma.jus.br/pje/login.seam",
+		"perfis": [
+				"2ª Vara da Fazenda Pública de São Luís / Secretaria / Diretor de Secretaria"
+		],
+		"tarefas": [
+				"Preparar intimação"
+		 ],
+		"qtdProcessos": "10",
+		"secao": "Fórum da Comarca de Imperatriz",
+		"classeJudicial": "PROCEDIMENTO COMUM CÍVEL (7)",
+		"poloAtivoTipo": "AUTOR",
+		"poloAtivoCpf": "11111111111",
+		"poloPassivoTipo": "REU",
+		"poloPassivoCpf": "22222222222",
+		"usuario": "67324134300",
+		"senha": "pje123456",
+		"fonteDeDados": "TAREFA"
+	}
+]

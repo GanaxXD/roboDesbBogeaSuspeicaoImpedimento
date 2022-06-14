@@ -1,0 +1,102 @@
+[IA_BANCOS_DEMORA_EM_FILA]
+banco;instituição financeira;agência;agência bancária
+atendimento;senha;guichê
+demora;espera;chamad;fila
+15 minutos;quinze minutos;lei municipal
+NOT:hospital;clínica;emergência;pronto-atendimento;universidade
+
+[IA_PLANO_DE_SAUDE_REAJUSTE_ANUAL]
+Plano de Saúde;Seguro Saúde
+reajuste
+aniversário;anual;índice ANS;índice da ANS
+Abusivo;excessivo;exorbitante;cobrança indevida;reajuste;percentual autorizado;restituição;elevação de mensalidade;elevação da mensalidade;readequação da mensalidade;readequação de mensalidade;cláusula abusiva;cláusulas abusivas;cálculo atuarial
+NOT:Faixa etária;59 anos;cinquenta e nove anos;Estatuto do idoso;Lei 9.656/98;Resolução Normativa 63/03;índice de sinistralidade;sinistralidade;despesa anual;variação de custos;procedimento;cirurgia
+
+[IA_PLANO_DE_SAUDE_CANCELAMENTO]
+Plano de Saúde;Seguro Saúde
+cancelamento;suspensão do benefício;rescisão;unilateral
+atraso;inadimplemento;inadimplência;pagamento;vencimento;boleto;60 dias;sessenta dias;30 dias;trinta dias
+Notificação prévia;ausência de notificação;comunicação prévia
+
+[IA_PLANO_DE_SAUDE_NEGATIVA_PROCEDIMENTO]
+Plano de Saúde;Seguro Saúde
+negativa d;autorização para;autorização d;carência;recusa
+procedimento;cirurgia;atendimento;consulta;tratamento;medicação;medicamento;exame;urgência;emergência
+rede credenciada;especialista;médico credenciado;cobertura
+laudo;relatório
+
+[IA_SEGUROS_VENDA_CASADA]
+SEGURADORA
+seguro;prestamista;seguro de vida
+empréstimo;financiamento;consórcio;cartão de crédito
+venda casada
+desconhece;desconhecid;não solicitado;imposição;impôs;adesão;aderir
+NOT:carro;veículo;motocicleta; moto ;caminhão;plano de saúde;operadora de saúde;COELBA;EMBASA
+
+[IA_TELEFONIA_COBRANCA_INDEVIDA]
+TELEFONIA;OPERADORA
+fatura paga;boleto pago;comprovante de pagamento;quitação;quitad;duplicidade;cancelamento;cancelad;rescisão;rescindid
+cobrança;ligação;ligações
+NOT:fraude;seguradora;universidade; IES ;COELBA;EMBASA
+
+[IA_VICIO_PRODUTO]
+vício;viciad;defeito;defeituos;imprestável ao uso
+produto;aparelho
+garantia;garantia contratual;garantia legal;validade
+negativa;negad;negou;recusa;sem resposta;solução;resolv;garantia;validade
+assistência técnica;visita técnica;ordem de serviço
+reparo;conserto;troca;substituição;restituição;devolução;ressarcimento;estorno
+responsável;responsabilidade;solidári;solidariedade;marketplace;cadeia de fornecedores;loja;lojista;vendedor;comerciante;fabricante;produtor
+NOT:plano de saúde;telefonia;faculdade;hospital;cobrança indevida;EMBASA;COELBA;fraude;consórcio;roubo;furto;faculdade;universidade;não entreg;entrega do produto
+
+[IA_COBRANCA_NEGATIVACAO_INDEVIDA]
+SPC;SERASA;CDL;órgãos de restrição;órgãos de proteção;restrição ao crédito;rol de maus pagadores;cadastro de inadimplentes
+NOME NEGATIVADO;negativação;cadastro indevido;inexistência de débito;inexistência de dívida
+não contratou;não contratad;não contraiu;desconhec;sem anuência;sem consentimento;sem aquiescência;sem solicitação;não solicitad;não autorizad;não contratad;indevid
+dano moral;danos morais
+NOT:score;cadastro positivo;limpa nome
+
+[IA_EMPRESAS_AEREAS_CANCELAMENTO]
+ Voo ;companhia aérea;bilhete aéreo
+cancelamento
+Cancelamento de voo;cancelado;alteração de planos de viagem;motivo do cancelamento;cancelamento injustificado;multa pelo cancelamento;multa exorbitante;No-show
+Falta de assistência;ausência de assistência;não forneceu alimentação;não forneceu assistência;sem informações;informações;informação;sem justificativas;não prestou informações;não prestou justificativas;não ofereceu auxilio;disponibilidade de acomodação
+NOT:Milhas;milhagem;programa de incentivo;pontos;fidelidade;prazo de expiração;trecho não pontuado;resgate de pontos;perda dos pontos;Overbooking;extravio;extraviad
+
+[IA_EMBASA_DEMORA_LIGACAO_REATIVACAO]
+EMBASA;EMPRESA BAIANA DE AGUAS
+ligação de água;solicitação de água;solicitação de serviço;fornecimento de água;ligação nova;água nova;reativação
+prazo;extrapol;serviço essencial
+NOT:refatur;revisão;média de consumo;by-pass;bypass;COELBA;SEGURADORA
+
+[IA_CONSTRUTORAS_ATRASO_DE_OBRA]
+construtora;incorporadora
+atraso na entrega;entrega atrasada;prazo pactuado;prazo máximo;prazo previsto contratualmente;atraso na conclusão de obra;demora na conclusão de obra;atraso na conclusão da obra;demora na conclusão da obra
+cláusula de tolerância;tolerância;180 dias;cento e oitenta dias
+entrega das chaves;entrega de chaves;imissão na posse;entrega do imóvel;efetiva entrega;posse do imóvel
+NOT:vício construtivo;distrato;baixa de hipoteca;juros de obra;taxa de evolução de obra;taxa de juros de obra
+
+[IA_COELBA_DESVIO_MEDIDOR]
+COELBA;COMPANHIA DE ELETRICIDADE DO ESTADO DA BAHIA
+desvio;avaria;medidor avariado;irregular
+inspeção;recuperação de consumo; TOI 
+cobrança abusiva;abusiv
+NOT:refaturamento;EMBASA
+
+[IA_COELBA_DEMORA_LIGACAO_RELIGACAO_ENERGIA]
+COELBA;COMPANHIA DE ELETRICIDADE DO ESTADO DA BAHIA
+ligação de energia;solicitação de energia;solicitação de serviço;instalação de energia;reativação
+prazo;extrapol;serviço essencial
+NOT:refaturamento;queda de energia;desvio de medidor;desvio do medidor;EMBASA
+
+[IA_BANCOS_DEMORA_EM_FILA]
+banco;instituição financeira;agência;agência bancária
+atendimento;senha;guichê
+demora;espera;chamad;fila
+15 minutos;quinze minutos;lei municipal
+NOT:hospital;clínica;emergência;pronto-atendimento;universidade
+
+[IA_SISTEMA_REMUNERATORIO_PISO_SALARIAL]
+municipio;município;
+agente comunitário;agente comunitario;endemia
+saude;saúde;piso salarial;salário;salario;

@@ -1,0 +1,17 @@
+[
+	{
+		"robo": "PAGE.pje21.geral.CitacaoIntimacao_Page",
+		"qtdRobos": "1",
+		"navegador": "CHROME",
+		"url": "https://pje2g-simulacao.tjba.jus.br/pje/login.seam",
+		"perfil": "6ª Turma Recursal / Direção de Secretaria / Diretor de Secretaria",
+		"tarefa": "(CCPC) Preparar citação e(ou) intimação via sistema ou correios",
+		"fonteDeDados":"TAREFA",
+		"comunicacao": "Intimação",
+		"documentoProcesso": "Acórdão",
+		"prazo": "15",
+		"polos": ["poloPassivo","poloAtivo"],
+		"filtrarEtiqueta":"TESTE_LEO"
+		
+	}
+]

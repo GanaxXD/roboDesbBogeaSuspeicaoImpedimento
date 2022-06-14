@@ -1,0 +1,16 @@
+{
+	"usuario": "lerioliveira",
+	"senha": "xx",
+	"dbURL": "jdbc:oracle:thin:@(DESCRIPTION=(ADDRESS_LIST=(ADDRESS=(PROTOCOL=TCP)(HOST=xx-scan.tjba.jus.br)(PORT=1521)))(CONNECT_DATA=(SERVICE_NAME=projudi)))",
+	"dbUser": "lerioliveira",
+	"dbPass": "xx",
+	"JCRLocation": "\\\\projudijava-job\\projudi-processos",
+	"sinapsesURL": "https://sinapses-backend.ia.pje.jus.br/rest/modelo/executarServico/-tjba-coje/CLS_TRIAGEM_COJE_JE2/3",
+	"sinapsesUser": "tjba_coje_tema",
+	"sinapsesPassword": "xx",
+	"mongoHost":"localhost",
+	"mongoPort":27017,
+	"mongoDB":"sugestaoSentencas",
+	"mongoCollection":"projudiConsumidor"
+
+}

@@ -1,0 +1,20 @@
+[ {
+	"robo" : "PAGE.pje21.geral.RedistribuirProcesso_Page",
+	"navegador" : "CHROME",
+	"url" : "https://pje1g-simulacao.tjba.jus.br/pje/login.seam",
+	"perfis" : [ "1ª V DOS FEITOS REL A RELAÇÕES DE CONSUMO, CÍVEL, COM, REG PUB E FAZENDA DE PAULO AFONSO / Direção de Secretaria / Diretor de Secretaria" ],
+	"tarefas" : [ 
+		"Verificar providência a adotar" 
+	],
+	"fonteDeDados" : "ARQUIVO",
+	"nomeArquivo" : "dados/processos1V_CARTORIO.txt",
+	"movimentar" : [ "Redistribuir processo" ],
+	"usuario" : "00982259522",
+	"senha" : "00982259522",
+	"dadosRedistribuicao" : {
+		"motivo" : "Incompetência",
+		"motivoAlternativo":"Alteração da competência do órgão",
+		"jurisdicao" : "PAULO AFONSO",
+		"competencia" : "Familia"
+	}
+} ]

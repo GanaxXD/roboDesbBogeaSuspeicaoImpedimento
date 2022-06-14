@@ -1,0 +1,23 @@
+[
+	{
+		"robo": "tjma.PAGE.pje215.geral.JuntarDocumentoProcesso_Page",
+		"qtdRobos": "1",
+		"navegador": "CHROME",
+		"url": "https://pje1g.tjma.jus.br/pje/login.seam",
+		"perfis": [
+				"1º Juizado Especial Cível e Criminal do Termo Judiciário de São José de Ribamar / Secretaria / Diretor de Secretaria"
+		],
+		"tarefas": [
+				"Processo com prazo em curso"
+		 ],
+		"fonteDeDados":"TAREFA",
+		
+		"filtrarEtiqueta":"JUIZADO 2",
+		"tipoDocumento":"Certidão",
+		"descricaoDocumento":"Certidão de redistribuição para o 2º Juizado Especial Cível e Criminal de São José de Ribamar",
+		"modeloDocumento":"Certidão redistribuição 2 Juizado",
+		
+		"usuario":"60866978330",
+		"senha":"ds!123456789"
+	}
+]
