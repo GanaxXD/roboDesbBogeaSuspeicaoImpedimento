@@ -656,6 +656,67 @@ public abstract class PaginaBase extends TempoRoboProcessamento {
 	}
 	
 	/**
+	 * Método que devolve os processos constantes nas tarefas
+	 * assinar desição, minutar desição urgência inicial, minutar desição urgência, 
+	 * minutar desição, minutar despacho inicial, minutar despacho
+	 * para a caixa (CIV) Assessoria - Análise de Assessoria (coonforme solicitação Des. Bogéa)
+	 * 
+	 * 
+	 * @autor Pedro Victor de Sousa Dantas
+	 * @ToadaLab
+	 */
+	protected void devolverParaAssessoria(Processo processo) throws AutomacaoException{
+		System.out.println("realizarTarefa......" + processo.getNumeroProcessoFormatado());
+		String campoPesquisa = "//input[@id='inputPesquisaTarefas']";
+		System.out.println("Movendo processo para a caixa: (CIV) Assessoria - Análise da Assessoria...");
+		try {
+			//assinar decição
+			alternarFrame(new String[] { "ngFrame" });
+			if(existeElementoTexto("Assinar decisão ")
+					|| existeElementoTexto("Minutar decisão de urgência inicial ")
+					|| existeElementoTexto("Minutar decisão de urgência ")
+					|| existeElementoTexto("Minutar decisão ")
+					|| existeElementoTexto("Minutar despacho inicial ")
+					|| existeElementoTexto("Minutar despacho ")) {
+				
+				limparDigitacao(campoPesquisa);
+				
+				digitar(campoPesquisa, processo.getNumeroProcessoFormatado(), 1, 10);
+				clicar("//button[@title = 'Pesquisar']", 1, 20);
+				Thread.sleep(1000);
+				int qtdProcessos = obterQuantidadeElementos("//p-datalist/div/div/ul/li");
+				fecharJanelaDetalhes();
+				alternarFrame(new String[] { "ngFrame" });
+				
+				//Iniciando o procedimento após clicar no número do processo
+				clicar("//span[text()[contains(.,'" + processo.getNumeroProcessoFormatado() + "')]]", 2, 2000);
+				clicar("//*[@id=\"btnTransicoesTarefa\"]");
+				clicar("/html/body/app-root/selector/div/div/div[2]/right-panel/div/processos-tarefa/div[2]/conteudo-tarefa/div[1]/div/div/div[2]/div[2]/ul/li[3]/a");
+				
+				Thread.sleep(1000);
+				criarLog(processo, "Procedimento realizado com sucesso!");				
+			}
+
+		} catch (WebDriverException we) {
+			we.printStackTrace();
+			return;
+
+		} catch (AutomacaoException ae) {
+			throw ae;
+
+		} catch (Exception e) {
+
+			criarLog(processo, "\nOcorreu um erro: " + processo.getNumeroProcesso());
+
+		} finally {
+			fecharJanelaDetalhes();
+
+		}
+
+		System.out.println("fim realizarTarefa....");
+	}
+	
+	/**
 	 * Método que permite ao robo realizar o preenchimento de decisão de suspeição ou impedimento
 	 * 
 	 * @autor Pedro Victor de Sousa Dantas
@@ -681,18 +742,39 @@ public abstract class PaginaBase extends TempoRoboProcessamento {
 				alternarFrame(new String[] { "ngFrame" });
 				clicar("//span[text()[contains(.,'" + processo.getNumeroProcessoFormatado() + "')]]", 2, 2000);
 
-				//clicar("//*[@id=\"taskInstanceForm:minutaEmElaboracao-481979342:selectMenuTipoDocumentoDecoration:selectMenuTipoDocumento\"]");
-				clicar("//*[@id=\"taskInstanceForm:minutaEmElaboracao-481979342:selectMenuTipoDocumentoDecoration:selectMenuTipoDocumento\"]/option[1]");
-				clicar("//*[@id=\"taskInstanceForm:minutaEmElaboracao-481979342:minutaEmElaboracao-481979342Decoration:selectModeloDocumento\"]/option[7]");
+				clicar("//*[@id=\"btnTransicoesTarefa\"]/i", 2,1000);
 				
-				digitar("//*[@id=\"taskInstanceForm:minutaEmElaboracao-481979342:minutaEmElaboracao-481979342Decoration2:j_id194:j_id203:homologadorEventoTreeParamPesquisaInput\"]", "impedimento");
-				clicar("/html/body/div[5]/div/div[3]/form/div/div[2]/span[1]/div/div/div/div[2]/div/div[1]/div[2]/div/div[2]/div[2]/div/div[2]/span/div[1]/div[2]/div/div[2]/fieldset/input[2]", 8, 2000);
-				clicar("//*[@id=\"taskInstanceForm:minutaEmElaboracao-481979342:minutaEmElaboracao-481979342Decoration2:j_id194:j_id203:j_id215:j__id216:0:j__id216:1:j__id216:0::j_id217:text\"]/span");
-				clicar("//*[@id=\"taskInstanceForm:minutaEmElaboracao-481979342:minutaEmElaboracao-481979342Decoration2:j_id194:homologadorEventoTreeSelectedEventsTable:0:homologadorEventoTreelinkComplementos\"]/i");
-				digitar("//*[@id=\"taskInstanceForm:minutaEmElaboracao-481979342:minutaEmElaboracao-481979342Decoration2:j_id194:j_id5208:0:j_id5209:tipoComplementoLivre105Decoration:tipoComplementoLivre105\"]", "DESEMBARGADOR RAIMUNDO BOGÉA");
-				clicar("//*[@id=\"taskInstanceForm:minutaEmElaboracao-481979342:minutaEmElaboracao-481979342Decoration2:j_id194:homologadorEventoTreebotaoGravarMovimento\"]");
-				clicar("//*[@id=\"btnTransicoesTarefa\"]/i");
-				clicar("//*[@id=\"frameTarefas\"]/div/div[2]/div[2]/ul/li[1]/a");
+				
+				clicar("/html/body/app-root/selector/div/div/div[2]/right-panel/div/processos-tarefa/div[2]/conteudo-tarefa/div[1]/div/div/div[2]/div[2]/ul/li[5]/a",2,1000);
+				
+				clicar("//select[@id[contains('taskInstanceForm:minutaEmElaboracao-')]]");
+				clicar("/html/body/div[5]/div/div[3]/form/div/div[2]/span[1]/div/div/div/div[2]/div/div[1]/div[1]/div[1]/div[2]/select", 1, 1000);
+				Thread.sleep(5000);
+				System.out.println("AQUI");
+				
+				//clicar("//select/option[contains(text(), 'Decisão')]",1,1000);
+				
+				
+//				List<WebElement> selectsDaTela = getDriver().findElements(By.xpath("/html/body/div[5]/div/div[3]/form/div/div[2]/span[1]/div/div/div/div[2]/div/div[1]/div[1]/div[1]/div[2]/select"));
+//				
+//				int i = 0;
+//				for(WebElement e : selectsDaTela) {
+//					System.out.println(i+"  -   "+ e.getAttribute("text")+" - "+ e.getAttribute("id")+" - "+e.getAttribute("name")+" - "+e.getText()+" - "+e.getLocation());
+//					i++;
+//				}
+				
+				//clicar("//*[@id=\"taskInstanceForm:minutaEmElaboracao-481979342:selectMenuTipoDocumentoDecoration:selectMenuTipoDocumento\"]");
+				//clicar("//*[@id=\"taskInstanceForm:minutaEmElaboracao-481979342:selectMenuTipoDocumentoDecoration:selectMenuTipoDocumento\"]/option[1]");
+				//clicar("//*[@id=\"taskInstanceForm:minutaEmElaboracao-481979342:minutaEmElaboracao-481979342Decoration:selectModeloDocumento\"]/option[7]");
+				
+				//digitar("//*[@id=\"taskInstanceForm:minutaEmElaboracao-481979342:minutaEmElaboracao-481979342Decoration2:j_id194:j_id203:homologadorEventoTreeParamPesquisaInput\"]", "impedimento");
+				//clicar("/html/body/div[5]/div/div[3]/form/div/div[2]/span[1]/div/div/div/div[2]/div/div[1]/div[2]/div/div[2]/div[2]/div/div[2]/span/div[1]/div[2]/div/div[2]/fieldset/input[2]", 8, 2000);
+				//clicar("//*[@id=\"taskInstanceForm:minutaEmElaboracao-481979342:minutaEmElaboracao-481979342Decoration2:j_id194:j_id203:j_id215:j__id216:0:j__id216:1:j__id216:0::j_id217:text\"]/span");
+				//clicar("//*[@id=\"taskInstanceForm:minutaEmElaboracao-481979342:minutaEmElaboracao-481979342Decoration2:j_id194:homologadorEventoTreeSelectedEventsTable:0:homologadorEventoTreelinkComplementos\"]/i");
+				//digitar("//*[@id=\"taskInstanceForm:minutaEmElaboracao-481979342:minutaEmElaboracao-481979342Decoration2:j_id194:j_id5208:0:j_id5209:tipoComplementoLivre105Decoration:tipoComplementoLivre105\"]", "DESEMBARGADOR RAIMUNDO BOGÉA");
+				//clicar("//*[@id=\"taskInstanceForm:minutaEmElaboracao-481979342:minutaEmElaboracao-481979342Decoration2:j_id194:homologadorEventoTreebotaoGravarMovimento\"]");
+				//clicar("//*[@id=\"btnTransicoesTarefa\"]/i");
+				//clicar("//*[@id=\"frameTarefas\"]/div/div[2]/div[2]/ul/li[1]/a");
 				
 				criarLog(processo, "Procedimento realizado com sucesso!");
 
@@ -750,7 +832,8 @@ public abstract class PaginaBase extends TempoRoboProcessamento {
 					escreverLog("\n(" + (i + 1) + "/" + nProcessos.size() + ")");
 					escreverLog(" Iniciando procedimento do processo: " + teste + "\n");
 					//realizarTarefa(nProcessos.get(i));
-					realizarSubmissaoDeSuspeicao(nProcessos.get(i));
+					//devolverParaAssessoria(nProcessos.get(i));
+					realizarSubmissaoDeImpedimento(nProcessos.get(i));
 					//Thread.sleep(5000);
 					escreverLog("\n----------------------------------------------------\n");
 
