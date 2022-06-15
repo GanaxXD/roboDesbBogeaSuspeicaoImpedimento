@@ -672,8 +672,7 @@ public abstract class PaginaBase extends TempoRoboProcessamento {
 		try {
 			//assinar decição
 			alternarFrame(new String[] { "ngFrame" });
-			if(existeElementoTexto("Assinar decisão ")
-					|| existeElementoTexto("Minutar decisão de urgência inicial ")
+			if(existeElementoTexto("Minutar decisão de urgência inicial ")
 					|| existeElementoTexto("Minutar decisão de urgência ")
 					|| existeElementoTexto("Minutar decisão ")
 					|| existeElementoTexto("Minutar despacho inicial ")
@@ -739,19 +738,26 @@ public abstract class PaginaBase extends TempoRoboProcessamento {
 
 
 				fecharJanelaDetalhes();
-				alternarFrame(new String[] { "ngFrame" });
 				clicar("//span[text()[contains(.,'" + processo.getNumeroProcessoFormatado() + "')]]", 2, 2000);
 
 				clicar("//*[@id=\"btnTransicoesTarefa\"]/i", 2,1000);
 				
+				//pesquisar método de pesquisa de árvore html de pesquisa do selenium no momento do teste
+				//ctrl+h "alternarFrame e encontrar onde a função está sendo usada
 				
 				clicar("/html/body/app-root/selector/div/div/div[2]/right-panel/div/processos-tarefa/div[2]/conteudo-tarefa/div[1]/div/div/div[2]/div[2]/ul/li[5]/a",2,1000);
 				
-				clicar("//select[@id[contains('taskInstanceForm:minutaEmElaboracao-')]]");
-				clicar("/html/body/div[5]/div/div[3]/form/div/div[2]/span[1]/div/div/div/div[2]/div/div[1]/div[1]/div[1]/div[2]/select", 1, 1000);
-				Thread.sleep(5000);
-				System.out.println("AQUI");
+				alternarFrame(new String[] {"ngFrame","frame-tarefa"});
+				clicar("//select[contains(@id,'selectMenuTipoDocumentoDecoration:selectMenuTipoDocumento')]", 3, 3000);
+				clicar("//option[contains(text(),'Decisão')]", 1, 1000);
 				
+				
+				Thread.sleep(2000);
+				clicar("//select[contains(@id,'Decoration:selectModeloDocumento')]",1,1000);
+				clicar("//option[contains(text(), 'IMPEDIMENTO DESEMB. RAIMUNDO BOGÉA')]", 2, 1000);
+				
+				Thread.sleep(2000);
+				System.out.println("AQUI");
 				//clicar("//select/option[contains(text(), 'Decisão')]",1,1000);
 				
 				
