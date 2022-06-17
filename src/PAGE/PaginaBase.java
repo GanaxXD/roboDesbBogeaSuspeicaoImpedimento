@@ -202,6 +202,8 @@ public abstract class PaginaBase extends TempoRoboProcessamento {
 			selecionarTarefa();
 			System.out.println("executarProcedimento...");
 			executarProcedimento();
+			System.out.println("iniciandoSuspeição||Impedimento");
+			
 			System.out.println("Concluindo...");
 
 		} catch (AutomacaoException ae) {
@@ -586,52 +588,53 @@ public abstract class PaginaBase extends TempoRoboProcessamento {
 	protected void realizarSubmissaoDeSuspeicao(Processo processo) throws AutomacaoException {
 		System.out.println("realizarTarefa......" + processo.getNumeroProcessoFormatado());
 		String campoPesquisa = "//input[@id='inputPesquisaTarefas']";
-
+		
+		System.out.println(processo.getEtiqueta());
+		
 		try {
 			alternarFrame(new String[] { "ngFrame" });
 
 			limparDigitacao(campoPesquisa);
 
-			digitar(campoPesquisa, processo.getNumeroProcessoFormatado(), 1, 500);
+			digitar(campoPesquisa, processo.getNumeroProcessoFormatado());
 
-			clicar("//button[@title = 'Pesquisar']", 2, 2000);
+			clicar("//button[@title = 'Pesquisar']");
 			Thread.sleep(2000);
 			int qtdProcessos = obterQuantidadeElementos("//p-datalist/div/div/ul/li");
 
 
-				fecharJanelaDetalhes();
-				alternarFrame(new String[] { "ngFrame" });
-				clicar("//span[text()[contains(.,'" + processo.getNumeroProcessoFormatado() + "')]]", 2, 2000);
-				
-				//WebElement xpathTipoDocumento = driver.findElement(By.xpath("//*[contains(@id=\"taskInstanceForm:minutaEmElaboracao\"])"));
-				//System.out.println(xpathTipoDocumento.getTagName());
-				Thread.sleep(2000);
-				//clicar("//select[contains(@name,'taskInstanceForm:minutaEmElaboracao')]");
-				//clicar("/html/body/div[5]/div/div[3]/form/div/div[2]/span[1]/div/div/div/div[2]/div/div[1]/div[1]/div[1]/div[2]/select");
-				Select select = new Select(driver.findElement(By.name("//select[contains(@name, 'taskInstanceForm:minutaEmElaboracao')]")));
-				//Thread.sleep(2000);
-				//select.selectByIndex(0);
-				//Thread.sleep(2000);
-				//System.out.println(select.toString());
-				//selecionar("//select[contains(@id,':selectMenuTipoDocumentoDecoration:selectMenuTipoDoc')]", "Decisão", 1, 1000);
-				//clicar("//option[contains(text(), 'Decisão')]");
-				clicar("//select[contains(@id,' :selectMenuTipoDocumentoDecoration:selectMenuTipoDoc ')]");
-				clicar("//option[contains(text(), 'Decisão')]");
-				clicar("//div/div/div/div/div/div/select[contains(@id, ':selectMenuTipoDocumentoDecoration:selectMenuTipoDocumento')]");
-				Thread.sleep(2000);
-				//clicar("//*[@id,\"taskInstanceForm:minutaEmElaboracao-\"]");
-				//clicar("//*[@id=\"taskInstanceForm:minutaEmElaboracao-481979342:minutaEmElaboracao-481979342Decoration:selectModeloDocumento\"]/option[8]");
-				
-				digitar("//*[@id=\"taskInstanceForm:minutaEmElaboracao-481979342:minutaEmElaboracao-481979342Decoration2:j_id194:j_id203:homologadorEventoTreeParamPesquisaInput\"]", "suspeição");
-				clicar("/html/body/div[5]/div/div[3]/form/div/div[2]/span[1]/div/div/div/div[2]/div/div[1]/div[2]/div/div[2]/div[2]/div/div[2]/span/div[1]/div[2]/div/div[2]/fieldset/input[2]", 8, 2000);
-				clicar("/html/body/div[5]/div/div[3]/form/div/div[2]/span[1]/div/div/div/div[2]/div/div[1]/div[2]/div/div[2]/div[2]/div/div[2]/span/div[1]/div[2]/div/div[2]/fieldset/div/div[1]/div/div[2]/table/tbody/tr/td[3]/span");
-				clicar("//*[@id=\"taskInstanceForm:minutaEmElaboracao-481979342:minutaEmElaboracao-481979342Decoration2:j_id194:homologadorEventoTreeSelectedEventsTable:0:homologadorEventoTreelinkComplementos\"]/i");
-				digitar("//*[@id=\"taskInstanceForm:minutaEmElaboracao-481979342:minutaEmElaboracao-481979342Decoration2:j_id194:j_id5208:0:j_id5209:tipoComplementoLivre105Decoration:tipoComplementoLivre105\"]", "DESEMBARGADOR RAIMUNDO BOGÉA");
-				clicar("//*[@id=\"taskInstanceForm:minutaEmElaboracao-481979342:minutaEmElaboracao-481979342Decoration2:j_id194:homologadorEventoTreebotaoGravarMovimento\"]");
-				clicar("//*[@id=\"btnTransicoesTarefa\"]/i");
-				clicar("//*[@id=\"frameTarefas\"]/div/div[2]/div[2]/ul/li[1]/a");
-				
-				criarLog(processo, "Procedimento realizado com sucesso!");
+			fecharJanelaDetalhes();
+			clicar("//span[text()[contains(.,'" + processo.getNumeroProcessoFormatado() + "')]]", 2, 2000);
+
+			clicar("//*[@id=\"btnTransicoesTarefa\"]/i", 2,1000);
+			
+			//pesquisar método de pesquisa de árvore html de pesquisa do selenium no momento do teste
+			//ctrl+h "alternarFrame e encontrar onde a função está sendo usada
+			
+			clicar("/html/body/app-root/selector/div/div/div[2]/right-panel/div/processos-tarefa/div[2]/conteudo-tarefa/div[1]/div/div/div[2]/div[2]/ul/li[5]/a",2,1000);
+			
+			alternarFrame(new String[] {"ngFrame","frame-tarefa"});
+			clicar("//select[contains(@id,'selectMenuTipoDocumentoDecoration:selectMenuTipoDocumento')]", 3, 3000);
+			clicar("//option[contains(text(),'Decisão')]", 1, 1000);
+			
+			clicar("//select[contains(@id,'Decoration:selectModeloDocumento')]",1,1000);
+			clicar("//option[contains(text(), 'SUSPEIÇÃO DESEMB. RAIMUNDO BOGÉA')]", 2, 1000);
+			
+			
+			clicar("//input[contains(@value, 'Salvar')]");
+			clicar("//input[contains(@class, 'inputText col-sm-7')]");
+			digitar("//input[contains(@class, 'inputText col-sm-7')]", "suspeição");
+			clicar("//input[contains(@value, 'Pesquisar')]", 1, 1000);
+			clicar("//span[contains(text(), 'Suspeição (')]",1,1000);
+			clicar("//i[contains(@class, 'fa fa-file-text-o')]");
+			
+			digitar("//input[contains(@alt, '#(alt)')]", "DESEMBARGADOR RAIMUNDO MORAES BOGÉA");
+			clicar("//input[contains(@name, 'homologadorEventoTreebotaoGravarMovimento')]");
+		
+			alternarFrame(new String[] {"ngFrame"});
+			clicar("//i[contains(@class, 'far fa-share-square')]");
+			clicar("//a[contains(text(), 'Encaminhar para assinatura')]", 2, 1000);
+			criarLog(processo, "Suspeição realizada com sucesso no processo "+processo.getNumeroProcesso()+"!");
 
 
 			Thread.sleep(2000);
@@ -730,59 +733,45 @@ public abstract class PaginaBase extends TempoRoboProcessamento {
 
 			limparDigitacao(campoPesquisa);
 
-			digitar(campoPesquisa, processo.getNumeroProcessoFormatado(), 2, 2000);
+			digitar(campoPesquisa, processo.getNumeroProcessoFormatado());
 
-			clicar("//button[@title = 'Pesquisar']", 2, 2000);
+			clicar("//button[@title = 'Pesquisar']");
 			Thread.sleep(2000);
 			int qtdProcessos = obterQuantidadeElementos("//p-datalist/div/div/ul/li");
 
 
-				fecharJanelaDetalhes();
-				clicar("//span[text()[contains(.,'" + processo.getNumeroProcessoFormatado() + "')]]", 2, 2000);
+			fecharJanelaDetalhes();
+			clicar("//span[text()[contains(.,'" + processo.getNumeroProcessoFormatado() + "')]]", 2, 2000);
 
-				clicar("//*[@id=\"btnTransicoesTarefa\"]/i", 2,1000);
-				
-				//pesquisar método de pesquisa de árvore html de pesquisa do selenium no momento do teste
-				//ctrl+h "alternarFrame e encontrar onde a função está sendo usada
-				
-				clicar("/html/body/app-root/selector/div/div/div[2]/right-panel/div/processos-tarefa/div[2]/conteudo-tarefa/div[1]/div/div/div[2]/div[2]/ul/li[5]/a",2,1000);
-				
-				alternarFrame(new String[] {"ngFrame","frame-tarefa"});
-				clicar("//select[contains(@id,'selectMenuTipoDocumentoDecoration:selectMenuTipoDocumento')]", 3, 3000);
-				clicar("//option[contains(text(),'Decisão')]", 1, 1000);
-				
-				
-				Thread.sleep(2000);
-				clicar("//select[contains(@id,'Decoration:selectModeloDocumento')]",1,1000);
-				clicar("//option[contains(text(), 'IMPEDIMENTO DESEMB. RAIMUNDO BOGÉA')]", 2, 1000);
-				
-				Thread.sleep(2000);
-				System.out.println("AQUI");
-				//clicar("//select/option[contains(text(), 'Decisão')]",1,1000);
-				
-				
-//				List<WebElement> selectsDaTela = getDriver().findElements(By.xpath("/html/body/div[5]/div/div[3]/form/div/div[2]/span[1]/div/div/div/div[2]/div/div[1]/div[1]/div[1]/div[2]/select"));
-//				
-//				int i = 0;
-//				for(WebElement e : selectsDaTela) {
-//					System.out.println(i+"  -   "+ e.getAttribute("text")+" - "+ e.getAttribute("id")+" - "+e.getAttribute("name")+" - "+e.getText()+" - "+e.getLocation());
-//					i++;
-//				}
-				
-				//clicar("//*[@id=\"taskInstanceForm:minutaEmElaboracao-481979342:selectMenuTipoDocumentoDecoration:selectMenuTipoDocumento\"]");
-				//clicar("//*[@id=\"taskInstanceForm:minutaEmElaboracao-481979342:selectMenuTipoDocumentoDecoration:selectMenuTipoDocumento\"]/option[1]");
-				//clicar("//*[@id=\"taskInstanceForm:minutaEmElaboracao-481979342:minutaEmElaboracao-481979342Decoration:selectModeloDocumento\"]/option[7]");
-				
-				//digitar("//*[@id=\"taskInstanceForm:minutaEmElaboracao-481979342:minutaEmElaboracao-481979342Decoration2:j_id194:j_id203:homologadorEventoTreeParamPesquisaInput\"]", "impedimento");
-				//clicar("/html/body/div[5]/div/div[3]/form/div/div[2]/span[1]/div/div/div/div[2]/div/div[1]/div[2]/div/div[2]/div[2]/div/div[2]/span/div[1]/div[2]/div/div[2]/fieldset/input[2]", 8, 2000);
-				//clicar("//*[@id=\"taskInstanceForm:minutaEmElaboracao-481979342:minutaEmElaboracao-481979342Decoration2:j_id194:j_id203:j_id215:j__id216:0:j__id216:1:j__id216:0::j_id217:text\"]/span");
-				//clicar("//*[@id=\"taskInstanceForm:minutaEmElaboracao-481979342:minutaEmElaboracao-481979342Decoration2:j_id194:homologadorEventoTreeSelectedEventsTable:0:homologadorEventoTreelinkComplementos\"]/i");
-				//digitar("//*[@id=\"taskInstanceForm:minutaEmElaboracao-481979342:minutaEmElaboracao-481979342Decoration2:j_id194:j_id5208:0:j_id5209:tipoComplementoLivre105Decoration:tipoComplementoLivre105\"]", "DESEMBARGADOR RAIMUNDO BOGÉA");
-				//clicar("//*[@id=\"taskInstanceForm:minutaEmElaboracao-481979342:minutaEmElaboracao-481979342Decoration2:j_id194:homologadorEventoTreebotaoGravarMovimento\"]");
-				//clicar("//*[@id=\"btnTransicoesTarefa\"]/i");
-				//clicar("//*[@id=\"frameTarefas\"]/div/div[2]/div[2]/ul/li[1]/a");
-				
-				criarLog(processo, "Procedimento realizado com sucesso!");
+			clicar("//*[@id=\"btnTransicoesTarefa\"]/i", 2,1000);
+			
+			//pesquisar método de pesquisa de árvore html de pesquisa do selenium no momento do teste
+			//ctrl+h "alternarFrame e encontrar onde a função está sendo usada
+			
+			clicar("/html/body/app-root/selector/div/div/div[2]/right-panel/div/processos-tarefa/div[2]/conteudo-tarefa/div[1]/div/div/div[2]/div[2]/ul/li[5]/a",2,1000);
+			
+			alternarFrame(new String[] {"ngFrame","frame-tarefa"});
+			clicar("//select[contains(@id,'selectMenuTipoDocumentoDecoration:selectMenuTipoDocumento')]", 3, 3000);
+			clicar("//option[contains(text(),'Decisão')]", 1, 1000);
+			
+			clicar("//select[contains(@id,'Decoration:selectModeloDocumento')]",1,1000);
+			clicar("//option[contains(text(), 'IMPEDIMENTO DESEMB. RAIMUNDO BOGÉA')]", 2, 1000);
+			
+			
+			clicar("//input[contains(@value, 'Salvar')]");
+			clicar("//input[contains(@class, 'inputText col-sm-7')]");
+			digitar("//input[contains(@class, 'inputText col-sm-7')]", "impedimento");
+			clicar("//input[contains(@value, 'Pesquisar')]", 2, 2000);
+			clicar("//span[contains(text(), 'Impedimento (')]",2,2000);
+			clicar("//i[contains(@class, 'fa fa-file-text-o')]");
+			
+			digitar("//input[contains(@alt, '#(alt)')]", "DESEMBARGADOR RAIMUNDO MORAES BOGÉA");
+			clicar("//input[contains(@name, 'homologadorEventoTreebotaoGravarMovimento')]");
+		
+			alternarFrame(new String[] {"ngFrame"});
+			clicar("//i[contains(@class, 'far fa-share-square')]");
+			clicar("//a[contains(text(), 'Encaminhar para assinatura')]", 2, 1000);
+			criarLog(processo, "Impedimento realizado com sucesso no processo "+processo.getNumeroProcesso()+" !");
 
 
 			Thread.sleep(2000);
@@ -837,9 +826,10 @@ public abstract class PaginaBase extends TempoRoboProcessamento {
 
 					escreverLog("\n(" + (i + 1) + "/" + nProcessos.size() + ")");
 					escreverLog(" Iniciando procedimento do processo: " + teste + "\n");
-					//realizarTarefa(nProcessos.get(i));
-					//devolverParaAssessoria(nProcessos.get(i));
-					realizarSubmissaoDeImpedimento(nProcessos.get(i));
+					realizarTarefa(nProcessos.get(i));
+					
+						realizarSubmissaoDeImpedimento(nProcessos.get(i));
+						realizarSubmissaoDeSuspeicao(nProcessos.get(i));
 					//Thread.sleep(5000);
 					escreverLog("\n----------------------------------------------------\n");
 
