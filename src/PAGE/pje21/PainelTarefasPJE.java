@@ -247,13 +247,13 @@ public abstract class PainelTarefasPJE extends PaginaBasePJE {
 
 			alternarFrame(new String[] { "ngFrame" });
 
-			clicar("//button[@tooltip='Etiquetas do processo']", 10, 1000);
+			clicar("//button[@tooltip='Etiquetas do processo']", 1, 10);
 
-			limparDigitacao("//input[@name='itPesquisarEtiquetas']", 10, 2000);
+			limparDigitacao("//input[@name='itPesquisarEtiquetas']", 1, 10);
 
-			digitar("//input[@name='itPesquisarEtiquetas']", etiqueta, 10, 2000);
+			digitar("//input[@name='itPesquisarEtiquetas']", etiqueta, 1, 10);
 
-			digitar("//input[@name='itPesquisarEtiquetas']", Keys.ENTER, 10, 2000);
+			digitar("//input[@name='itPesquisarEtiquetas']", Keys.ENTER, 1, 10);
 
 			Thread.sleep(500);
 			if (!elementoExiste(By.xpath("//div[text()='Nova etiqueta criada']"))) {
@@ -271,8 +271,8 @@ public abstract class PainelTarefasPJE extends PaginaBasePJE {
 							if (elementoExiste(By.xpath(
 									caminhoEtiquetas + "//tr[" + i + "]//td[1]//button//i[@class='far fa-square']"))) {
 								clicar(caminhoEtiquetas + "//tr[" + i + "]//td[1]//button//i[@class='far fa-square']",
-										10, 2000);
-								Thread.sleep(2000);
+										1, 100);
+								Thread.sleep(1000);
 								break;
 							} /*else {
 								criarLog("Etiqueta " + etiqueta + " já existia no processo ");
@@ -286,9 +286,9 @@ public abstract class PainelTarefasPJE extends PaginaBasePJE {
 				System.out.println("Etiqueta Criada!!");
 			}
 
-			limparDigitacao("//input[@name='itPesquisarEtiquetas']", 10, 1000);
+			limparDigitacao("//input[@name='itPesquisarEtiquetas']", 1, 100);
 
-			clicar("//button[@tooltip='Etiquetas do processo']", 15, 5000);
+			clicar("//button[@tooltip='Etiquetas do processo']", 1, 500);
 		} catch (Exception e) {
 			throw new AutomacaoException("Nao foi possivel atribuir a etiqueta " + etiqueta);
 		}

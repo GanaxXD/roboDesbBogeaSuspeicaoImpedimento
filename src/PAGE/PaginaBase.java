@@ -201,8 +201,9 @@ public abstract class PaginaBase extends TempoRoboProcessamento {
 			System.out.println("selecionarTarefa...");
 			selecionarTarefa();
 			System.out.println("executarProcedimento...");
-			executarProcedimento();
-			System.out.println("iniciandoSuspeição||Impedimento");
+			System.out.println("EEEEEEEEIIIIIIIIIIIII");
+			executarProcedimento();			
+			System.out.println("PASSEIIIIII");
 			
 			System.out.println("Concluindo...");
 
@@ -828,8 +829,37 @@ public abstract class PaginaBase extends TempoRoboProcessamento {
 					escreverLog(" Iniciando procedimento do processo: " + teste + "\n");
 					realizarTarefa(nProcessos.get(i));
 					
-						realizarSubmissaoDeImpedimento(nProcessos.get(i));
+					System.out.println("Verificando Suspeição no processo "+nProcessos.get(i).getNumeroProcesso());
+					//Aplicando a suspeição
+					if(existeElementoTexto("ToadaRobô06-suspeição Gustavo S. de Oliveira")
+							|| existeElementoTexto("ToadaRobô06-suspeição Haroldo G. S. Filho")
+							|| existeElementoTexto("ToadaRobô06-suspeição G S Adv. Ass.")
+							|| existeElementoTexto("Elaine")) {
 						realizarSubmissaoDeSuspeicao(nProcessos.get(i));
+						System.out.println("AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA");
+						System.out.println("Suspeição aplicada ao processo "+nProcessos.get(i).getNumeroProcesso());
+					} else {
+						System.out.println("Não foram encontradas etiquetas de suspeição no processo "+nProcessos.get(i).getNumeroProcesso());
+					}
+					
+					//aplicando o impedimento
+					System.out.println("Verificando Impedimento no processo "+nProcessos.get(i).getNumeroProcesso());
+					if(existeElementoTexto("ToadaRobô06-impedimento Ulisses C. M. de Sousa")
+							|| existeElementoTexto("ToadaRobô06-impedimento Marcos L. B. R. Simões")
+							|| existeElementoTexto("ToadaRobô06-impedimento Antônio A. J. Canovas")
+							|| existeElementoTexto("ToadaRobô06-impedimento Catarina S. Bogéa")
+							|| existeElementoTexto("ToadaRobô06-impedimento Ulisses S. Adv. Ass.")
+							|| existeElementoTexto("Codó")) {
+						realizarSubmissaoDeImpedimento(nProcessos.get(i));
+						System.out.println("BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB");
+						System.out.println("Impedimento aplicado no processo "+nProcessos.get(i).getNumeroProcesso());
+					} else {
+						System.out.println("Não foram encontradas etiquetas de impedimento no processo "+nProcessos.get(i).getNumeroProcesso());
+					}
+					
+					//Devolvendo para a análise da assessoria
+					devolverParaAssessoria(nProcessos.get(i));
+					
 					//Thread.sleep(5000);
 					escreverLog("\n----------------------------------------------------\n");
 

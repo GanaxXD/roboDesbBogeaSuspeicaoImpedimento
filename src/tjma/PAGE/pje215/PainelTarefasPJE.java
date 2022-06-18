@@ -179,7 +179,7 @@ public abstract class PainelTarefasPJE extends PaginaBasePJE {
 
 			digitar(campoPesquisa, processo.getNumeroProcessoFormatado(), 2, 2000);
 
-			clicar("//button[@title = 'Pesquisar']", 2, 2000);
+			clicar("//button[@title = 'Pesquisar']");//, 2, 2000);
 			Thread.sleep(2000);
 			int qtdProcessos = obterQuantidadeElementos("//p-datalist/div/div/ul/li");
 
@@ -220,7 +220,7 @@ public abstract class PainelTarefasPJE extends PaginaBasePJE {
 
 		} catch (Exception e) {
 
-			criarLog(processo, "\nOcorreu um erro: " + processo.getNumeroProcesso());
+			criarLog(processo, "\nAAAAAOcorreu um erro: " + processo.getNumeroProcesso());
 
 		} finally {
 			fecharJanelaDetalhes();
@@ -476,7 +476,7 @@ public abstract class PainelTarefasPJE extends PaginaBasePJE {
 
 	protected void escolherTarefaSecretaria(String tarefa) throws AutomacaoException, InterruptedException {
 		try {
-			clicar("//input[contains(@id, '" + tarefa + "')]", 10, 3000);
+			clicar("//input[contains(@id, '" + tarefa + "')]", 2, 2000);
 		} catch (Exception e) {
 			e.printStackTrace();
 		}

@@ -61,3 +61,27 @@ NOMEACAO;NOMEAÇÃO;NOMEAÇAO;
 [ToadaRobô01-IRDR-Militar]
 0801095;PROMOÇÃO;PROMOCAO;RESSARCIMENTO
 MILITAR
+
+[ToadaRobô06-suspeição Gustavo S. de Oliveira]
+Gustavo Sauaia de Oliveira
+
+[ToadaRobô06-suspeição Haroldo G. S. Filho]
+Haroldo Guimarães Soares Filho;Haroldo Guimaraes Soares Filho
+
+[ToadaRobô06-impedimento Ulisses C. M. de Sousa]
+Ulisses César Martins de Sousa;Ulisses Cesar Martins de Sousa
+
+[ToadaRobô06-impedimento Marcos L. B. R. Simões]
+Marcos Luís Braid Ribeiro Simões;Marcos Luis Braid Ribeiro Simoes
+
+[ToadaRobô06-impedimento Antônio A. J. Canovas]
+Antônio Anglada Jatay Canovas;Antonio Anglada Jatay Canovas
+
+[ToadaRobô06-impedimento Catarina S. Bogéa]
+Catarina Santos Bogéa;Catarina Santos Bogea
+
+[ToadaRobô06-impedimento Ulisses S. Adv. Ass.]
+Ulisses Sousa Advogados Associados
+
+[ToadaRobô06-suspeição G S Adv. Ass.]
+G S Advogados Associados

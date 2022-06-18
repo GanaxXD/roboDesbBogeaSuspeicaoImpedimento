@@ -18,18 +18,6 @@ import PAGE.pje21.justicaComum.CI.AtoJudicialEtiqueta;
  * @TJBA
  */
 public class Parametros implements Cloneable{
-
-	/*
-	 * Identificando as partes do processo em que serão minutadas com decisão
-	 * do desembargador.
-	 * Usado para despachar processos de acordo com os modelos definidos no PJE
-	 * 
-	 */
-	private String tipoDocumentoMinutar;
-	private String modeloDecisaoMinutar;
-	private String codigoDecisao;
-	private String preencheComplemento;
-	
 	
 	private String robo;
 	
@@ -184,40 +172,6 @@ public class Parametros implements Cloneable{
 	private String arquivoBairrosJuizado1;
 	private String arquivoBairrosJuizado2;
 	
-	
-	
-	
-	public String getTipoDocumentoMinutar() {
-		return tipoDocumentoMinutar;
-	}
-
-	public void setTipoDocumentoMinutar(String tipoDocumentoMinutar) {
-		this.tipoDocumentoMinutar = tipoDocumentoMinutar;
-	}
-
-	public String getModeloDecisaoMinutar() {
-		return modeloDecisaoMinutar;
-	}
-
-	public void setModeloDecisaoMinutar(String modeloDecisaoMinutar) {
-		this.modeloDecisaoMinutar = modeloDecisaoMinutar;
-	}
-
-	public String getCodigoDecisao() {
-		return codigoDecisao;
-	}
-
-	public void setCodigoDecisao(String codigoDecisao) {
-		this.codigoDecisao = codigoDecisao;
-	}
-
-	public String getPreencheComplemento() {
-		return preencheComplemento;
-	}
-
-	public void setPreencheComplemento(String preencheComplemento) {
-		this.preencheComplemento = preencheComplemento;
-	}
 
 	public boolean isJanelaOculta() {
 		return ("OCULTA".equals(getExecucaoJanela()));

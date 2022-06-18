@@ -41,6 +41,38 @@ public class TriagemInicial_Page extends PainelTarefasPJE {
 							obterArquivoLog());
 					
 					contadorProcessosEtiquetados();
+					
+					/*
+					 * System.out.println("Verificando Suspeição no processo "+processo.
+					 * getNumeroProcesso()); //Aplicando a suspeição
+					 * if(existeElementoTexto("ToadaRobô06-suspeição Gustavo S. de Oliveira") ||
+					 * existeElementoTexto("ToadaRobô06-suspeição Haroldo G. S. Filho") ||
+					 * existeElementoTexto("ToadaRobô06-suspeição G S Adv. Ass.") ||
+					 * existeElementoTexto("Elaine")) { realizarSubmissaoDeSuspeicao(processo);
+					 * System.out.println("AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA");
+					 * System.out.println("Suspeição aplicada ao processo "+processo.
+					 * getNumeroProcesso()); } else { System.out.
+					 * println("Não foram encontradas etiquetas de suspeição no processo "+processo.
+					 * getNumeroProcesso()); }
+					 * 
+					 * //aplicando o impedimento
+					 * System.out.println("Verificando Impedimento no processo "+processo.
+					 * getNumeroProcesso());
+					 * if(existeElementoTexto("ToadaRobô06-impedimento Ulisses C. M. de Sousa") ||
+					 * existeElementoTexto("ToadaRobô06-impedimento Marcos L. B. R. Simões") ||
+					 * existeElementoTexto("ToadaRobô06-impedimento Antônio A. J. Canovas") ||
+					 * existeElementoTexto("ToadaRobô06-impedimento Catarina S. Bogéa") ||
+					 * existeElementoTexto("ToadaRobô06-impedimento Ulisses S. Adv. Ass.") ||
+					 * existeElementoTexto("Codó")) { realizarSubmissaoDeImpedimento(processo);
+					 * System.out.println("BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB");
+					 * System.out.println("Impedimento aplicado no processo "+processo.
+					 * getNumeroProcesso()); } else { System.out.
+					 * println("Não foram encontradas etiquetas de impedimento no processo "
+					 * +processo.getNumeroProcesso()); }
+					 * 
+					 * //Devolvendo para a análise da assessoria devolverParaAssessoria(processo);
+					 */
+					
 				} else {
 					criarLog(
 							"Etiqueta " + etiqueta + " já existia no processo " + processo.getNumeroProcessoFormatado(),
