@@ -23,6 +23,8 @@ public class Processo {
 	private String numeroProcesso;
 	private String linkProcesso;
 	
+	
+
 	private ArrayList<Movimento> movimentos = new ArrayList<Movimento>();
 	private ArrayList<Documento> documentos = new ArrayList<Documento>();
 

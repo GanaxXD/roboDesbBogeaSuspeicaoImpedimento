@@ -30,7 +30,7 @@ import PAGE.pje21.justicaComum.CI.AtoJudicialEtiqueta;
 
 /**
  * 
- * Classe principal que representa um rob� (Navegador).
+ * Classe principal que representa um robô (Navegador).
  * Realiza o
  * 
  * @author Leonardo Ribeiro de Oliveira @ TJBA

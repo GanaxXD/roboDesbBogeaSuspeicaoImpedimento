@@ -172,7 +172,6 @@ public class Parametros implements Cloneable{
 	private String arquivoBairrosJuizado1;
 	private String arquivoBairrosJuizado2;
 	
-
 	public boolean isJanelaOculta() {
 		return ("OCULTA".equals(getExecucaoJanela()));
 	}

@@ -1,6 +1,7 @@
 package PAGE;
 
 import PAGE.pje21.PaginaBasePJE;
+import tjma.PAGE.pje215.PainelTarefasPJE;
 import tjma.time.TempoRoboProcessamento;
 
 import java.io.BufferedReader;
@@ -201,10 +202,7 @@ public abstract class PaginaBase extends TempoRoboProcessamento {
 			System.out.println("selecionarTarefa...");
 			selecionarTarefa();
 			System.out.println("executarProcedimento...");
-			System.out.println("EEEEEEEEIIIIIIIIIIIII");
-			executarProcedimento();			
-			System.out.println("PASSEIIIIII");
-			
+			executarProcedimento();
 			System.out.println("Concluindo...");
 
 		} catch (AutomacaoException ae) {
@@ -594,19 +592,13 @@ public abstract class PaginaBase extends TempoRoboProcessamento {
 		
 		try {
 			alternarFrame(new String[] { "ngFrame" });
-
 			limparDigitacao(campoPesquisa);
-
 			digitar(campoPesquisa, processo.getNumeroProcessoFormatado());
-
 			clicar("//button[@title = 'Pesquisar']");
 			Thread.sleep(2000);
 			int qtdProcessos = obterQuantidadeElementos("//p-datalist/div/div/ul/li");
-
-
 			fecharJanelaDetalhes();
 			clicar("//span[text()[contains(.,'" + processo.getNumeroProcessoFormatado() + "')]]", 2, 2000);
-
 			clicar("//*[@id=\"btnTransicoesTarefa\"]/i", 2,1000);
 			
 			//pesquisar método de pesquisa de árvore html de pesquisa do selenium no momento do teste
@@ -621,8 +613,7 @@ public abstract class PaginaBase extends TempoRoboProcessamento {
 			clicar("//select[contains(@id,'Decoration:selectModeloDocumento')]",1,1000);
 			clicar("//option[contains(text(), 'SUSPEIÇÃO DESEMB. RAIMUNDO BOGÉA')]", 2, 1000);
 			
-			
-			clicar("//input[contains(@value, 'Salvar')]");
+			clicar("//input[contains(@class, 'btn btn-primary')]", 2, 1000);
 			clicar("//input[contains(@class, 'inputText col-sm-7')]");
 			digitar("//input[contains(@class, 'inputText col-sm-7')]", "suspeição");
 			clicar("//input[contains(@value, 'Pesquisar')]", 1, 1000);
@@ -636,26 +627,18 @@ public abstract class PaginaBase extends TempoRoboProcessamento {
 			clicar("//i[contains(@class, 'far fa-share-square')]");
 			clicar("//a[contains(text(), 'Encaminhar para assinatura')]", 2, 1000);
 			criarLog(processo, "Suspeição realizada com sucesso no processo "+processo.getNumeroProcesso()+"!");
-
-
+			System.out.println("Suspeição finalizada.");
 			Thread.sleep(2000);
-
 		} catch (WebDriverException we) {
 			we.printStackTrace();
 			return;
-
 		} catch (AutomacaoException ae) {
 			throw ae;
-
 		} catch (Exception e) {
-
 			criarLog(processo, "\nOcorreu um erro: " + processo.getNumeroProcesso());
-
 		} finally {
 			fecharJanelaDetalhes();
-
 		}
-
 		System.out.println("fim realizarTarefa....");
 	}
 	
@@ -699,23 +682,16 @@ public abstract class PaginaBase extends TempoRoboProcessamento {
 				Thread.sleep(1000);
 				criarLog(processo, "Procedimento realizado com sucesso!");				
 			}
-
 		} catch (WebDriverException we) {
 			we.printStackTrace();
 			return;
-
 		} catch (AutomacaoException ae) {
 			throw ae;
-
 		} catch (Exception e) {
-
 			criarLog(processo, "\nOcorreu um erro: " + processo.getNumeroProcesso());
-
 		} finally {
 			fecharJanelaDetalhes();
-
 		}
-
 		System.out.println("fim realizarTarefa....");
 	}
 	
@@ -728,22 +704,15 @@ public abstract class PaginaBase extends TempoRoboProcessamento {
 	protected void realizarSubmissaoDeImpedimento(Processo processo) throws AutomacaoException {
 		System.out.println("realizarTarefa......" + processo.getNumeroProcessoFormatado());
 		String campoPesquisa = "//input[@id='inputPesquisaTarefas']";
-
 		try {
 			alternarFrame(new String[] { "ngFrame" });
-
 			limparDigitacao(campoPesquisa);
-
 			digitar(campoPesquisa, processo.getNumeroProcessoFormatado());
-
 			clicar("//button[@title = 'Pesquisar']");
 			Thread.sleep(2000);
 			int qtdProcessos = obterQuantidadeElementos("//p-datalist/div/div/ul/li");
-
-
 			fecharJanelaDetalhes();
 			clicar("//span[text()[contains(.,'" + processo.getNumeroProcessoFormatado() + "')]]", 2, 2000);
-
 			clicar("//*[@id=\"btnTransicoesTarefa\"]/i", 2,1000);
 			
 			//pesquisar método de pesquisa de árvore html de pesquisa do selenium no momento do teste
@@ -758,8 +727,7 @@ public abstract class PaginaBase extends TempoRoboProcessamento {
 			clicar("//select[contains(@id,'Decoration:selectModeloDocumento')]",1,1000);
 			clicar("//option[contains(text(), 'IMPEDIMENTO DESEMB. RAIMUNDO BOGÉA')]", 2, 1000);
 			
-			
-			clicar("//input[contains(@value, 'Salvar')]");
+			clicar("//input[contains(@class, 'btn btn-primary')]", 2, 1000);
 			clicar("//input[contains(@class, 'inputText col-sm-7')]");
 			digitar("//input[contains(@class, 'inputText col-sm-7')]", "impedimento");
 			clicar("//input[contains(@value, 'Pesquisar')]", 2, 2000);
@@ -773,28 +741,21 @@ public abstract class PaginaBase extends TempoRoboProcessamento {
 			clicar("//i[contains(@class, 'far fa-share-square')]");
 			clicar("//a[contains(text(), 'Encaminhar para assinatura')]", 2, 1000);
 			criarLog(processo, "Impedimento realizado com sucesso no processo "+processo.getNumeroProcesso()+" !");
-
-
+			System.out.println("Impedimento finalizado");
 			Thread.sleep(2000);
-
 		} catch (WebDriverException we) {
 			we.printStackTrace();
 			return;
-
 		} catch (AutomacaoException ae) {
 			throw ae;
-
 		} catch (Exception e) {
-
 			criarLog(processo, "\nOcorreu um erro: " + processo.getNumeroProcesso());
-
 		} finally {
 			fecharJanelaDetalhes();
-
 		}
-
 		System.out.println("fim realizarTarefa....");
 	}
+	
 
 	public void executarProcedimento() throws AutomacaoException {
 		try {
@@ -831,35 +792,34 @@ public abstract class PaginaBase extends TempoRoboProcessamento {
 					
 					System.out.println("Verificando Suspeição no processo "+nProcessos.get(i).getNumeroProcesso());
 					//Aplicando a suspeição
+					alternarFrame(new String[] { "ngFrame"});
 					if(existeElementoTexto("ToadaRobô06-suspeição Gustavo S. de Oliveira")
-							|| existeElementoTexto("ToadaRobô06-suspeição Haroldo G. S. Filho")
-							|| existeElementoTexto("ToadaRobô06-suspeição G S Adv. Ass.")
-							|| existeElementoTexto("Elaine")) {
+							| existeElementoTexto("ToadaRobô06-suspeição Haroldo G. S. Filho")
+							| existeElementoTexto("ToadaRobô06-suspeição G S Adv. Ass.")
+							| existeElementoTexto("Codó") 
+							| existeElementoTexto("Elaine")) {
 						realizarSubmissaoDeSuspeicao(nProcessos.get(i));
-						System.out.println("AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA");
 						System.out.println("Suspeição aplicada ao processo "+nProcessos.get(i).getNumeroProcesso());
 					} else {
 						System.out.println("Não foram encontradas etiquetas de suspeição no processo "+nProcessos.get(i).getNumeroProcesso());
 					}
-					
+
 					//aplicando o impedimento
 					System.out.println("Verificando Impedimento no processo "+nProcessos.get(i).getNumeroProcesso());
 					if(existeElementoTexto("ToadaRobô06-impedimento Ulisses C. M. de Sousa")
-							|| existeElementoTexto("ToadaRobô06-impedimento Marcos L. B. R. Simões")
-							|| existeElementoTexto("ToadaRobô06-impedimento Antônio A. J. Canovas")
-							|| existeElementoTexto("ToadaRobô06-impedimento Catarina S. Bogéa")
-							|| existeElementoTexto("ToadaRobô06-impedimento Ulisses S. Adv. Ass.")
-							|| existeElementoTexto("Codó")) {
+							| existeElementoTexto("ToadaRobô06-impedimento Marcos L. B. R. Simões")
+							| existeElementoTexto("ToadaRobô06-impedimento Antônio A. J. Canovas")
+							| existeElementoTexto("ToadaRobô06-impedimento Catarina S. Bogéa")
+							| existeElementoTexto("ToadaRobô06-impedimento Ulisses S. Adv. Ass.")
+							| existeElementoTexto("Caxias")) {
 						realizarSubmissaoDeImpedimento(nProcessos.get(i));
-						System.out.println("BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB");
 						System.out.println("Impedimento aplicado no processo "+nProcessos.get(i).getNumeroProcesso());
 					} else {
 						System.out.println("Não foram encontradas etiquetas de impedimento no processo "+nProcessos.get(i).getNumeroProcesso());
 					}
-					
+
 					//Devolvendo para a análise da assessoria
 					devolverParaAssessoria(nProcessos.get(i));
-					
 					//Thread.sleep(5000);
 					escreverLog("\n----------------------------------------------------\n");
 
@@ -1057,6 +1017,7 @@ public abstract class PaginaBase extends TempoRoboProcessamento {
 
 	protected void clicar(String xpath) throws AutomacaoException {
 		try {
+
 			getDriver().findElement(By.xpath(xpath)).click();
 		} catch (Exception e) {
 			throw new AutomacaoException("Não foi possível clicar no elemento: " + xpath);

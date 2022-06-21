@@ -162,7 +162,7 @@ public abstract class PainelTarefasPJE extends PaginaBasePJE {
 
 			if (!existe ) {
 				throw new AutomacaoException(
-						"A etiqueta " + getParametros().getFiltrarEtiqueta() + " n�o est� presente no processo "
+						"A etiqueta " + getParametros().getFiltrarEtiqueta() + " não está presente no processo "
 								+ processo.getNumeroProcessoFormatado() + " ou est� indisponível nesta tarefa");
 
 			}else {
