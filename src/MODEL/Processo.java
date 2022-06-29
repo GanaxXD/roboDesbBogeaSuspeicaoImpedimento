@@ -409,6 +409,7 @@ public class Processo {
 
 		return sb.toString();
 	}
+	
 
 	public String toString2() {
 		return getNumeroProcesso();

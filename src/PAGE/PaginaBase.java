@@ -588,100 +588,53 @@ public abstract class PaginaBase extends TempoRoboProcessamento {
 		System.out.println("realizarTarefa......" + processo.getNumeroProcessoFormatado());
 		String campoPesquisa = "//input[@id='inputPesquisaTarefas']";
 		
-		System.out.println(processo.getEtiqueta());
+		System.out.println("Dentro do processo de Suspeição");
 		
 		try {
 			alternarFrame(new String[] { "ngFrame" });
 			limparDigitacao(campoPesquisa);
 			digitar(campoPesquisa, processo.getNumeroProcessoFormatado());
 			clicar("//button[@title = 'Pesquisar']");
-			Thread.sleep(2000);
+			Thread.sleep(500);
 			int qtdProcessos = obterQuantidadeElementos("//p-datalist/div/div/ul/li");
 			fecharJanelaDetalhes();
-			clicar("//span[text()[contains(.,'" + processo.getNumeroProcessoFormatado() + "')]]", 2, 2000);
-			clicar("//*[@id=\"btnTransicoesTarefa\"]/i", 2,1000);
+			clicar("//span[text()[contains(.,'" + processo.getNumeroProcessoFormatado() + "')]]", 1, 1000);
+			clicar("//*[@id=\"btnTransicoesTarefa\"]/i", 1,1000);
 			
 			//pesquisar método de pesquisa de árvore html de pesquisa do selenium no momento do teste
 			//ctrl+h "alternarFrame e encontrar onde a função está sendo usada
-			
-			clicar("/html/body/app-root/selector/div/div/div[2]/right-panel/div/processos-tarefa/div[2]/conteudo-tarefa/div[1]/div/div/div[2]/div[2]/ul/li[5]/a",2,1000);
-			
+			if(existeElementoTexto("Minutar decisão")) {
+				clicar("/html/body/app-root/selector/div/div/div[2]/right-panel/div/processos-tarefa/div[2]/conteudo-tarefa/div[1]/div/div/div[2]/div[2]/ul/li[5]/a",1,1000);
+			}
 			alternarFrame(new String[] {"ngFrame","frame-tarefa"});
-			clicar("//select[contains(@id,'selectMenuTipoDocumentoDecoration:selectMenuTipoDocumento')]", 3, 3000);
+			clicar("//select[contains(@id,'selectMenuTipoDocumentoDecoration:selectMenuTipoDocumento')]", 1, 1000);
 			clicar("//option[contains(text(),'Decisão')]", 1, 1000);
 			
 			clicar("//select[contains(@id,'Decoration:selectModeloDocumento')]",1,1000);
-			clicar("//option[contains(text(), 'SUSPEIÇÃO DESEMB. RAIMUNDO BOGÉA')]", 2, 1000);
+			clicar("//option[contains(text(), 'SUSPEIÇÃO DESEMB. RAIMUNDO BOGÉA')]", 1, 1000);
+					
 			
-			clicar("//input[contains(@class, 'btn btn-primary')]", 2, 1000);
+			clicar("//input[contains(@id, 'BotaoSalvar')]", 1, 1000);
 			clicar("//input[contains(@class, 'inputText col-sm-7')]");
 			digitar("//input[contains(@class, 'inputText col-sm-7')]", "suspeição");
 			clicar("//input[contains(@value, 'Pesquisar')]", 1, 1000);
 			clicar("//span[contains(text(), 'Suspeição (')]",1,1000);
-			clicar("//i[contains(@class, 'fa fa-file-text-o')]");
 			
-			digitar("//input[contains(@alt, '#(alt)')]", "DESEMBARGADOR RAIMUNDO MORAES BOGÉA");
-			clicar("//input[contains(@name, 'homologadorEventoTreebotaoGravarMovimento')]");
-		
+			if(existeElementoXPath("//a[contains(@title, 'Preencher complementos')]")) {
+				clicar("//i[contains(@class, 'fa fa-file-text-o')]", 1, 1000);
+				digitar("//input[contains(@alt, '#(alt)')]", "DESEMBARGADOR RAIMUNDO MORAES BOGÉA");
+				clicar("//input[contains(@name, 'homologadorEventoTreebotaoGravarMovimento')]");
+				
+			}
+			
 			alternarFrame(new String[] {"ngFrame"});
 			clicar("//i[contains(@class, 'far fa-share-square')]");
-			clicar("//a[contains(text(), 'Encaminhar para assinatura')]", 2, 1000);
+			clicar("//a[contains(text(), 'Encaminhar para assinatura')]", 1, 1000);
 			criarLog(processo, "Suspeição realizada com sucesso no processo "+processo.getNumeroProcesso()+"!");
 			System.out.println("Suspeição finalizada.");
-			Thread.sleep(2000);
-		} catch (WebDriverException we) {
-			we.printStackTrace();
-			return;
-		} catch (AutomacaoException ae) {
-			throw ae;
-		} catch (Exception e) {
-			criarLog(processo, "\nOcorreu um erro: " + processo.getNumeroProcesso());
-		} finally {
-			fecharJanelaDetalhes();
-		}
-		System.out.println("fim realizarTarefa....");
-	}
-	
-	/**
-	 * Método que devolve os processos constantes nas tarefas
-	 * assinar desição, minutar desição urgência inicial, minutar desição urgência, 
-	 * minutar desição, minutar despacho inicial, minutar despacho
-	 * para a caixa (CIV) Assessoria - Análise de Assessoria (coonforme solicitação Des. Bogéa)
-	 * 
-	 * 
-	 * @autor Pedro Victor de Sousa Dantas
-	 * @ToadaLab
-	 */
-	protected void devolverParaAssessoria(Processo processo) throws AutomacaoException{
-		System.out.println("realizarTarefa......" + processo.getNumeroProcessoFormatado());
-		String campoPesquisa = "//input[@id='inputPesquisaTarefas']";
-		System.out.println("Movendo processo para a caixa: (CIV) Assessoria - Análise da Assessoria...");
-		try {
-			//assinar decição
 			alternarFrame(new String[] { "ngFrame" });
-			if(existeElementoTexto("Minutar decisão de urgência inicial ")
-					|| existeElementoTexto("Minutar decisão de urgência ")
-					|| existeElementoTexto("Minutar decisão ")
-					|| existeElementoTexto("Minutar despacho inicial ")
-					|| existeElementoTexto("Minutar despacho ")) {
-				
-				limparDigitacao(campoPesquisa);
-				
-				digitar(campoPesquisa, processo.getNumeroProcessoFormatado(), 1, 10);
-				clicar("//button[@title = 'Pesquisar']", 1, 20);
-				Thread.sleep(1000);
-				int qtdProcessos = obterQuantidadeElementos("//p-datalist/div/div/ul/li");
-				fecharJanelaDetalhes();
-				alternarFrame(new String[] { "ngFrame" });
-				
-				//Iniciando o procedimento após clicar no número do processo
-				clicar("//span[text()[contains(.,'" + processo.getNumeroProcessoFormatado() + "')]]", 2, 2000);
-				clicar("//*[@id=\"btnTransicoesTarefa\"]");
-				clicar("/html/body/app-root/selector/div/div/div[2]/right-panel/div/processos-tarefa/div[2]/conteudo-tarefa/div[1]/div/div/div[2]/div[2]/ul/li[3]/a");
-				
-				Thread.sleep(1000);
-				criarLog(processo, "Procedimento realizado com sucesso!");				
-			}
+			
+			Thread.sleep(2000);
 		} catch (WebDriverException we) {
 			we.printStackTrace();
 			return;
@@ -712,37 +665,41 @@ public abstract class PaginaBase extends TempoRoboProcessamento {
 			Thread.sleep(2000);
 			int qtdProcessos = obterQuantidadeElementos("//p-datalist/div/div/ul/li");
 			fecharJanelaDetalhes();
-			clicar("//span[text()[contains(.,'" + processo.getNumeroProcessoFormatado() + "')]]", 2, 2000);
-			clicar("//*[@id=\"btnTransicoesTarefa\"]/i", 2,1000);
+			clicar("//span[text()[contains(.,'" + processo.getNumeroProcessoFormatado() + "')]]", 1, 1000);
+			clicar("//*[@id=\"btnTransicoesTarefa\"]/i", 1,1000);
 			
 			//pesquisar método de pesquisa de árvore html de pesquisa do selenium no momento do teste
 			//ctrl+h "alternarFrame e encontrar onde a função está sendo usada
-			
-			clicar("/html/body/app-root/selector/div/div/div[2]/right-panel/div/processos-tarefa/div[2]/conteudo-tarefa/div[1]/div/div/div[2]/div[2]/ul/li[5]/a",2,1000);
+			if(existeElementoTexto("Minutar decisão")) {
+				clicar("/html/body/app-root/selector/div/div/div[2]/right-panel/div/processos-tarefa/div[2]/conteudo-tarefa/div[1]/div/div/div[2]/div[2]/ul/li[5]/a",1,1000);
+			}
 			
 			alternarFrame(new String[] {"ngFrame","frame-tarefa"});
-			clicar("//select[contains(@id,'selectMenuTipoDocumentoDecoration:selectMenuTipoDocumento')]", 3, 3000);
+			clicar("//select[contains(@id,'selectMenuTipoDocumentoDecoration:selectMenuTipoDocumento')]", 1, 1000);
 			clicar("//option[contains(text(),'Decisão')]", 1, 1000);
 			
 			clicar("//select[contains(@id,'Decoration:selectModeloDocumento')]",1,1000);
-			clicar("//option[contains(text(), 'IMPEDIMENTO DESEMB. RAIMUNDO BOGÉA')]", 2, 1000);
+			clicar("//option[contains(text(), 'IMPEDIMENTO DESEMB. RAIMUNDO BOGÉA')]", 1, 1000);
 			
-			clicar("//input[contains(@class, 'btn btn-primary')]", 2, 1000);
+			clicar("//input[contains(@id, 'BotaoSalvar')]", 1, 1000);
 			clicar("//input[contains(@class, 'inputText col-sm-7')]");
 			digitar("//input[contains(@class, 'inputText col-sm-7')]", "impedimento");
-			clicar("//input[contains(@value, 'Pesquisar')]", 2, 2000);
-			clicar("//span[contains(text(), 'Impedimento (')]",2,2000);
-			clicar("//i[contains(@class, 'fa fa-file-text-o')]");
+			clicar("//input[contains(@value, 'Pesquisar')]", 1, 1000);
+			clicar("//span[contains(text(), 'Impedimento (')]",1,1000);
 			
-			digitar("//input[contains(@alt, '#(alt)')]", "DESEMBARGADOR RAIMUNDO MORAES BOGÉA");
-			clicar("//input[contains(@name, 'homologadorEventoTreebotaoGravarMovimento')]");
-		
+			if(existeElementoXPath("//a[contains(@title, 'Preencher complementos')]")) {
+				clicar("//i[contains(@class, 'fa fa-file-text-o')]",1,1000);				
+				digitar("//input[contains(@alt, '#(alt)')]", "DESEMBARGADOR RAIMUNDO MORAES BOGÉA");
+				clicar("//input[contains(@name, 'homologadorEventoTreebotaoGravarMovimento')]");
+			}
 			alternarFrame(new String[] {"ngFrame"});
 			clicar("//i[contains(@class, 'far fa-share-square')]");
-			clicar("//a[contains(text(), 'Encaminhar para assinatura')]", 2, 1000);
+			clicar("//a[contains(text(), 'Encaminhar para assinatura')]", 1, 1000);
 			criarLog(processo, "Impedimento realizado com sucesso no processo "+processo.getNumeroProcesso()+" !");
 			System.out.println("Impedimento finalizado");
-			Thread.sleep(2000);
+			alternarFrame(new String[] { "ngFrame" });
+			
+			Thread.sleep(800);
 		} catch (WebDriverException we) {
 			we.printStackTrace();
 			return;
@@ -756,6 +713,95 @@ public abstract class PaginaBase extends TempoRoboProcessamento {
 		System.out.println("fim realizarTarefa....");
 	}
 	
+	/**
+	 * Método que devolve os processos constantes nas tarefas
+	 * assinar desição, minutar desição urgência inicial, minutar desição urgência, 
+	 * minutar desição, minutar despacho inicial, minutar despacho
+	 * para a caixa (CIV) Assessoria - Análise de Assessoria (coonforme solicitação Des. Bogéa)
+	 * 
+	 * 
+	 * @autor Pedro Victor de Sousa Dantas
+	 * @ToadaLab
+	 */
+	protected void devolverParaAssessoria(Processo processo) throws AutomacaoException{
+		System.out.println("realizarTarefa......" + processo.getNumeroProcessoFormatado());
+		String campoPesquisa = "//input[@id='inputPesquisaTarefas']";
+		System.out.println("Movendo processo para a caixa: (CIV) Assessoria - Análise da Assessoria...");
+		try {
+			//assinar decição
+			alternarFrame(new String[] { "ngFrame" });
+			if(tarefaAtual("Minutar decisão de urgência inicial ")
+				|| tarefaAtual("Minutar decisão de urgência ")
+				|| tarefaAtual("Minutar decisão ")
+				|| tarefaAtual("Minutar despacho inicial ")
+				|| tarefaAtual("Minutar despacho ")) {
+					limparDigitacao(campoPesquisa);
+					
+					digitar(campoPesquisa, processo.getNumeroProcessoFormatado(), 1, 1000);
+					clicar("//button[@title = 'Pesquisar']", 1, 1000);
+					Thread.sleep(1000);
+					int qtdProcessos = obterQuantidadeElementos("//p-datalist/div/div/ul/li");
+					fecharJanelaDetalhes();
+					alternarFrame(new String[] { "ngFrame" });
+					
+					//Iniciando o procedimento após clicar no número do processo
+					clicar("//span[text()[contains(.,'" + processo.getNumeroProcessoFormatado() + "')]]", 1, 1000);
+					clicar("//*[@id=\"btnTransicoesTarefa\"]", 1, 1000);
+					clicar("/html/body/app-root/selector/div/div/div[2]/right-panel/div/processos-tarefa/div[2]/conteudo-tarefa/div[1]/div/div/div[2]/div[2]/ul/li[3]/a", 1, 1000);
+					
+					Thread.sleep(1000);
+					criarLog(processo, "Procedimento realizado com sucesso!");				
+			} else {
+				System.out.println("O processo não está em nenhuma caixa que precise ser devolvida para a análise da Assessoria");
+			}
+		} catch (WebDriverException we) {
+			we.printStackTrace();
+			return;
+		} catch (AutomacaoException ae) {
+			throw ae;
+		} catch (Exception e) {
+			criarLog(processo, "\nOcorreu um erro: " + processo.getNumeroProcesso());
+		} finally {
+			fecharJanelaDetalhes();
+		}
+		System.out.println("fim realizarTarefa....");
+	}
+	
+	/**
+	 * Método que permite ao robo identificar se um elemento 
+	 * existe na tela conforme xpath passado
+	 * 
+	 * @autor Pedro Victor de Sousa Dantas
+	 * @ToadaLab
+	 */
+	public boolean existeElementoXPath(String xpath) {
+		try {
+			getDriver().findElement(By.xpath(xpath));
+			return true;
+		} catch (Exception e) {
+			new AutomacaoException(e.getMessage());
+		}
+		return false;
+	}
+	
+	/**
+	 * Método que permite ao robo identificar em qual tarefa ele 
+	 * está trabalhando
+	 * 
+	 * @autor Pedro Victor de Sousa Dantas
+	 * @ToadaLab
+	 */
+	public boolean tarefaAtual(String nomeTarefa) {
+		try {
+			if(getDriver().findElement(By.xpath("//span[contains(@class, 'text-truncate uppercase nome-tarefa')]")).getText().compareTo(nomeTarefa) ==0) {
+				return true;
+			}
+			return false;
+		} catch (Exception e) {
+			new AutomacaoException(e.getMessage());
+		}
+		return false;
+	}
 
 	public void executarProcedimento() throws AutomacaoException {
 		try {
@@ -790,28 +836,37 @@ public abstract class PaginaBase extends TempoRoboProcessamento {
 					escreverLog(" Iniciando procedimento do processo: " + teste + "\n");
 					realizarTarefa(nProcessos.get(i));
 					
+					Thread.sleep(2000);
+					
 					System.out.println("Verificando Suspeição no processo "+nProcessos.get(i).getNumeroProcesso());
 					//Aplicando a suspeição
 					alternarFrame(new String[] { "ngFrame"});
-					if(existeElementoTexto("ToadaRobô06-suspeição Gustavo S. de Oliveira")
-							| existeElementoTexto("ToadaRobô06-suspeição Haroldo G. S. Filho")
-							| existeElementoTexto("ToadaRobô06-suspeição G S Adv. Ass.")
-							| existeElementoTexto("Codó") 
-							| existeElementoTexto("Elaine")) {
+					if(existeEtiquetaNoProcesso("ToadaRobô06-suspeição Gustavo S. de Oliveira")
+							|| existeEtiquetaNoProcesso("ToadaRobô06-suspeição Haroldo G. S. Filho")
+							|| existeEtiquetaNoProcesso("ToadaRobô06-suspeição G S Adv. Ass.")
+							|| existeEtiquetaNoProcesso("ToadaRobô06-impedimento Ulisses S. Adv. Ass.")) {
 						realizarSubmissaoDeSuspeicao(nProcessos.get(i));
 						System.out.println("Suspeição aplicada ao processo "+nProcessos.get(i).getNumeroProcesso());
 					} else {
 						System.out.println("Não foram encontradas etiquetas de suspeição no processo "+nProcessos.get(i).getNumeroProcesso());
 					}
+					
+					Thread.sleep(1000);
 
 					//aplicando o impedimento
+					alternarFrame(new String[] { "ngFrame"});
 					System.out.println("Verificando Impedimento no processo "+nProcessos.get(i).getNumeroProcesso());
-					if(existeElementoTexto("ToadaRobô06-impedimento Ulisses C. M. de Sousa")
-							| existeElementoTexto("ToadaRobô06-impedimento Marcos L. B. R. Simões")
-							| existeElementoTexto("ToadaRobô06-impedimento Antônio A. J. Canovas")
-							| existeElementoTexto("ToadaRobô06-impedimento Catarina S. Bogéa")
-							| existeElementoTexto("ToadaRobô06-impedimento Ulisses S. Adv. Ass.")
-							| existeElementoTexto("Caxias")) {
+					
+					String campoPesquisa = "//input[@id='inputPesquisaTarefas']";
+					limparDigitacao(campoPesquisa);
+					digitar(campoPesquisa, nProcessos.get(i).getNumeroProcessoFormatado());
+					clicar("//button[@title = 'Pesquisar']");
+					
+					if(existeEtiquetaNoProcesso("ToadaRobô06-impedimento Ulisses C. M. de Sousa")
+							|| existeEtiquetaNoProcesso("ToadaRobô06-impedimento Marcos L. B. R. Simões")
+							|| existeEtiquetaNoProcesso("ToadaRobô06-impedimento Antônio A. J. Canovas")
+							|| existeEtiquetaNoProcesso("ToadaRobô06-impedimento Catarina S. Bogéa")
+							|| existeEtiquetaNoProcesso("ToadaRobô06-impedimento Ulisses S. Adv. Ass.")) {
 						realizarSubmissaoDeImpedimento(nProcessos.get(i));
 						System.out.println("Impedimento aplicado no processo "+nProcessos.get(i).getNumeroProcesso());
 					} else {
@@ -853,6 +908,8 @@ public abstract class PaginaBase extends TempoRoboProcessamento {
 		}
 
 	}
+	
+	
 
 	public void finalizarDriver() throws AutomacaoException {
 		System.out.println("FINALIZANDO ROBO!");
@@ -866,6 +923,7 @@ public abstract class PaginaBase extends TempoRoboProcessamento {
 			driver = null;
 		}
 	}
+	
 
 	protected void alternarJanela() throws AutomacaoException {
 		// alternar Janela
@@ -1429,6 +1487,15 @@ public abstract class PaginaBase extends TempoRoboProcessamento {
 	protected boolean existeElementoTexto(String texto) {
 		try {
 			getDriver().findElement(By.xpath("//*[text()[contains(.,'" + texto + "')]]"));
+			return true;
+		} catch (Exception e) {
+			return false;
+		}
+	}
+	
+	protected boolean existeEtiquetaNoProcesso(String texto) {
+		try {
+			getDriver().findElement(By.xpath("//span[text()[contains(.,'" + texto + "')]]"));
 			return true;
 		} catch (Exception e) {
 			return false;
